@@ -1,0 +1,294 @@
+$mainColor: #e8e8e8;
+
+:root {
+  --darkBlue: hsl(233, 26%, 24%);
+  --limeGreen: hsl(136, 65%, 52%);
+  --brightCyan: hsl(192, 70%, 51%);
+  --grayBlue: hsl(233, 8%, 62%);
+  --lightGray: #f6f6f6;
+  --wrapperSpace: 6.5em;
+  font-size: 16px;
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.ant-card-body{
+  padding: 0px 0px 0px 24px;
+}
+
+.hero{
+  margin: 10px 10px 0px 0px;
+}
+
+.include{
+  margin: 0px 0px 0px 15px;
+}
+
+.price-line{
+    margin-bottom: 2px;
+    margin-left: 0.5em;
+    text-decoration: line-through;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.Travel-Container {
+  text-align: center;
+}
+
+.Travel-section {
+  background-color: $mainColor;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: 'Source sans pro', sans-serif;
+  margin: 0;
+  color: var(--grayBlue);
+}
+
+.Bttom-Card {
+  border-top: 1px solid rgb(240, 240, 240);
+}
+
+.Bttom {
+  white-space: nowrap;
+  text-align: center;
+  height: 64px;
+  width: auto;
+  padding: 0px 16px;
+  display: inline-block;
+  outline: 0px;
+  opacity: 1;
+  pointer-events: all;
+  border: 0px;
+  text-decoration: none;
+  font-size: 1rem;
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  position: relative;
+  background: linear-gradient(rgb(222, 42, 47), rgb(218, 34, 37), rgb(213, 25, 27), rgb(209, 14, 15), rgb(204, 0, 0));
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  align-self: right;
+
+}
+
+.contentBttom{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.spaceBtoom {
+  box-sizing: border-box;
+  max-width: none;
+  align-self: auto;
+  position: static;
+  box-shadow: none;
+  border-bottom: none;
+  border-right: none;
+}
+
+.CardTitle-title {
+  font-weight: 400;
+  font-size: 1.375em;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.CardTitle-subtitle {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.h1{
+  margin: 0;
+}
+
+.Type {
+  width: fit-content;
+  height: 2em;
+  text-align: center;
+  position: relative;
+  padding: 0px 1.1em 0px 0.5em;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background: linear-gradient(rgb(255, 88, 0), rgb(255, 146, 0));
+  color: white;
+  cursor: pointer;
+  border-radius: 3px 0px 0px 3px;
+  margin-bottom: 0em;
+}
+.contentType{
+  display: grid;
+  align-items: center ;
+  grid-template-areas: "type  hours ratings" ;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 50px;
+  max-width: 200px;
+}
+
+.contentPrice{
+  display: flex;
+}
+
+.cost{
+  font-weight: 700;
+  font-size: 1.375em;
+}
+
+.ratings {
+  color : rgb(21, 128, 192)
+}
+
+.hours {
+  margin-right: 0.3em;
+}
+
+.triangle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 15px 8px 15px 0px;
+  border-color: transparent white transparent transparent;
+}
+
+.TextBanner{
+  margin-left: 10px;
+}
+
+.BannerAbsolute {
+  width: auto;
+  font-size: 12px;
+  height: auto;
+  position: absolute;
+  text-align: center;
+  padding: 8px 20px 8px 10px;
+  margin-left: -5px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  background: rgb(249, 181, 49);
+  color: rgb(0, 55, 84);
+  z-index: 1;
+}
+
+.BannerAbsolute::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  bottom: 0px;
+  right: -10px;
+  border-style: solid;
+  border-width: 18px 0px 0px 10px;
+  border-color: transparent rgb(249, 181, 49);
+}
+
+.BannerAbsolute::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  border-style: solid;
+  border-width: 18px 10px 0px 0px;
+  border-color: rgb(249, 181, 49) transparent transparent;
+}
+
+.textBtoom {
+  box-sizing: border-box;
+  margin: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  max-width: none;
+  align-self: auto;
+  position: static;
+  box-shadow: none;
+  border-bottom: none;
+  border-right: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
