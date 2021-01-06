@@ -1,0 +1,1039 @@
+@import url(bootstrap/bootstrap-reboot.css);
+@import url(bootstrap/bootstrap-grid.css);
+@import url(bootstrap/bootstrap.css);
+@import url(icon-font/icon-font.css);
+body, html {
+  font-family: 'Quicksand', sans-serif;
+  color: #2d2d2d;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #020202;
+  font-weight: 500; }
+
+a {
+  color: #ff0000;
+  transition: all 0.5s ease; }
+  a:hover, a:focus, a:active {
+    color: rgba(255, 0, 0, 0.7); }
+
+.hero-section {
+  background: url("../images/landing-gradient-bk.png") no-repeat center top;
+  background-size: cover;
+  border-top: 5px solid #ff0000;
+  width: 100%;
+  padding: 0; }
+  .hero-section .image-carousel {
+    height: 150px; }
+    @media (min-width: 576px) {
+      .hero-section .image-carousel {
+        min-height: 400px; } }
+    @media (min-width: 768px) {
+      .hero-section .image-carousel {
+        min-height: 500px; } }
+  .hero-section .carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border-radius: 100px; }
+  .hero-section .logoAlkomprarLog {
+    margin: 20px 0 15px 0; }
+    @media (min-width: 400px) {
+      .hero-section .logoAlkomprarLog {
+        margin: 30px 0 20px 0; } }
+    @media (min-width: 576px) {
+      .hero-section .logoAlkomprarLog {
+        margin: 40px 0 25px 0; } }
+    @media (min-width: 650px) {
+      .hero-section .logoAlkomprarLog {
+        margin: 40px 0 30px 0; } }
+    @media (min-width: 768px) {
+      .hero-section .logoAlkomprarLog {
+        margin: 55px 0 35px 0; } }
+    @media (min-width: 992px) {
+      .hero-section .logoAlkomprarLog {
+        margin: 70px 0 40px 0; } }
+  .hero-section h1 {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem; }
+    @media (min-width: 576px) {
+      .hero-section h1 {
+        font-size: 2.9rem;
+        margin-bottom: 2.5rem; } }
+
+.btn-top {
+  border-radius: 0 0 6px 6px;
+  text-transform: uppercase;
+  padding: 0.8rem 0.7rem 1rem 0.7rem; }
+
+.content-section {
+  background-color: #f2f2f2;
+  padding: 20px 0; }
+
+.landing-white-panel {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 60px 20px 20px 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  margin: 2rem 0;
+  border-top: 3px solid #ff0000;
+  position: relative;
+  height: 90%; }
+  .landing-white-panel .icon {
+    background-color: #fff;
+    font-size: 55px;
+    position: absolute;
+    color: #ff0000;
+    top: -25px;
+    left: 41%;
+    padding: 9px;
+    line-height: 47px;
+    border-radius: 100px; }
+  .landing-white-panel h2 {
+    font-size: 22px; }
+
+.gradient-bk {
+  background: url("../images/gradient-bk.png") no-repeat center top;
+  background-size: cover;
+  border-top: 5px solid #ff0000;
+  width: 100%;
+  padding: 30px 0 0 0;
+  margin-bottom: 1.5rem !important; }
+  @media (min-width: 576px) {
+    .gradient-bk {
+      padding: 65px 0 0 0; } }
+  @media (min-width: 768px) {
+    .gradient-bk {
+      padding: 100px 0 0 0; } }
+
+.header-unlogued {
+  text-align: right; }
+  @media (max-width: 575px) {
+    .header-unlogued {
+      padding-bottom: 5px;
+      text-align: left; } }
+  .header-unlogued .alkomprar-logo {
+    width: 80%; }
+    @media (min-width: 576px) {
+      .header-unlogued .alkomprar-logo {
+        width: 70%; } }
+    @media (min-width: 768px) {
+      .header-unlogued .alkomprar-logo {
+        width: 60%;
+        margin-left: 1rem; } }
+    @media (min-width: 992px) {
+      .header-unlogued .alkomprar-logo {
+        width: 50%; } }
+    @media (min-width: 1200px) {
+      .header-unlogued .alkomprar-logo {
+        width: 40%; } }
+
+.HeaderPublic {
+  justify-content: center !important; }
+  .HeaderPublic .alkomprar-logo {
+    margin-bottom: 10px;
+    align-self: center; }
+
+.titleDocumentPDF {
+  font-weight: bold;
+  position: relative;
+  align-self: center;
+  left: 270px; }
+
+.serialDocumentPDF {
+  position: relative;
+  align-self: right;
+  left: 650px; }
+
+.dateCertificate_Renta {
+  position: relative;
+  align-self: left;
+  left: 0px; }
+
+.Red_Certificate_Renta {
+  position: relative;
+  align-self: left;
+  left: 245px;
+  color: #FF0000; }
+
+.idea_Certificate_Renta {
+  position: relative;
+  align-self: left;
+  text-align: justify;
+  left: 30px; }
+
+.paragraph_Certificate_Renta {
+  position: relative;
+  align-self: left;
+  text-align: justify; }
+
+.logoAlkomprar .Payment_Plan {
+  background: url("../images/logo-alkomprar.png") no-repeat center top;
+  background-size: 240px 40px;
+  width: 650px;
+  height: 86px;
+  right: 800px;
+  display: inline-block;
+  align-self: right;
+  position: relative;
+  left: 30px;
+  top: 10px; }
+
+.logoAlkomprarCertificates {
+  background: url("../images/logo-alkomprar.png") no-repeat center top;
+  background-size: 100% 50%;
+  width: 300px;
+  height: 46px;
+  right: 800px;
+  display: inline-block;
+  align-self: right;
+  position: relative;
+  left: 30px;
+  top: 10px; }
+
+.logoCorbetaCertificates {
+  background: url("../images/imagen_corbeta.png") no-repeat center top;
+  background-size: 160px 106px;
+  width: 150px;
+  height: 106px;
+  right: 800px;
+  display: inline-block;
+  align-self: right; }
+
+.logoAlkomprarLog {
+  background-size: 100% 100%;
+  width: 262px;
+  height: 46px;
+  display: inline-block;
+  text-indent: -999px;
+  overflow: hidden;
+  align-self: center; }
+
+.navbar .logoCredito20Min {
+  max-width: 60px;
+  max-height: 60px;
+  margin-bottom: 0px;
+  margin-top: 0px; }
+  @media (min-width: 768px) {
+    .navbar .logoCredito20Min {
+      max-width: 90px;
+      max-height: 90px; } }
+  @media (min-width: 768px) {
+    .navbar .logoCredito20Min {
+      max-width: 90px;
+      max-height: 90px; } }
+
+.btn {
+  padding: 0.5rem 2.5rem;
+  font-weight: 500; }
+
+.btn-primary {
+  background-color: #ff0000;
+  border-color: #ff0000;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2); }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    color: #fff;
+    border-color: rgba(255, 0, 0, 0.6);
+    background-color: rgba(255, 0, 0, 0.7);
+    outline-style: none;
+    box-shadow: none; }
+
+.whitePanel {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 20px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 4rem; }
+  .whitePanel h1 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem; }
+  .whitePanel .form-group {
+    position: relative;
+    margin-bottom: 1.7rem; }
+    .whitePanel .form-group .icon {
+      font-size: 24px;
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      color: #020202;
+      z-index: 2; }
+    .whitePanel .form-group .icon-right {
+      font-size: 18px;
+      position: absolute;
+      right: 3px;
+      top: 3px;
+      color: #020202;
+      z-index: 2; }
+  .whitePanel .form-control {
+    border: 0 none;
+    border-radius: 0;
+    font-family: 'Quicksand', sans-serif;
+    border-bottom: 2px solid #ebebeb;
+    color: #2d2d2d; }
+    .whitePanel .form-control:focus {
+      outline-style: none;
+      box-shadow: none;
+      border-color: transparent;
+      outline: none;
+      border: 0 none;
+      border-bottom: 2px solid #2d2d2d; }
+    .whitePanel .form-control::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #2d2d2d; }
+    .whitePanel .form-control::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #2d2d2d; }
+    .whitePanel .form-control:-ms-input-placeholder {
+      /* IE 10+ */
+      color: #2d2d2d; }
+    .whitePanel .form-control:-moz-placeholder {
+      /* Firefox 18- */
+      color: #2d2d2d; }
+
+.login .form-control {
+  padding: 0.375rem 2.3rem; }
+
+.register {
+  background: #fff; }
+  @media (min-width: 768px) {
+    .register {
+      background: #fff url("../images/right-image-register.png") no-repeat right bottom;
+      background-size: 54% 100%;
+      min-height: 434px; } }
+  .register .form-control {
+    padding: 0.375rem 2.3rem; }
+  .register .form-check-label {
+    font-size: 0.8rem; }
+
+footer {
+  border-top: 3px solid #ebebeb;
+  background-color: #fff;
+  width: 100%;
+  padding: 5px 0 5px 0; }
+  @media (min-width: 576px) {
+    footer {
+      padding: 15px 0 10px 0; } }
+  @media (min-width: 768px) {
+    footer {
+      padding: 25px 0 10px 0; } }
+  footer p {
+    font-size: 0.8rem;
+    margin: .2rem 0; }
+    @media (min-width: 576px) {
+      footer p {
+        margin: .3rem 0; } }
+    @media (min-width: 768px) {
+      footer p {
+        margin: .7rem 0; } }
+  footer h5 {
+    text-transform: capitalize !important;
+    font-size: 1.3rem !important;
+    font-weight: 500 !important; }
+  footer .logoCredito20Min {
+    max-height: 80px; }
+    @media (min-width: 768px) {
+      footer .logoCredito20Min {
+        max-height: 100px; } }
+    @media (min-width: 1024px) {
+      footer .logoCredito20Min {
+        max-height: 114px; } }
+  footer .socialShare {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center; }
+    @media (min-width: 380px) and (max-width: 479px) {
+      footer .socialShare {
+        width: 70%; } }
+    footer .socialShare li {
+      display: inline-block;
+      margin: 0 5px; }
+      footer .socialShare li a {
+        background: url("../images/social-sprite.png") no-repeat 0 0;
+        background-size: 189px 47px;
+        display: inline-block;
+        text-indent: -999px;
+        overflow: hidden;
+        align-self: center;
+        width: 48px;
+        height: 48px; }
+        footer .socialShare li a:hover {
+          opacity: 0.6; }
+        footer .socialShare li a.twitterIcon {
+          background-position: 1px 0; }
+        footer .socialShare li a.facebookIcon {
+          background-position: -47px 0; }
+        footer .socialShare li a.instagramIcon {
+          background-position: -94.3px 0; }
+        footer .socialShare li a.youtubeIcon {
+          background-position: -142px 0; }
+  footer .ant-back-top {
+    z-index: 55; }
+
+.mobileMenuButton {
+  background: transparent;
+  display: inline-block;
+  font-size: 25px;
+  color: #fff;
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+  outline: none;
+  border: 0 none;
+  margin: 0;
+  padding: 5px 8px;
+  cursor: pointer; }
+  @media (min-width: 768px) {
+    .mobileMenuButton {
+      display: none; } }
+
+#offCanvasMenu {
+  border-top: 5px solid #ff0000;
+  width: 100vw;
+  height: 100vh;
+  background-color: #7c7c7c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s cubic-bezier(0, 0.52, 0, 1);
+  overflow: scroll;
+  z-index: 2000; }
+  #offCanvasMenu.hide {
+    transform: translate3d(-100vw, 0, 0);
+    opacity: 0; }
+  #offCanvasMenu.show {
+    transform: translate3d(0vw, 0, 0);
+    overflow: hidden;
+    opacity: 1; }
+  #offCanvasMenu h2 a {
+    color: #333;
+    margin-left: 15px;
+    text-decoration: none; }
+    #offCanvasMenu h2 a:hover {
+      text-decoration: underline; }
+  #offCanvasMenu .submenu li {
+    width: 50%;
+    float: left; }
+  #offCanvasMenu .closeicon {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0;
+    color: #fff; }
+
+.sidebar {
+  background-color: #d5ddec;
+  position: fixed;
+  width: 90px;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  overflow-x: auto;
+  overflow-y: auto;
+  border-top: 5px solid   #020202;
+  display: none; }
+  @media (min-width: 768px) {
+    .sidebar {
+      display: block; } }
+
+.submenu {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .submenu li {
+    list-style: none; }
+    .submenu li a {
+      color: #272727;
+      opacity: 0.8;
+      font-size: 12px;
+      line-height: 13px;
+      text-transform: uppercase;
+      display: block;
+      padding: 11px 0 0 0;
+      min-height: 90px;
+      vertical-align: middle; }
+      .submenu li a .icon {
+        width: 100%;
+        display: inline-block;
+        font-size: 42px;
+        margin-bottom: 15px; }
+      .submenu li a b {
+        display: inline-block;
+        font-weight: 400; }
+      .submenu li a:hover, .submenu li a:active {
+        background-color: #5c5c5c;
+        color: #fff;
+        opacity: 1;
+        text-decoration: none; }
+  .submenu li.disabled {
+    pointer-events: none;
+    opacity: 0.6; }
+
+.container-fluid, .container-fluid-ak {
+  background-color: #f2f2f2;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .container-fluid, .container-fluid-ak {
+      padding: 0 0 0 90px; } }
+  .container-fluid > .row, .container-fluid-ak > .row {
+    margin: 0; }
+    .container-fluid > .row > .col, .container-fluid-ak > .row > .col {
+      padding: 0; }
+
+.private-wrapper {
+  z-index: 50; }
+  .private-wrapper h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.7rem;
+    color: #020202;
+    text-transform: uppercase;
+    font-weight: 500; }
+    .private-wrapper h1 .icon {
+      font-size: 2rem;
+      margin-right: 10px;
+      vertical-align: middle; }
+  .private-wrapper h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+    color: #020202;
+    font-weight: 400; }
+    .private-wrapper h2 strong {
+      font-weight: 400; }
+  .private-wrapper h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+    font-weight: 400;
+    color: #020202; }
+  .private-wrapper h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0.7rem;
+    color: #020202; }
+  .private-wrapper h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #2d2d2d; }
+  .private-wrapper .btn-primary {
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1); }
+  .private-wrapper .btn-sm {
+    padding: 0.3rem 2rem;
+    font-size: 0.8rem; }
+  .private-wrapper .navbar {
+    background: url("../images/header-gradient-bk.png") no-repeat center top;
+    background-size: cover;
+    padding: 7px 0 6px 0;
+    min-height: 50px;
+    min-width: 320px;
+    left: 0;
+    right: 0;
+    top: 0;
+    border-top: 5px solid #ff0000; }
+    @media (min-width: 768px) {
+      .private-wrapper .navbar {
+        left: 90px; } }
+    .private-wrapper .navbar .logo {
+      background: url("../images/logo-alkomprar-header.png") no-repeat center top;
+      background-size: 196px 34px;
+      width: 196px;
+      height: 34px;
+      display: inline-block;
+      text-indent: -999px;
+      overflow: hidden;
+      align-self: center;
+      margin: 0 0.2rem; }
+      @media (min-width: 576px) {
+        .private-wrapper .navbar .logo {
+          margin-left: 1rem; } }
+      @media (max-width: 767px) {
+        .private-wrapper .navbar .logo {
+          max-height: 60px; } }
+    .private-wrapper .navbar .dropdown-menu {
+      left: auto;
+      right: 0; }
+    .private-wrapper .navbar ul {
+      margin: 0;
+      padding: 0; }
+      .private-wrapper .navbar ul li {
+        list-style-type: none; }
+    .private-wrapper .navbar .logoCredito20Min {
+      display: none;
+      max-width: 50px;
+      max-height: 50px; }
+      @media (min-width: 576px) {
+        .private-wrapper .navbar .logoCredito20Min {
+          display: inline-block; } }
+      @media (min-width: 768px) {
+        .private-wrapper .navbar .logoCredito20Min {
+          max-width: 60px;
+          max-height: 60px; } }
+  .private-wrapper .nameAvatar {
+    background-color: #4c4b4b;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 100px;
+    padding: 10px; }
+    @media (min-width: 576px) {
+      .private-wrapper .nameAvatar {
+        padding: 12px; } }
+  .private-wrapper .wrapper {
+    width: 100%;
+    padding-top: 5.5rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; }
+  .private-wrapper .panel {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem; }
+    .private-wrapper .panel .date {
+      float: none;
+      color: #06cf06;
+      margin: 0 0 0.5rem 0;
+      padding: 0;
+      font-size: 15px;
+      line-height: 1.2; }
+      @media (min-width: 576px) {
+        .private-wrapper .panel .date {
+          float: right;
+          margin: 0; } }
+    .private-wrapper .panel.facturas h5, .private-wrapper .panel.facturas p {
+      display: inline; }
+    .private-wrapper .panel.facturas p {
+      float: right; }
+    @media (min-width: 576px) {
+      .private-wrapper .panel.facturas h5, .private-wrapper .panel.facturas p {
+        display: block; }
+      .private-wrapper .panel.facturas p {
+        float: none; } }
+  .private-wrapper .usuario .nameAvatar {
+    background-color: #cdcdcd;
+    color: #fff;
+    display: inline;
+    vertical-align: middle;
+    margin-right: 2%;
+    font-size: 22px;
+    padding: 24px; }
+  .private-wrapper .usuario .content {
+    display: inline-block;
+    vertical-align: middle; }
+  .private-wrapper .usuario .nameAvatar {
+    display: inline-block;
+    vertical-align: middle; }
+  .private-wrapper .usuario .form-control-sm {
+    height: calc(1.8125rem + 2px);
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem; }
+  .private-wrapper .usuario h4 {
+    margin-bottom: 2.7rem; }
+  .private-wrapper .usuario ul {
+    margin: 0 0 1rem 0;
+    padding: 0; }
+    .private-wrapper .usuario ul li {
+      list-style: none;
+      padding: 0;
+      margin: 0.9rem 0;
+      display: block; }
+      .private-wrapper .usuario ul li .btn-sm {
+        min-width: 200px; }
+  .private-wrapper .table th {
+    font-weight: 400;
+    border-top: 0 none;
+    font-size: 15px;
+    color: #ff6600;
+    text-transform: uppercase; }
+  .private-wrapper .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #ebebeb; }
+  .private-wrapper .table th, .private-wrapper .table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .private-wrapper form label {
+    text-transform: uppercase; }
+  .private-wrapper form .form-check {
+    margin: 3rem 0 1rem 0; }
+  .private-wrapper .form-group {
+    margin: 0 0 2rem 0; }
+    .private-wrapper .form-group label {
+      text-transform: none; }
+  .private-wrapper .form-control {
+    height: calc(2.95rem + 2px);
+    font-size: 1.4rem;
+    background-color: #fafafa;
+    border-color: #bcbcbc; }
+  .private-wrapper .form-control:disabled, .private-wrapper .form-control[readonly] {
+    background-color: #c8c8c8;
+    opacity: 1; }
+  .private-wrapper .labelpay {
+    margin: 0.9rem 0;
+    text-transform: none; }
+  .private-wrapper .payfield {
+    margin: 0.6rem 0;
+    font-size: 1.4rem; }
+  .private-wrapper .copytext {
+    margin: 1.6rem 0 1rem 0;
+    padding: 0; }
+  .private-wrapper .list-group-item {
+    background-color: rgba(255, 255, 255, 0.7); }
+  .private-wrapper .bg-puntos-temp {
+    background: url("../images/temp-mapa.jpg") no-repeat center top;
+    background-size: cover;
+    border: 10px solid #fff; }
+
+@media (min-width: 576px) {
+  .container-fluid-ak {
+    padding: 0 10% 0 10% !important; } }
+
+.square {
+  width: 100%;
+  padding-bottom: 80%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  margin: 15px 0 15px 0; }
+
+.title-info-module {
+  text-align: right;
+  background: yellow;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  bottom: -3%;
+  margin: 5px 0 5px 0;
+  font-size: 3vw; }
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  border-bottom: 3vw solid yellow;
+  position: absolute;
+  bottom: 3vw;
+  left: 2vw; }
+
+.collapsed {
+  cursor: pointer; }
+
+.ReCaptcha {
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0; }
+
+.btn-modal {
+  padding: 0.375rem 0.75rem; }
+
+.submit {
+  color: white !important;
+  background: black !important; }
+
+.scroll {
+  overflow-x: auto;
+  overflow-y: auto; }
+
+.icons {
+  height: 550px; }
+
+.customer {
+  background: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  border: 0;
+  overflow: hidden; }
+
+.bts {
+  padding: 0px;
+  float: left;
+  height: 30px;
+  width: 39px;
+  text-align: center;
+  border-left-width: 1px; }
+
+.panel {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem; }
+
+.textRequiredValues {
+  text-align: center;
+  background-color: #f31c1c; }
+
+.vertical {
+  height: 100%;
+  width: 1px;
+  border-left: 1px solid gray; }
+
+@media (min-width: 768px) {
+  .vertical-md {
+    width: 1px;
+    border-left: 1px solid gray; } }
+
+.carrusel--center {
+  align-self: center; }
+
+.carrusel--subtitle {
+  color: #f31c1c; }
+
+.carrusel--icono-big {
+  font-size: 5.85rem; }
+
+.hidden {
+  display: none !important; }
+
+.textResponsive {
+  font-size: 2vw; }
+
+.btn-block {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.min-width-historial {
+  min-width: 100px; }
+
+.panel-title {
+  font-size: 1.17rem;
+  margin-bottom: 0px; }
+  .panel-title .text_collapse {
+    color: #004581; }
+
+.no-padding {
+  padding: 0px; }
+
+.mobile-pse-logo {
+  padding: 15px;
+  margin: 0px; }
+  .mobile-pse-logo img {
+    width: 15%;
+    margin-right: 10px; }
+
+.input-group {
+  margin-bottom: 5px; }
+
+.panel .btn {
+  margin-top: 5px; }
+
+.focus-td {
+  background: #f2f2f2; }
+
+.mobile-transaction-table {
+  margin-bottom: 0px !important; }
+
+.private-wrapper .alkomprar-logo {
+  width: 80%; }
+  @media (min-width: 425px) {
+    .private-wrapper .alkomprar-logo {
+      width: 70%; } }
+  @media (min-width: 576px) {
+    .private-wrapper .alkomprar-logo {
+      width: 60%;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) {
+    .private-wrapper .alkomprar-logo {
+      width: 50%; } }
+
+.credito-logo {
+  width: 30%; }
+  @media (min-width: 425px) {
+    .credito-logo {
+      width: 35%; } }
+  @media (min-width: 576px) {
+    .credito-logo {
+      width: 40%;
+      margin-left: 1rem; } }
+  @media (min-width: 768px) {
+    .credito-logo {
+      width: 45%; } }
+
+.adjust-btn {
+  margin-right: 50px;
+  margin-top: -35px; }
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 0;
+  background-color: #d2ecf0; }
+
+.tr-animated {
+  transition: height .35s ease !important; }
+
+.interest-mora {
+  font-size: 120%; }
+
+.padding-price {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem; }
+
+.bottom-btn-resumen {
+  position: absolute;
+  bottom: 0; }
+  @media (min-width: 768px) {
+    .bottom-btn-resumen {
+      width: 90%; } }
+  @media (min-width: 992px) {
+    .bottom-btn-resumen {
+      width: 92%; } }
+  @media (min-width: 1200px) {
+    .bottom-btn-resumen {
+      width: 95%; } }
+
+.table thead th {
+  text-align: center !important;
+  vertical-align: middle !important; }
+
+.carousel .slide {
+  min-width: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  background: transparent !important; }
+
+.table thead th.text-left-important {
+  text-align: left !important;
+  padding: 0.75rem; }
+
+.ant-btn-primary {
+  background-color: #ff0000 !important;
+  border-color: #ff0000 !important;
+  color: #fff; }
+
+.ant-confirm-btns {
+  width: 100%;
+  display: flex; }
+  .ant-confirm-btns .ant-btn {
+    width: 100%;
+    display: inline; }
+
+.carousel .control-next.control-arrow {
+  right: 0 !important; }
+
+.carousel .control-next.control-arrow:before {
+  border-left: 30px solid #fff !important; }
+
+.carousel .control-prev.control-arrow {
+  left: 0 !important; }
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 30px solid #fff !important; }
+
+.ant-modal-body .whitePanel {
+  background-color: unset;
+  border-radius: unset;
+  padding: unset;
+  box-shadow: unset;
+  margin-bottom: unset; }
+
+.image-complete {
+  min-width: 100%; }
+  @media (min-width: 1140px) {
+    .image-complete {
+      min-width: 1140px; } }
+
+.container-image-complete {
+  margin-top: -1.5rem; }
+
+.ant-modal-title {
+  margin-right: 30px !important; }
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: gray;
+  border-color: gray; }
+
+.link_action {
+  color: #ff0000 !important;
+  text-decoration: underline !important; }
+
+.ant-modal-close-x:before {
+  margin-top: -10px; }
+
+.ant-modal-close-x:after {
+  content: "cerrar";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  left: 0;
+  font-weight: normal; }
+
+@media (max-width: 767px) {
+  html {
+    font-size: 80% !important; }
+  .private-wrapper .form-control,
+  .private-wrapper .table th,
+  .ant-collapse {
+    font-size: inherit !important; }
+  .invoices-content {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 15px; }
+  .table th {
+    padding: .6rem; }
+  .table-mobile {
+    margin-bottom: -15px;
+    border-top-left-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px; }
+  .input-table {
+    width: auto;
+    padding: 0px; }
+  .private-wrapper .table-striped tbody tr:nth-of-type(odd) {
+    background: #FFF; }
+  tr, th, td {
+    border: none !important; }
+  thead {
+    background: #ebebeb; }
+    thead tr th {
+      color: black !important; }
+  .input-group-text {
+    background-color: #d2ecf0; }
+  .text-filters {
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+    .text-filters a {
+      color: #004581; }
+  .min-width-historial {
+    min-width: 90px; }
+  .custom-map {
+    width: 95% !important; }
+  .margin-codigos {
+    margin-bottom: 10px; } }
+
+@media (min-width: 768px) {
+  html, body {
+    font-size: 90% !important; }
+  .private-wrapper .form-control,
+  .private-wrapper .table th,
+  .ant-collapse {
+    font-size: inherit !important; }
+  .table th {
+    padding: .4rem; }
+  .table-mobile {
+    margin-bottom: -15px;
+    border-top-left-radius: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px; }
+  .input-table {
+    width: auto;
+    padding: 0px; }
+  tr, th, td {
+    border: none !important; }
+  .input-group-text {
+    background-color: #d2ecf0; }
+  .min-width-historial {
+    min-width: 90px; }
+  .margin-codigos {
+    margin-bottom: 10px; } }

@@ -1,0 +1,18 @@
+//bootstrap
+@import "bootstrap/bootstrap-reboot.css";
+@import "bootstrap/bootstrap-grid.css";
+@import "bootstrap/bootstrap.css";
+
+//Icon Font
+@import "icon-font/icon-font.css";
+
+//APP STYLES files 
+@import "SharedStyles/variables";
+@import "PublicStyles/landing";
+@import "PublicStyles/login-register";
+@import "SharedStyles/footer";
+
+@import "PrivateStyles/menu";
+@import "PrivateStyles/main";
+@import "PublicStyles/common";
+@import "PublicStyles/media-queries";

@@ -1,0 +1,132 @@
+//landing styles
+
+body, html {
+  font-family: 'Quicksand', sans-serif;
+  color: $FontBlack;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $TitleBlack;
+  font-weight: 500;
+}
+
+a {
+  color: $AlkRed;
+  transition: all 0.5s ease;
+
+  &:hover, &:focus, &:active {
+    color: rgba($AlkRed, 0.7);
+  }
+}
+
+.hero-section {
+  background: url('../images/landing-gradient-bk.png') no-repeat center top;
+  background-size: cover;
+  border-top: 5px solid $AlkRed;
+  width: 100%;
+  padding: 0;
+
+  .image-carousel {
+    // background-position-y: bottom !important;
+    height: 150px;
+    @media (min-width: 576px) {
+      min-height: 400px;
+    }
+    @media (min-width: 768px) {
+      min-height: 500px;
+    }
+
+    // &.image-1 {
+    //   background-image: url('../images/landing-image1.png');
+    // }
+
+    // &.image-2 {
+    //   background-image: url('../images/landing-image2.png');
+    // }
+
+    // &.image-3 {
+    //   background-image: url('../images/landing-image3.png');
+    // }
+  }
+
+  .carousel-indicators li {
+    width: 7px;
+    height: 7px;
+    border-radius: 100px;
+  }
+
+  .logoAlkomprarLog {
+    margin: 20px 0 15px 0;
+    @media (min-width: 400px) {
+      margin: 30px 0 20px 0;
+    }
+    @media (min-width: 576px) {
+      margin: 40px 0 25px 0;
+    }
+    @media (min-width: 650px) {
+      margin: 40px 0 30px 0;
+    }
+    @media (min-width: 768px) {
+      margin: 55px 0 35px 0;
+    }
+    @media (min-width: 992px) {
+      margin: 70px 0 40px 0;
+    }
+  }
+
+  h1 {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+    @media (min-width: 576px) {
+      font-size: 2.9rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+.btn-top {
+  border-radius: 0 0 6px 6px;
+  text-transform: uppercase;
+  padding: 0.8rem 0.7rem 1rem 0.7rem;
+}
+
+.content-section {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.landing-white-panel {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 60px 20px 20px 20px;
+  box-shadow: 0 3px 5px rgba(#000, 0.2);
+  margin: 2rem 0;
+  border-top: 3px solid $AlkRed;
+  position: relative;
+  height: 90%;
+
+  .icon {
+    background-color: #fff;
+    font-size: 55px;
+    position: absolute;
+    color: $AlkRed;
+    top: -25px;
+    left: 41%;
+    padding: 9px;
+    line-height: 47px;
+    border-radius: 100px;
+  }
+
+  h2 {
+    font-size: 22px;
+    //margin-bottom: 1.2rem;
+  }
+
+  p {
+    //margin-bottom: 1.5rem;
+  }
+}

@@ -1,0 +1,354 @@
+.container-fluid-ak {
+  @extend .container-fluid;
+  @media (min-width: 576px) {
+    padding: 0 10% 0 10% !important;
+  }
+}
+
+.square {
+  width: 100%;
+  padding-bottom: 80%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;
+  margin: 15px 0 15px 0;
+}
+
+.title-info-module {
+  text-align: right;
+  background: yellow;
+  width: 100%;
+  border-radius: 0 0 8px 8px;
+  position: absolute;
+  bottom: -3%;
+  margin: 5px 0 5px 0;
+  font-size: 3vw;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 3vw solid transparent;
+  border-right: 3vw solid transparent;
+  border-bottom: 3vw solid yellow;
+  position: absolute;
+  bottom: 3vw;
+  left: 2vw;
+}
+
+.collapsed {
+  cursor: pointer;
+}
+
+.ReCaptcha {
+  transform: scale(.8);
+  -webkit-transform: scale(.8);
+  transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+}
+
+.btn-modal {
+  padding: 0.375rem 0.75rem;
+}
+
+.submit {
+  color: white !important;
+  background: black !important;
+}
+
+.scroll {
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.icons {
+  height: 550px;
+}
+
+.customer {
+  background: #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  border: 0;
+  overflow: hidden;
+}
+
+.bts {
+  padding: 0px;
+  float: left;
+  height: 30px;
+  width: 39px;
+  text-align: center;
+  border-left-width: 1px;
+}
+
+.panel {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  box-shadow: 0 3px 3px rgba(#000, 0.1);
+  margin-bottom: 2rem;
+}
+
+.textRequiredValues {
+  text-align: center;
+  background-color: rgb(243, 28, 28);
+}
+
+.vertical {
+  height: 100%;
+  width: 1px;
+  border-left: 1px solid gray;
+}
+
+.vertical-md {
+  @media (min-width: 768px) {
+    width: 1px;
+    border-left: 1px solid gray;
+  }
+}
+
+.carrusel--center {
+  align-self: center;
+}
+
+.carrusel--subtitle {
+  color: #f31c1c;
+}
+
+.carrusel--icono-big {
+  font-size: 5.85rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.textResponsive {
+  font-size: 2vw;
+}
+
+.btn-block {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.min-width-historial {
+  min-width: 100px;
+}
+
+.panel-title {
+  font-size: 1.17rem;
+  margin-bottom: 0px;
+
+  .text_collapse {
+    color: rgba(0, 69, 129, 1.0);
+  }
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.mobile-pse-logo {
+  padding: 15px;
+  margin: 0px;
+
+  img {
+    width: 15%;
+    margin-right: 10px;
+  }
+}
+
+.input-group {
+  margin-bottom: 5px;
+}
+
+.panel {
+  .btn {
+    margin-top: 5px;
+  }
+}
+
+.focus-td {
+  background: #f2f2f2;
+}
+
+.mobile-transaction-table {
+  margin-bottom: 0px !important;
+}
+
+.private-wrapper {
+  .alkomprar-logo {
+    width: 80%;
+    @media (min-width: 425px) {
+      width: 70%;
+    }
+    @media (min-width: 576px) {
+      width: 60%;
+      margin-left: 1rem;
+    }
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
+}
+
+.credito-logo {
+  width: 30%;
+  @media (min-width: 425px) {
+    width: 35%;
+  }
+  @media (min-width: 576px) {
+    width: 40%;
+    margin-left: 1rem;
+  }
+  @media (min-width: 768px) {
+    width: 45%;
+  }
+}
+
+.adjust-btn {
+  margin-right: 50px;
+  margin-top: -35px;
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  padding: 6px 0px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 0;
+  background-color: #d2ecf0;
+}
+
+.tr-animated {
+  transition: height .35s ease !important;
+}
+
+.interest-mora {
+  font-size: 120%;
+}
+
+.padding-price {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.bottom-btn-resumen {
+  position: absolute;
+  bottom: 0;
+  @media (min-width: 768px) {
+    width: 90%;
+  }
+  @media (min-width: 992px) {
+    width: 92%;
+  }
+  @media (min-width: 1200px) {
+    width: 95%;
+  }
+}
+
+.table thead th {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.carousel .slide {
+  min-width: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  background: transparent !important;
+}
+
+.table thead {
+  th.text-left-important {
+    text-align: left !important;
+    padding: 0.75rem;
+  }
+}
+
+.ant-btn-primary {
+  background-color: $AlkRed !important;
+  border-color: $AlkRed !important;
+  color: #fff;
+}
+
+.ant-confirm-btns {
+  width: 100%;
+  display: flex;
+
+  .ant-btn {
+    width: 100%;
+    display: inline;
+  }
+}
+
+.carousel .control-next.control-arrow {
+  right: 0 !important;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 30px solid #fff !important;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 0 !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 30px solid #fff !important;
+}
+
+.ant-modal-body {
+  .whitePanel {
+    background-color: unset;
+    border-radius: unset;
+    padding: unset;
+    box-shadow: unset;
+    margin-bottom: unset;
+  }
+}
+
+.image-complete {
+  min-width: 100%;
+  @media (min-width: 1140px) {
+    min-width: 1140px;
+  }
+}
+
+.container-image-complete {
+  margin-top: -1.5rem;
+}
+
+.ant-modal-title {
+  margin-right: 30px !important;
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: gray;
+  border-color: gray;
+}
+
+.link_action {
+  color: #ff0000 !important;
+  text-decoration: underline !important;
+}
+
+.ant-modal-close-x:before {
+  margin-top: -10px;
+}
+
+.ant-modal-close-x:after {
+  content: "cerrar";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  left: 0;
+  font-weight: normal;
+}
