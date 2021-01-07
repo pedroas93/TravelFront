@@ -11,10 +11,10 @@ class Api {
     }
 
     async _postContact(data) {
+      console.log('what is data ',data )
       const settings = {
         method: 'POST',
         headers: {
-            Accept: 'application/json',
             'Content-Type': 'application/json',
         },
         body: JSON.stringify(data)
@@ -22,8 +22,10 @@ class Api {
       try {
         const fetchResponse = await fetch(`https://blackisp.herokuapp.com/contact`, settings);
         const data = await fetchResponse.json();
+        alert("Los datos fueron guardados correctamente es correcta!.");
         return data;
       } catch (e) {
+        alert("Los datos no fueron guardados correctamente!.");
         return e;
       }
     }

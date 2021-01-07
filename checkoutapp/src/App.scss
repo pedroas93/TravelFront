@@ -20,6 +20,14 @@
     grid-template-areas: "subTotal  subTotalPrice ";
     grid-template-columns: 50% 50%;
     margin-left: 50px;
+    margin: 60px 60px 5px 60px;
+
+  }
+}
+@media screen and (max-width: 468px){
+  .containerButtons{
+    margin: 10px 10px 10px 10px;
+
   }
 }
 
@@ -58,18 +66,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
   grid-template-areas: "imageProduct  descriptionProduct pricePRoduct" ;
   grid-template-columns: 33% 33% 33%;
   margin-left: 50px;
-}
-
-.imageProduct {
-
-}
-
-.descriptionProduct{
+  text-align: center;
 
 }
 
 .pricePRoduct {
-
+  font-weight: bold;
 }
 
 .totaltPrice {
@@ -84,6 +86,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   width: 100%;
   padding: 10px;
   outline: none;
+  margin-right: 10px;
 }
 
 .input-field:focus {
@@ -99,6 +102,19 @@ body {font-family: Arial, Helvetica, sans-serif;}
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+  width: 69%;
+
+}
+
+.btn-total {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
 }
 
 .btn-secundary {
@@ -109,7 +125,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   padding: 15px 20px;
   border: none;
   cursor: pointer;
-  width: 30%;
+  width: 20%;
   opacity: 0.9;
 }
 
@@ -132,7 +148,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .containerButtons {
   text-align: center;
-  margin: 5px 5px 5px 5px;
 }
 .ContainerlTittleResume {
   background: #f9eded;
@@ -152,12 +167,18 @@ body {font-family: Arial, Helvetica, sans-serif;}
   border-top: 5px solid black;
 }
 .sendTotal{
-  align-items: center;
+  text-align: center;
 }
 .sendTotalPrice{
   align-items: center;
 }
-
+.addressSend{
+  border-style: solid;
+  border-width: 1px;
+}
+.bottomCheck{
+  text-align: center;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
