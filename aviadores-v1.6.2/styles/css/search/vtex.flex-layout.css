@@ -1,0 +1,169 @@
+.flexColChild--filterCol {
+    margin-top: 1.5rem;
+}
+
+.flexCol--orderByCol{
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+}
+.flexRowContent--busqueda-vacia{
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+}
+:global(.vtex-search-result-3-x-notFound--layout){
+    background: #f7f7f7;
+}
+:global(.vtex-search-result-3-x-notFound--layout) :global(.vtex-flex-layout-0-x-flexCol){
+    margin: 0;
+    padding: 0;
+}
+@media (max-width: 768px){
+    :global(.vtex-rich-text-0-x-paragraph--busqueda-vacia){
+        text-align: center;
+    }
+
+}
+:global(.vtex-flex-layout-0-x-flexColChild--build-container-search-vacio) :global(.vtex-rich-text-0-x-container){
+    display: flex;
+    justify-content: center;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--build-container-search-vacio) :global(.vtex-rich-text-0-x-paragraph){
+    color: #000000;
+    font-weight: 400;
+    font-size: 18px;
+   
+    border-bottom: 2px solid;
+    border-image: linear-gradient(
+135deg,#FFEA00,#00FFE1) 10;
+padding: 0.3rem;
+font-family: 'Montserrat', sans-serif;
+margin-bottom: 2rem;
+}
+.flexRowContent--row-busqueda-vacia{
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+.flexRowContent--row-busqueda-vacia-categorias{
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+}
+.flexRowContent--row-busqueda-vacia :global(.vtex-flex-layout-0-x-stretchChildrenWidth), .flexRowContent--row-busqueda-vacia-categorias :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+.flexRowContent--searchinfomobile{
+    width: 100%;
+    background: #fff;
+    align-items: center;
+}
+.flexRowContent--searchinfomobile :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+    width: 50% !important;
+}
+.flexRowContent--searchinfomobile :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child{
+    order: 2;
+}
+.flexRowContent--searchinfomobile :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+    order: 1;
+}
+.flexCol--searchtitle{
+    margin: 0;
+    margin-left: 1rem;
+}
+@media (min-width: 768px){
+    .flexRowContent--search-info{
+        padding: 0.5rem 1.5rem;
+        align-items: center;
+    }
+    .flexRowContent--search-info :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .flexCol--orderByCol {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+.flexRow--busqueda-vacia{
+    margin-top: 4rem;
+
+}
+.flexRowContent--busqueda-vacia{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3.5rem;
+}
+.flexRowContent--busqueda-vacia :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child{
+    width: 30% !important;
+    display: flex;
+}
+.flexRowContent--busqueda-vacia :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+   margin-left: 2rem;
+   display: flex;
+   justify-content: center;
+   width: 60% !important;
+}
+.flexColChild--build-container-search-vacio :global(.vtex-rich-text-0-x-paragraph){
+    font-size: 1.5rem;
+
+
+}
+.flexRow--row-busqueda-vacia-categorias{
+    margin-bottom: 3rem;
+}
+@media (max-width: 768px){
+   .flexRowContent--busqueda-vacia :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child, .flexRowContent--busqueda-vacia :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+        width: auto !important;
+    }
+    .flexRowContent--busqueda-vacia :global(.vtex-flex-layout-0-x-stretchChildrenWidth):last-child{
+        margin-left: 0;
+    }
+    .flexRowContent--busqueda-vacia{
+        padding: 1rem;
+        width: 90%;
+    }
+}
+.flexRowContent--searchinfomobile{
+    background-color: #fff !important;
+}
+.flexRowContent--searchinfomobile .flexColChild{
+    background-color: #fff !important;
+
+
+}
+:global(.vtex-store__template){
+    background-color: #f7f7f7;
+}
+.flexCol--col-vitrina{
+    position: relative;
+}
+.flexRowContent--vitrina-horizontal{
+    display: flex;
+}
+.flexRowContent--order-switcher{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flexRowContent--order-switcher .stretchChildrenWidth:last-child{
+    width: 20% !important;
+    
+
+}
+.flexRowContent--productCountMobileRow{
+    display: flex;
+}
+.flexRowContent--productCountMobileRow :global(.vtex-search-result-3-x-galleryLayoutSwitcher){
+    display: flex;
+    justify-content: flex-end;
+}

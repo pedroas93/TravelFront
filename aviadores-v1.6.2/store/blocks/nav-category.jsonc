@@ -1,0 +1,188 @@
+{
+    // TITULO CATEGORIAS
+  "vtex.menu@2.x:menu#nav-category": {
+    "children": [
+      "menu-item#categorias"
+    ]
+  },
+  // SE DECLARA EL TITULO CATEGORIA
+  "menu-item#categorias": {
+    "props":{
+      "iconProps":{
+        "id": "hamburguer-menu"
+      },
+      "itemProps": {
+        "text": "TODAS LAS CATEGORÍAS"
+      },
+      "blockClass": "all-categories",
+      "highlight": false,
+      "iconToTheRight": true
+    },
+    "blocks": [
+        // Defining a submenuS de 1er nivel
+        "vtex.menu@2.x:submenu#categorias"
+    ] 
+  },
+
+//   CATEGORIAS GENERALES
+  "vtex.menu@2.x:submenu#categorias": {
+    "children": [
+      "vtex.menu@2.x:menu#categorias"
+    ]
+  },
+  "vtex.menu@2.x:menu#categorias": {
+    "props": {
+        "orientation": "vertical", //Para ponerlo todo en una sola columna
+        "blockClass":"categorias"
+    },
+    "children": [
+        "menu-item#aberturas-nav",
+        "menu-item#aislantes-nav",
+        "menu-item#baños-nav",
+        "menu-item#cocina-hogar-nav",
+        "menu-item#construccion-seco-nav",
+        "menu-item#griferia-nav",
+        "menu-item#herramientas-nav",
+        "menu-item#instalaciones-nav",
+        "menu-item#jardin-pileta-nav",
+        "menu-item#materiales-gruesos-nav",
+        "menu-item#pisos-revestimientos-nav",
+        "menu-item#industrias-oficinas-nav"
+    ]
+  },
+  //  ABERTURAS - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#aberturas-nav":{
+    "props":{
+        "itemProps": {
+          "href": "/electrónicos",
+          "text": "Electrónica"
+        },
+        "blockClass":["item-department-0", "item-department"]
+    },
+    "blocks":[  
+        "vtex.menu@2.x:submenu#portones-puertas-ventanas"
+    ]
+  },
+  //  AISLANTES - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#aislantes-nav":{
+    "props": {
+        "itemProps": {
+          "href": "/computación",
+          "text": "Computación"
+        },
+        "blockClass":["item-department-1", "item-department"]
+      },
+      "blocks":["vtex.menu@2.x:submenu#aislantes-categorias"]
+  },
+  //  BAÑOS - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#baños-nav":{
+    "props": {
+        "itemProps": {
+          "href": "/electrodomésticos",
+          "text": "Electrodomésticos"
+        },
+        "blockClass":["item-department-2", "item-department"]
+      },
+      "blocks":["vtex.menu@2.x:submenu#banos-categorias"]
+  },
+  //  COCINA Y HOGAR - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#cocina-hogar-nav":{
+    "props": {
+        "itemProps": {
+          "href": "/deportes-y-tiempo-libre",
+          "text": "Deportes"
+        },
+        "blockClass":["item-department-3", "item-department"]
+      },
+      "blocks":["vtex.menu@2.x:submenu#cocina-hogar-categorias"]
+  },
+  //  CONSTRUCCION EN SECO - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#construccion-seco-nav":{
+    "props": {
+        "itemProps": {
+          "href": "/niños-y-bebés",
+          "text": "Bebés, niños y juguetes"
+        },
+        "blockClass":["item-department-4", "item-department"]
+      },
+      "blocks":["vtex.menu@2.x:submenu#construccion-seco-categorias"]
+  },
+  //  GRIFERIAS - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#griferia-nav":{
+    "props": {
+        "itemProps": {
+          "href": "/estética-y-belleza",
+          "text": "Bienestar y belleza"
+        },
+        "blockClass":["item-department-5", "item-department"]
+      },
+      "blocks":["vtex.menu@2.x:submenu#griferias-categorias"]
+  },
+  //  HERRAMIENTAS - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#herramientas-nav":{
+    "props": {
+        "itemProps": {
+          "href": "/hogar-muebles-y-jardín",
+          "text": "Hogar, muebles y jardín"
+        },
+        "blockClass":["item-department-6", "item-department"]
+      },
+      "blocks":["vtex.menu@2.x:submenu#herramientas-categorias"]
+  },
+  //  INSTALACIONES - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#instalaciones-nav":{
+    "props": {
+        "itemProps": {
+          "href": "/automotriz",
+          "text": "Vehículos"
+        },
+        "blockClass":["item-department-7", "item-department"]
+      },
+      "blocks":["vtex.menu@2.x:submenu#instalaciones-categorias"]
+  },
+  //  JARDIN Y PILETA - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#jardin-pileta-nav":{
+    "props": {
+        "itemProps": {
+          "href": "/ropa-deportiva-y-calzado",
+          "text": "Moda y deportes"
+        },
+        "blockClass":["item-department-8", "item-department"]
+      },
+      "blocks":["vtex.menu@2.x:submenu#jardin-pileta-categorias"]
+  },
+  //  MATERIALES GRUESOS DE CONSTRUCCIÓN - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#materiales-gruesos-nav":{
+    "props": {
+        "itemProps": {
+          "href": "/instrumentos-musicales",
+          "text": "Instrumentos musicales"
+        },
+        "blockClass":["item-department-9", "item-department"]
+      },
+      "blocks":["vtex.menu@2.x:submenu#materiales-gruesos-categorias"]
+  },
+  //  PISOS Y REVESTIMIENTOS - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#pisos-revestimientos-nav":{
+    "props": {
+        "itemProps": {
+          "href": "/supermercados-y-bodegones",
+          "text": "Mercado"
+        },
+        "blockClass":["item-department-10", "item-department"]
+      },
+      "blocks":["vtex.menu@2.x:submenu#pisos-revestimientos-categorias"]
+  },
+  //  PISOS Y REVESTIMIENTOS - CATEGORY FIRST LEVEL - SOLO DE PRIMER NIVEL
+  "menu-item#industrias-oficinas-nav":{
+    "props": {
+        "itemProps": {
+          "href": "/herramientas-y-construcción",
+          "text": "Industrias y oficinas"
+        },
+        "blockClass":["item-department-10", "item-department"]
+      },
+      "blocks":["vtex.menu@2.x:submenu#industrias-oficinas-categorias"]
+  }    
+  
+}

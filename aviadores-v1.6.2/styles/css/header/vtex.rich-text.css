@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+.link--top-reclamos{
+    color: #fff;
+    font-weight: bold;
+    list-style: none;
+    background-color: #111111;
+    text-decoration: none;
+    height: 30px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.paragraph--minicart-vacio{
+    font-weight: bold;
+}
+
+/* HEADER MIDDLE */
+.paragraph--header-wishlist{
+    
+}
+
+.paragraph--categorias{
+    font-weight: bold;
+    position: absolute;
+    margin-block: 7px;
+    font-size: 20px;
+    margin-inline: -5px;
+    
+}
+.paragraph--text-envios-nacionales{
+    line-height: .5rem !important;
+}
+
+.paragraph--ofertas{
+    font-size: 16px;    
+    margin-right: 14px; 
+    background-color: #02AFDF;    
+    color: #fff;
+    margin-top: 13px;
+    padding: 0 10px;    
+}
+
+.container--category-access{
+    justify-content: center;
+}
+
+.container--seguircomprando{
+    justify-content: center;
+    /* margin-top: -4%;  */
+    font-size: 18px;
+}
+
+.image--ofertas{    
+    width: 14px;
+}
+
+.link--ofertas{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+.link--seguircomprando{
+    list-style: none;
+    text-decoration: none;
+    color: #28292B;
+}
+.container--header-wishlist .wrapper--header-wishlist, .link--header-wishlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image--header-wishlist{
+    margin-top: 1px;
+}
+@media (max-width: 372px){
+    .image--header-wishlist{
+        margin-left: 5px;
+    }  
+}
+.container--header-wishlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container--top-header{
+    color: #fff;
+}
+
+.paragraph--top-header{
+    font-weight: bold;
+}
+
+
+/* HEADER BOTTOM */
+/* accesos directos categorias */
+.link--category-access{
+    color: #474747;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: none;
+    margin: auto;
+}
+.paragraph--custom-access{
+    color: #444343;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0;
+}
+/* .link--custom-access{
+    text-decoration: none;
+    color: white;
+    background-color: #DD6031;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 37px;
+    padding: 4px;
+}
+.link--custom-access:hover{
+    background-color: #c5562e;
+} */
+
+/* FIN HEADER BOTTOM */
+
+.paragraph--portones-puertas-ventanas-title,
+.paragraph--aislantes-title,
+.paragraph--banos-title,
+.paragraph--cocina-hogar-title,
+.paragraph--construccion-seco-title,
+.paragraph--griferias-title,
+.paragraph--herramientas-title,
+.paragraph--instalaciones-title,
+.paragraph--jardin-pileta-title,
+.paragraph--materiales-gruesos-title,
+.paragraph--pisos-revestimientos-title,
+.paragraph--pisos-revestimientos-title{
+    color: #444343;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: -0.5px;
+    margin-bottom: -1px;
+    display: flex;
+}
+
+.link--electronica-vertodo,
+.link--computacion-vertodo,
+.link--electrodomesticos-vertodo,
+.link--deportes-vertodo,
+.link--bebes-ninos-juguetes-vertodo,
+.link--bienestar-belleza-vertodo,
+.link--hogar-muebles-jardin-vertodo,
+.link--vehiculos-vertodo,
+.link--moda-deportes-vertodo,
+.link--instrumentos-musicales-vertodo,
+.link--mercado-vertodo,
+.link--industrias-oficinas-vertodo
+{
+    color: rgba(130, 130, 130, 1);
+    text-decoration: none;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.container--electronica-vertodo,
+.container--computacion-vertodo,
+.container--electrodomesticos-vertodo,
+.container--deportes-vertodo,
+.container--bebes-ninos-juguetes-vertodo,
+.container--bienestar-belleza-vertodo,
+.container--hogar-muebles-jardin-vertodo,
+.container--vehiculos-vertodo,
+.container--moda-deportes-vertodo,
+.container--instrumentos-musicales-vertodo,
+.container--mercado-vertodo,
+.container--industrias-oficinas-vertodo
+{
+    margin-top: -0.8rem;
+    margin-bottom: -1rem; 
+    /* margin-left: 5%;    */
+}
+
+.link--portones-puertas-ventanas-title{
+    text-decoration: none;
+    color: #444343;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* .container--portones-puertas-ventanas-title{
+    border-right: 1px solid #f1f1f1; 
+}
+
+.container--aislantes-title{
+    border-right: 1px solid #f1f1f1;
+}
+
+.container--banos-title{
+    border-right: 1px solid #f1f1f1;
+}
+
+.container--cocina-hogar-title{
+    border-right: 1px solid #f1f1f1;
+}
+
+.container--construccion-seco-title{
+    border-right: 1px solid #f1f1f1;
+}
+
+.container--griferias-title{
+    border-right: 1px solid #f1f1f1;
+}
+
+.container--herramientas-title{
+    border-right: 1px solid #f1f1f1;
+}
+
+.container--instalaciones-title{
+    border-right: 1px solid #f1f1f1;
+}
+
+.container--jardin-pileta-title{
+    border-right: 1px solid #f1f1f1;
+}
+
+.container--materiales-gruesos-title{
+    border-right: 1px solid #f1f1f1;
+}
+
+.container--pisos-revestimientos-title{
+    border-right: 1px solid #f1f1f1;
+}
+
+.container--pisos-revestimientos-title{
+    border-right: 1px solid #f1f1f1;
+} */
+
+.container--portones-puertas-ventanas-title{
+    width: fit-content;
+}
+
+@media (min-width:1600px) {
+    .link--electronica-vertodo{
+        margin-left: -2rem;
+    }
+
+    .link--computacion-vertodo{
+        margin-left: -3.5rem;
+    }
+
+    .link--electrodomesticos-vertodo{
+        margin-left: -3rem;
+    }
+
+    .link--deportes-vertodo{
+        margin-left: -2.5rem;
+    }
+
+    .link--bebes-ninos-juguetes-vertodo{
+        margin-left: -4rem;
+    }
+
+    .link--bienestar-belleza-vertodo{
+        margin-left: -3rem;
+    }
+
+    .link--hogar-muebles-jardin-vertodo{
+        margin-left: -4rem;
+    }
+
+    .link--vehiculos-vertodo{
+        margin-left: -2.5rem;
+    }
+
+    .link--moda-deportes-vertodo{
+        margin-left: -3rem;
+    }
+
+    .link--instrumentos-musicales-vertodo{
+        margin-left: -4rem;
+    }
+
+    .link--mercado-vertodo{
+        margin-left: -2rem;
+    }
+
+    .link--industrias-oficinas-vertodo{
+        margin-left: -2.5rem;
+    }
+} 

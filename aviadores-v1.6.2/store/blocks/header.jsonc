@@ -1,0 +1,378 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  // HEADER DESKTOP
+  "header-layout.desktop": {
+    "children": [
+      //"modal-trigger#telon",//Telón desk
+      "sticky-layout#desktop", "flex-layout.row#header-bottom"]
+  },
+
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#header-top",
+      "flex-layout.row#desktop"
+    ]
+  },
+  
+  // Header Top
+  "flex-layout.row#header-top": {
+    "props":{
+      "blockClass":"header-top"
+    },
+    "children": [      
+      "flex-layout.col#top-reclamos"
+    ]
+  },  
+  
+  "flex-layout.col#top-reclamos": {
+    "props": {
+      "horizontalAlign": "center"
+      /* "marginRight":6 */
+    },
+    "children": ["rich-text#top-reclamos"]
+  },  
+
+  "rich-text#top-reclamos": {
+    "props": {
+      "text": "[⚡ Black Friday ⚡](#)",
+      "blockClass":"top-reclamos"
+    }
+  }, // Fin Header Top
+
+  // Header principal
+  "flex-layout.row#desktop": {
+    "props": {
+      "sticky": true,
+      "blockClass":"header-middle"
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      
+      "flex-layout.col#barra-busqueda",
+      "flex-layout.col#cart-login"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign":"middle",
+      "blockClass":"logo-desktop",
+      "width":"14%"
+    },
+    "children": ["logo#header"]
+  },
+  "logo#header": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/header/logo.svg",
+      /* "width": "150", */
+      "mobileWidth": 130,
+      "blockClass": "logo"
+    }
+  },
+  "flex-layout.col#categorias":{
+    "props":{
+      /* "width":"20%", */
+      "verticalAlign":"middle",
+      "blockClass":"categorias"
+    },
+    "children":["vtex.menu@2.x:menu#nav-category"]
+  },
+
+  "flex-layout.col#barra-busqueda":{
+    "props":{
+      "width":"51%",
+      "blockClass":"barra-busqueda"
+    },
+    "children":["search-bar#desktop"]
+  },
+  "search-bar#desktop": {
+    "blocks": [
+      "autocomplete-result-list.v2"
+    ],
+    "props": {
+      "displayMode": "clear-button",
+      /* "hasIconLeft":true, */
+      "placeholder": "Buscar productos, marcas y más...",
+      "blockClass":"searchbar",
+      // "autocompleteFullWidth":true,
+      "openAutocompleteOnFocus": true
+    }
+  },
+  "autocomplete-result-list.v2":{
+    "blocks": ["product-summary.shelf#vitrina-search"],
+    "props":{
+      "maxTopSearches":5,
+      "maxSuggestedTerms":5,
+      "blockClass":"auto-busqueda"
+    }
+  },
+
+  "flex-layout.col#cart-login": {
+    "props":{
+      "verticalAlign":"middle",
+      "width":"17%",
+      "blockClass":"cart-login"
+    },
+    "children": [
+      "flex-layout.row#cart-login"
+    ]
+  },
+  "flex-layout.row#cart-login":{
+    "props":{
+      "blockClass":"wish-cart-login"
+    },
+    "children":["flex-layout.col#login", "flex-layout.col#favoritos", "flex-layout.col#cart" ]
+  },
+   
+  "flex-layout.col#login": {
+    "children": [
+      "login"
+    ],
+    "props": {
+      "blockClass": "login"
+    }
+  },
+  "flex-layout.col#cart": {
+    "children": [
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "cart"
+    }
+  },
+  "flex-layout.col#favoritos": {
+    "children": [
+      "logo#favoritos"
+    ],
+    "props": {
+      "blockClass": "favoritos"
+    }
+  },
+  "logo#favoritos": {
+    "props": {
+      "title": "Logo-favorito",
+      "href": "account#/wishlist",
+      "url": "assets/header/wishlist.svg",
+      "width": 30,
+      "height": 34.9,
+      "blockClass": "favorito"
+    }
+  },
+  /* "rich-text#wishlist":{
+    "props":{
+      "text":"[![alt img](assets/header/wishlist.svg)](/wishlist)",
+      "blockClass":"header-wishlist"
+    } 
+  }, */
+  //Fin Header principal
+
+  
+  // HEADER BOTTOM
+  "flex-layout.row#header-bottom":{
+    "children":[
+      "flex-layout.col#categorias",
+      "flex-layout.col#category-access"
+    ],
+    "props":{
+      "blockClass": "main-nav",
+      "horizontalAlign": "left",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    }
+  }, 
+  // ACCESOS DIRECTOS CATEGORIAS
+  "flex-layout.col#category-access":{
+    "props":{
+      /* "horizontalAlign":"left", 
+      /* "marginLeft":6 */
+    },
+    "children":[
+      "flex-layout.row#category-access"      
+    ]
+  },
+  "flex-layout.row#category-access":{
+    "children":[
+      "rich-text#category-1",
+      "rich-text#category-2",
+      "rich-text#category-3",
+      "rich-text#category-4",
+      "rich-text#category-5",
+      "rich-text#category-6"
+    ],
+    "props":{
+    "blockClass": "row-category-access"
+    } 
+  },
+  "rich-text#category-1":{
+    "props":{
+      "text":"[TECNOLOGÍA](/electrónicos)", //COPIAR EL alt img para devolver los iconos
+      "blockClass":"category-access"
+    }
+  },
+  "rich-text#category-2":{
+    "props":{
+      "text":"[MODA](/ropa-deportiva-y-calzado)",
+      "blockClass":"category-access"
+    }
+  },
+  "rich-text#category-3":{
+    "props":{
+      "text":"[ELECTRODOMÉSTICOS](/electrodomésticos)",
+      "blockClass":"category-access"
+    }
+  },
+  "rich-text#category-4":{
+    "props":{
+      "text":"[OFERTAS](/138?map=productClusterIds)",
+      "blockClass":"category-access"
+    }
+  },
+  "rich-text#category-5":{
+    "props":{
+      "text":"[BEBES Y NIÑOS](/niños-y-bebés)",
+      "blockClass":"category-access"
+    }
+  },
+  "rich-text#category-6": {
+    "props":{
+      "text":"[MIS COMPRAS](/account#/orders)",
+      "blockClass":"category-access"
+    }
+  },
+  //FIN HEADER DESKTOP
+
+
+
+  // HEADER MOBILE
+  "header-layout.mobile": {
+    "children": [
+      //"modal-trigger#telon",//Telón mobile
+      "sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": [
+      "flex-layout.row#search-mobile",
+      "flex-layout.row#mobile"
+      
+    ]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "flex-layout.col#category-mobile",
+      "flex-layout.col#logo-mobile",
+      "flex-layout.col#wish-login-cart-mobile"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#category-mobile":{
+    "children":["category-menu#mobile"]
+  },
+  "flex-layout.col#logo-mobile":{
+    "props":{
+      "verticalAlign":"middle",
+      "blockClass":"logo-mobile"
+    },
+    "children":["logo#header"]
+  },
+  "flex-layout.col#wish-login-cart-mobile":{
+    "children":[
+      "flex-layout.row#wish-login-cart-mobile"      
+    ]
+  },
+  "flex-layout.row#wish-login-cart-mobile":{
+    "props":{
+      "width": "15%",
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch":true,
+      "blockClass":"wish-login-cart-mobile"
+    },
+    "children":["login", "flex-layout.col#favoritos", "minicart.v2"]
+  },
+
+  /* "drawer-trigger": {
+    "children": ["image#open-drawer"]
+  },
+  "image#open-drawer": {
+    "props": {
+      "src": "/arquivos/drawer.svg"
+    }
+  }, */
+
+  "category-menu#mobile": {
+    "props": {
+      "showAllDepartments": true,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "mobileMode":true
+    }
+  }, 
+
+  // BARRA DE BUSQUEDA MOBILE
+  "flex-layout.row#search-mobile":{
+    "props":{
+      "blockClass":"search-mobile"
+    },
+    "children":["search-bar#mobile"]
+  },
+
+  "search-bar#mobile":{
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "displayMode": "clear-button",
+      /* "hasIconLeft":true, */
+      "placeholder": "Buscar productos, marcas y más...",
+      "blockClass":"searchbarmobile",
+      /* "autocompleteFullWidth":true, */
+      /* "blurOnSubmit":true, */
+      "openAutocompleteOnFocus": true
+    }
+  },
+
+  //FIN HEADER MOBILE
+  // LOGIN PROP
+  "login": {
+    "props": {
+      "hideIconLabel": true,
+      "showIconProfile": true
+    }
+  },
+
+   //Telón
+   "modal-trigger#telon": {
+    "children": [
+     
+      "modal-layout#telon"
+    ],
+    "props":{
+      "trigger": "load",
+      "blockClass": "telon"
+    }
+  },
+
+  "modal-layout#telon": {
+    "children": [
+      "modal-actions.close"
+    ],
+    "props":{
+      "blockClass": "telon"
+
+
+    }
+  }
+}
+  

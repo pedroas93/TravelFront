@@ -1,0 +1,36 @@
+{
+    // SHELF DEL BUSCADOR
+  "product-summary.shelf#vitrina-search": {
+    "children": [
+      "add-to-list-btn",
+      "product-summary-image#vitrina-search", //<--Imagen del producto
+      "product-summary-name#vitrina-search",//<--Nombre del producto
+      "product-price#vitrina-search", //<--Precio del producto
+      /* "product-rating-inline", */
+      "product-summary-space" 
+      
+      
+
+    ],
+    "props": {
+      "blockClass": "vitrina-search"
+    }
+  },
+    // BLOCK CLASS PARA ESTILOS    
+  "product-summary-name#vitrina-search": {
+    "props": {
+      "blockClass": "nombre-vitrina-search"
+    }
+  },
+  "product-summary-image#vitrina-search": {
+    "props": {
+      "aspectRatio":"1:1",
+      "blockClass": "imagen-vitrina-search"
+    }
+  },
+  "product-price#vitrina-search": {
+    "props": {
+      "blockClass": "precio-vitrina-search"
+    }
+  }//FIN SHELF DEL BUSCADOR
+}

@@ -1,0 +1,782 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop", 
+      "footer-layout.mobile" 
+    ]
+  },
+  "footer-layout.desktop": { 
+    "children": [
+      "flex-layout.row#footer",
+      /* "flex-layout.row#menuHor", No se usa*/
+      "footer-row#copyright"
+    ],
+    "props":{
+      "blockClass": "footerAviadores"
+    }
+  },
+  "footer-layout.mobile": { 
+    "children": [
+      "flex-layout.row#footer",
+      "footer-row#copyright"/* ,
+      "flex-layout.row#menuHor" */
+    ],
+
+    "props":{
+      "blockClass": "footerAviadores"
+    }
+  },
+  "flex-layout.row#footer": { 
+    "children": [
+      "flex-layout.col#footer1",
+      "flex-layout.col#footer2",
+      /* "flex-layout.col#footer3", */
+      "flex-layout.col#footer4",
+      "flex-layout.col#footer5"
+    ],
+
+    "props":{
+      "blockClass": "footerAviadores"
+    }
+  },
+
+  "flex-layout.col#footer1": {
+    "children":[
+      "rich-text#footer1",
+      "flex-layout.row#socialIcons",
+      "link#foo",
+      "rich-text#tel"
+    ],
+
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+
+  "flex-layout.row#socialIcons": {
+    "children": [
+      "image#iconFacebook",
+      "image#iconWhatsApp",
+      "image#iconInstagram"
+    ],
+
+    "props":{
+      "blockClass": "socialIcons"
+    }
+  },
+
+  "image#iconFacebook": {
+    "props": {
+      "src": "/arquivos/foot-facebook.png",
+      "link": {"url": "https://es-la.facebook.com/CCParqueLosAviadores"},
+      "blockClass": "socialIcons"
+    }
+  },
+
+  
+  "image#iconWhatsApp": {
+    "props": {
+      "src": "/arquivos/foot-whatsapp.png",
+      "link": {"url": "https://api.whatsapp.com/send/?phone=+584121594643&text"},
+      "blockClass": "socialIcons"
+    }
+  },
+
+  "image#iconInstagram": {
+    "props": {
+      "src": "/arquivos/foot-instagram.png",
+      "link": {"url": "https://www.instagram.com/parqueaviadores"},
+      "blockClass": "socialIcons"
+    }
+  },
+
+  "rich-text#footer1": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nContacto\n",
+      
+      "blockClass": "footerOne"
+    }
+  },
+
+  "link#foo": {
+    "props": {
+      "href": "mailto:contacto@aviadoresgo.com",
+      "label": "contacto@aviadoresgo.com"
+    }
+  },
+
+  "rich-text#tel": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "[+58 4121594643](tel:+584121594643)",
+      "blockClass": "footerCel"
+    }
+  },
+
+  "flex-layout.col#footer2": {
+    "children":[
+      "rich-text#footer2",
+      "link#foo2",
+      /* "link#foo3", */
+      "link#foo4"
+    ],
+
+    "props":{
+      "preventVerticalStretch": true,
+      "blockClass": "footer2"
+    }
+  },
+
+  "rich-text#footer2": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nSobre la empresa\n",
+      
+      "blockClass": "footerOne2"
+    }
+  },
+
+  "link#foo2": {
+    "props": {
+      "href": "/ayuda",
+      "label": "Ayuda",
+      "blockClass":"links-foot"
+    }
+  },
+
+  "link#foo3": {
+    "props": {
+      "href": "/ayuda",
+      "label": "Sugerencias",
+      "blockClass":"links-foot"
+    }
+  },
+
+  "link#foo4": {
+    "props": {
+      "href": "/account#/orders",
+      "label": "Tracking de Pedido",
+      "blockClass":"links-foot"
+    }
+  },
+
+  "flex-layout.col#footer3": {
+    "children":[
+      "rich-text#footer3",
+      "link#foo5",
+      "link#foo6",
+      "link#foo7",
+      "link#foo8"
+    ],
+
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#footer3": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nNuestros Servicios\n",
+      
+      "blockClass": "footerOne"
+    }
+  },
+
+  "link#foo5": {
+    "props": {
+      "href": "#",
+      "label": "Presupuesto Ya"
+    }
+  },
+
+  "link#foo6": {
+    "props": {
+      "href": "#",
+      "label": "Calculador de Materiales"
+    }
+  },
+
+  "link#foo7": {
+    "props": {
+      "href": "#",
+      "label": "Acopio de Materiales"
+    }
+  },
+
+  "link#foo8": {
+    "props": {
+      "href": "#",
+      "label": "Asesoramiento Profesional"
+    }
+  },
+
+  "flex-layout.col#footer4": {
+    "children":[
+      "rich-text#footer4",
+      "link#foo15",
+      
+      "link#foo10",
+      "link#foo11",
+      "link#foo12",
+      "link#foo13",
+      "link#foo14", 
+      
+      "link#foo16",
+      "link#foo9"
+    ],
+
+    "props":{
+      "preventVerticalStretch": true,
+      "blockClass": "footer4"
+    }
+  },
+
+  "rich-text#footer4": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "\nFAQ\n",
+      
+      "blockClass": "footerOne4"
+    }
+  },
+
+  "link#foo9": {
+    "props": {
+      "href": "/ayuda/contacto",
+      "label": "Contacto",
+      "blockClass":"links-foot"
+    }
+  },
+
+  "link#foo10": {
+    "props": {
+      "href": "/ayuda/faqs",
+      "label": "Preguntas Frecuentes",
+      "blockClass":"links-foot"
+    }
+  },
+
+  "link#foo11": {
+    "props": {
+      "href": "/ayuda/terminos-condiciones",
+      "label": "Términos y Condiciones",
+      "blockClass":"links-foot"
+    }
+  },
+
+  "link#foo12": {
+    "props": {
+      "href": "/ayuda/metodos-pagos",
+      "label": "Medios de Pagos"
+    }
+  },
+  "link#foo13": {
+    "props": {
+      "href": "/ayuda/politica-envios",
+      "label": "Política de Envíos"
+    }
+  },
+  "link#foo14": {
+    "props": {
+      "href": "/ayuda/politica-entregas",
+      "label": "Política de Entregas"
+    }
+  },
+  "link#foo15": {
+    "props": {
+      "href": "/ayuda",
+      "label": "Guía de Compras"
+    }
+  },
+  "link#foo16": {
+    "props": {
+      "href": "/ayuda/cambios-devoluciones",
+      "label": "Cambios y devoluciones"
+    }
+  },
+
+  "flex-layout.col#footer5": {
+    "children":[
+      "rich-text#footer5",
+      "rich-text#newsletter",
+      "newsletter#footer"
+    ],
+
+    "props":{
+      "preventVerticalStretch": true
+    }
+  },
+
+  "rich-text#footer5": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Newsletter",
+      
+      "blockClass": "footerOne"
+    }
+  },
+
+  "rich-text#newsletter": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Ingresá tu correo electrónico para recibir nuestras novedades.",
+      "blockClass": "footerMail"
+    }
+  },
+
+  "newsletter#footer": {
+    "props": {
+    "isFullModeStyle":false,
+    "label": "",
+    "placeholder": "e-mail",
+    "submit": "Enviar",
+    "blockClass": "newsletter-footer"
+    }
+  }
+
+  /* "newsletter-form#footer": {
+    "children": [
+      "flex-layout.row#row-input-mail"
+    ]
+  },
+
+  "flex-layout.row#row-input-mail": {
+    "children": [
+      "newsletter-input-email",
+      "newsletter-submit"
+    ]
+  },
+
+  "newsletter-input-email":{
+    "props":{
+      "placeholderText": "",
+      "blockClass":"footerInputMail"
+    }
+  },
+
+  "newsletter-submit": {
+    "props":{
+      "submitButtonLabel": "Enviar",
+      "blockClass":"footerSubmitMail"
+    }
+  } */
+
+  /* "flex-layout.row#menuHor": {
+    "children":[
+      "flex-layout.col#cancelarCompra",
+      "flex-layout.col#menusFooter"
+    ],
+
+    "props":{
+      "blockClass":"footerFinal"
+    }
+  },
+
+  "flex-layout.col#cancelarCompra": {
+    "children":[
+      "rich-text#cancelarCompra"
+    ],
+    "props":{
+      "width": "15%"
+    }
+  },
+
+  "rich-text#cancelarCompra": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Quiero cancelar mi compra",
+      "blockClass": "cancelarCompra"
+    }
+  },
+
+  "flex-layout.col#menusFooter":{
+    "children":[
+      "flex-layout.row#menusFooter1"
+    ]
+  },
+
+  "flex-layout.row#menusFooter1":{
+    "children":[
+      "flex-layout.col#menusFooterTittle1",
+      "flex-layout.col#menusFooterLinks1"
+    ]
+  },
+
+  "flex-layout.col#menusFooterTittle1":{
+    "children":[
+      "rich-text#tittleFooter1",
+      "rich-text#tittleFooter2"
+    ],
+    "props":{
+      "width": "15%"
+    }
+  },
+
+  "rich-text#tittleFooter1":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Mejores categorías",
+      "blockClass": "tittleMenuFooter"
+    }
+  },
+
+  "rich-text#tittleFooter2":{
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Mejores subcategorías",
+      "blockClass": "tittleMenuFooter"
+    }
+  },
+
+  "flex-layout.col#menusFooterLinks1":{
+    "children":[
+      "vtex.menu@2.x:menu#menuFooter1",
+      "vtex.menu@2.x:menu#menuFooter2"
+    ],
+    "props":{
+      "width": "85%"
+    }
+  },
+
+  "vtex.menu@2.x:menu#menuFooter1": {
+    "children": [
+      "menu-item#aislantes",
+      "menu-item#aberturas",
+      "menu-item#baño",
+      "menu-item#cocina",
+      "menu-item#griferia",
+      "menu-item#seco",
+      "menu-item#herramientas"/* ,
+      "menu-item#instalaciones",
+      "menu-item#gruesos",
+      "menu-item#pyr" 
+    ]
+  },
+  "menu-item#aislantes": {
+    "props": {
+      "id": "menu-item-aislantes",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Aislantes",
+        "text": "Aislantes",
+        "blockClass": "linksFooter"
+      }
+    }
+  },
+
+  "menu-item#aberturas": {
+    "props": {
+      "id": "menu-item-aberturas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Aberturas",
+        "text": "Aberturas"
+      }
+    }
+  },
+
+  "menu-item#baño": {
+    "props": {
+      "id": "menu-item-baño",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Baño",
+        "text": "Baño"
+      }
+    }
+  },
+
+  "menu-item#cocina": {
+    "props": {
+      "id": "menu-item-cocina",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Cocina",
+        "text": "Cocina"
+      }
+    }
+  },
+
+  "menu-item#griferia": {
+    "props": {
+      "id": "menu-item-griferia",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Griferia",
+        "text": "Griferia"
+      }
+    }
+  },
+
+  "menu-item#seco": {
+    "props": {
+      "id": "menu-item-seco",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Construcción en seco",
+        "text": "Construcción en seco"
+      }
+    }
+  },
+
+  "menu-item#herramientas": {
+    "props": {
+      "id": "menu-item-herramientas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Herramientas",
+        "text": "Herramientas"
+      }
+    }
+  },
+
+  "menu-item#instalaciones": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Instalaciones",
+        "text": "Instalaciones"
+      }
+    }
+  },
+
+  "menu-item#gruesos": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Materiales gruesos",
+        "text": "Materiales gruesos"
+      }
+    }
+  },
+
+  "menu-item#pyr": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Pisos y revestimiento",
+        "text": "Pisos y revestimiento",
+        commit para push
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#menuFooter2": {
+    "children": [
+      "menu-item#aislantes2",
+      "menu-item#aberturas2",
+      "menu-item#baño2",
+      "menu-item#cocina2",
+      "menu-item#griferia2",
+      "menu-item#seco2",
+      "menu-item#herramientas2"
+    ]
+  },
+
+  "menu-item#aislantes2": {
+    "props": {
+      "id": "menu-item-aislantes",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Aislantes",
+        "text": "Aislantes"
+      }
+    }
+  },
+
+  "menu-item#aberturas2": {
+    "props": {
+      "id": "menu-item-aberturas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Aberturas",
+        "text": "Aberturas"
+      }
+    }
+  },
+
+  "menu-item#baño2": {
+    "props": {
+      "id": "menu-item-baño",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Baño",
+        "text": "Baño"
+      }
+    }
+  },
+
+  "menu-item#cocina2": {
+    "props": {
+      "id": "menu-item-cocina",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Cocina",
+        "text": "Cocina"
+      }
+    }
+  },
+
+  "menu-item#griferia2": {
+    "props": {
+      "id": "menu-item-griferia",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Griferia",
+        "text": "Griferia"
+      }
+    }
+  },
+
+  "menu-item#seco2": {
+    "props": {
+      "id": "menu-item-seco",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Construcción en seco",
+        "text": "Construcción en seco"
+      }
+    }
+  },
+
+  "menu-item#herramientas2": {
+    "props": {
+      "id": "menu-item-herramientas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Herramientas",
+        "text": "Herramientas"
+      }
+    }
+  },
+
+  "menu-item#instalaciones2": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Instalaciones",
+        "text": "Instalaciones"
+      }
+    }
+  },
+
+  "menu-item#gruesos2": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Materiales gruesos",
+        "text": "Materiales gruesos"
+      }
+    }
+  },
+
+  "menu-item#pyr2": {
+    "props": {
+      "id": "menu-item-shop",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Pisos y revestimiento",
+        "text": "Pisos y revestimiento"
+      }
+    }
+  } */
+
+  
+}

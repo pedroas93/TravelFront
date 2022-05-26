@@ -1,0 +1,137 @@
+
+/* 1-Se oculta el icono que viene por defecto */
+/* .cartIcon{
+    display: none;
+} */
+.minicartWrapperContainer{
+    padding: 0 !important;
+    position: relative;
+}
+.minicartIconContainer :global(.vtex-store-icons-0-x-cartIcon){
+    display: none;
+}
+/* 2-Se pone el icono deseado como fondo al contenedor */
+.openIconContainer{
+    background-image: url(assets/header/cart.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    padding-right: 6px;
+}
+
+@media (max-width: 640px){
+    .openIconContainer{
+        background-size: 22px;
+    }
+}
+/* 3-El hover al botton se lo pone transparente */
+.openIconContainer :global(.vtex-button){
+    background-color: transparent;
+}
+
+/* Dentro del cart */
+:global(.vtex-minicart-2-x-minicartQuantityBadgeDefault){
+    top: .1rem;
+    right: -1.2rem;
+}
+.minicartQuantityBadgeDefault{
+    /* display: none; */
+    background-color: #0075FD;
+    /* background-image: url(assets/header/star.svg); */
+    background-position: right;
+    /* background-size: 19px; */
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+}
+
+.minicartTitle{
+    text-align: center;
+    font-size: medium; 
+    margin-top: -7%;   
+}
+
+.closeIconContainer{
+    border-bottom: 1px solid #E6E6E6;
+}
+
+/* .minicartProductListContainer :global(.vtex-product-list-0-x-productPriceContainer)::before{
+    content: "$ ";
+    position: absolute;
+     left: 32%;
+     color: #393536;
+     font-family: "Montserrat", sans-serif;
+     font-weight: bold;
+ 
+ } */
+
+/* linea entre productos - solo cada 2 */
+/* .minicartProductListContainer :global(.vtex-flex-layout-0-x-flexRow):nth-child(2n){
+    border-bottom: 2px solid rgb(224, 224, 224);
+} */
+
+/* Boton finalizar pedido */
+/* .minicartCheckoutButton{
+    margin-bottom: 85px;
+} */
+
+.minicartCheckoutButton :global(.vtex-button){
+    background: #0075FD;
+    border: transparent;
+}
+/* .minicartCheckoutButton :global(.vtex-button):hover{
+    background: linear-gradient(105.81deg, #FFEA00 -0.75%, #81F46F 31.71%, #42FAA7 64.2%, #00FFE1 99.85%);
+    border: 1px solid #8f0e12;
+} */
+.minicartCheckoutButton :global(.vtex-button__label){
+    font-size: 0px;
+}
+.minicartCheckoutButton :global(.vtex-button__label)::after{
+    content: "Finalizar pedido";
+    text-transform: none;
+    font-size: 22px;
+}
+/* SCROLL PRODUCTO */
+.minicartProductListContainer::-webkit-scrollbar {
+    width:10px;
+}
+.minicartProductListContainer::-webkit-scrollbar-thumb{
+    background-color: #e2e2e2;
+    border-radius: 20px;
+}
+
+.drawerContent::-webkit-scrollbar {
+    width:10px;
+}
+/* FIN Dentro del cart */
+
+
+.minicartCheckoutButton :global(.vtex-button__label){
+    font-size: 0px;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label)::after{
+    content: "Finalizar compra";
+    text-transform: none;
+    font-size: 22px;
+}
+
+@media (min-width:1024px) and (max-width:1279px){
+    .openIconContainer{
+        background-position: center;
+        margin-left: -20%;
+    }
+
+    .minicartQuantityBadgeDefault{        
+        
+    }
+}
+
+@media (max-width:801px){
+    .openIconContainer{
+        background-position: center;
+        margin-left: -10%;
+    }
+}

@@ -1,0 +1,57 @@
+.trigger--faq{
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #AAAAAA;
+    background: url("assets/producto/chevron-right.svg");
+    background-repeat: no-repeat;
+    background-position: 95%;
+    transition: 200ms all ease-in-out;
+    -webkit-transition: 200ms all ease-in-out;
+    -moz-transition: 200ms all ease-in-out;
+    -ms-transition: 200ms all ease-in-out;
+    -o-transition: 200ms all ease-in-out;
+    cursor: pointer;
+}
+.trigger--faq--visible{
+    background: url("assets/producto/chevron-down.svg");
+    background-repeat: no-repeat;
+    background-position: 95%;
+
+
+}
+.content--faq--visible{
+    padding: 0.5rem 0.8rem;
+}
+@media (min-width: 768px){
+    .trigger--faq{
+    width: 80%;
+    }
+}
+@media (min-width: 600px){
+    .trigger--faq{
+        width: 100%;
+    }
+}
+@media (min-width: 768px){
+    .trigger--faq{
+        width: 70%;
+    }
+    .trigger--faq{
+        background-position: 98%;
+    }
+    .trigger--faq--visible{
+     
+        background-position: 98%;
+    
+    
+    }
+    .content--faq--visible :global(.vtex-rich-text-0-x-paragraph){
+        width: 70%;
+    }
+
+}
+
+.content--faq--visible :global(.vtex-rich-text-0-x-link){
+    color: #000;
+    text-decoration: none;
+}

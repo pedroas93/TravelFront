@@ -1,0 +1,49 @@
+
+.footerLayout--footerAviadores{
+    background-color: #F9F9F9;
+}
+
+.row--copyright {
+    background-color: #F9F9F9;
+    width: 90%;
+    margin: auto;
+}
+
+
+@media (max-width: 767px){
+    .row--copyright {
+        margin: auto;
+        width: 100%;
+        padding-top: 2.5rem;
+    } 
+
+    .rowContainer--copyright {
+        margin: auto;
+        width: 100%;
+    } 
+
+    .paragraph--footer-copyright{
+        display: none;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px){   
+    
+    .row--copyright {
+        margin: auto;
+        width: 100%;
+    } 
+
+    .rowContainer--copyright {
+        margin: auto;
+        width: 90%;
+    } 
+}
+
+@media (min-width:1024px) and (max-width:1279px){   
+    
+    .rowContainer--copyright {
+        margin: auto;
+        width: 90%;
+    } 
+}

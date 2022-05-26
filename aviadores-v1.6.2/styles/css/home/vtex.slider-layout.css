@@ -1,0 +1,350 @@
+.caretIcon--carousel{
+    color: #FFFFFF;
+}
+
+.paginationDotsContainer--carousel{
+    padding-bottom: 1%;
+}
+
+.paginationDot--carousel--isActive,
+.paginationDot--carouselmobile--isActive{
+    background-color: #FFFFFF;
+}
+
+.paginationDotsContainer--carouselmobile{
+    padding-bottom: 15px;
+}
+
+
+.paginationDotsContainer--banbeneficios{
+    display: none;
+}
+
+/* .paginationDotsContainer{
+    display: none;
+} */
+
+.sliderLayoutContainer--banbeneficiosdesktop{
+    background-color: #FFFFFF;    
+    /* padding-top: 1.5rem;
+    padding-bottom: 1.5rem; */
+    padding-left: 7rem;
+    margin: auto;
+}
+
+.sliderLayoutContainer--slider-refuerzos-mobile{
+    justify-content: end;     
+} 
+
+.slideChildrenContainer--slider-refuerzos-mobile{       
+    height: 100%;
+    padding: 2rem;   
+    padding-left: 30%; 
+}
+
+
+.sliderLayoutContainer--banpuertas{
+    width: 50%;     
+    margin: auto;
+    background: #f7f7f7;
+}
+
+.paginationDotsContainer--banpuertas{
+    display: none;
+}
+
+.sliderLayoutContainer--slider-marcas-mobile{      
+    padding: 1.5rem 0;    
+}
+
+.slideChildrenContainer--slider-marcas-mobile{
+    margin: 0 0.5rem;
+} 
+
+.paginationDotsContainer--slider-marcas-mobile{
+    display: none;
+}
+
+.sliderLayoutContainer--slider-mas-categorias{      
+    width: 65%;     
+    margin: auto;
+    padding-bottom: 4rem;
+}
+
+.sliderLayoutContainer--slider-banner-grilla1{ 
+    margin: auto;        
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.sliderLayoutContainer--slider-banner-grid-mobile{
+    padding: 1rem 2%;
+    background: #f7f7f7;    
+}
+
+.sliderLayoutContainer--slider-banner-grid-mobile :global(.vtex-store-components-3-x-imageElement){
+    border-radius: 20px;
+}
+
+.slideChildrenContainer--70off{
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 2rem;
+}
+
+.slideChildrenContainer--70offmobile{
+    /* width: 100%; */
+    margin: 0 5%;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.sliderLayoutContainer--oferdoble{
+    margin: 0 0 0 9.6%;
+    width: 84.5%;
+    margin-top: 2rem;
+}
+
+.sliderLayoutContainer--oferdoblemobile{
+    margin: 0 5%;
+    width: 90%;
+    margin-top: 2rem;
+}
+
+.slideChildrenContainer--oferdoble{
+    width: 91%;        
+}
+
+.sliderLayoutContainer--oferdobletablet{
+    margin: 0 0 0 12%;
+    width: 82%;
+    margin-top: 2rem;
+}
+
+.slideChildrenContainer--oferdobletablet{
+    width: 85%;        
+}
+
+.paginationDotsContainer--oferdoble{
+    display: none;
+}
+
+.paginationDotsContainer--oferdoblemobile{
+    display: none;
+}
+
+.sliderLayoutContainer--4descuentos{
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 2rem;
+}
+
+.sliderLayoutContainer--bantarjetas{
+    padding: 0 8%;    
+    background: #FBFAF9;
+    
+}
+
+.paginationDotsContainer--bantarjetas{
+    display: none;
+}
+
+.paginationDotsContainer--4descuentos{
+    display: none;
+}
+
+.sliderLayoutContainer--banbuscapieza{
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 1rem;
+    background-color: #FBFAF9;
+}
+
+.paginationDotsContainer--banbuscapieza{
+    display: none;
+}
+
+.sliderLayoutContainer--mas-categorias{
+    width: 80%;
+    margin: 0 10%;
+    margin-top: 1rem;
+    background-color: #FBFAF9;
+}
+
+.sliderLayoutContainer--slider-mas-categorias-mobile{
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+    background-color: #f7f7f7;
+}
+
+.sliderLayoutContainer--footiconos{
+    width: 30%;    
+    background-color: #FCFCFC;
+}
+
+.sliderLayoutContainer--crediconos{
+    border-top: 2px solid #FFFFFF;
+    margin-left: 5%; 
+    width: 92%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;    
+}
+
+.sliderLayoutContainer--contenedorredes1{
+    padding-bottom: 1rem;
+    width: 90%;
+    height: 100%;   
+}
+
+.sliderLayoutContainer--contenedorredes2{    
+    width: 90%; 
+    height: 20%;
+    padding-bottom: 3rem;   
+}
+
+.sliderLayoutContainer--contenedorredes1mobile{
+    margin-top: 3rem;
+    
+    padding: 0 20%; 
+}
+
+.sliderLayoutContainer--contenedorredes2mobile{
+    margin-top: 1rem;
+    padding: 0 20%; 
+}
+
+
+.slideChildrenContainer--carousel-vitrina1 {
+    height: 100% !important;
+    width: 100%;
+    border-radius: 0;
+    padding: 0 .2rem;
+    padding-bottom: .5rem;
+}
+
+.sliderLayoutContainer--carousel-vitrina1{
+    
+}
+
+.caretIcon--carousel-vitrina1{
+    color: #00FFE1;
+    width: 90%;
+    padding: 1rem;
+    margin-left: -0.6rem;
+    margin-right: -1.8rem;
+    background-color: #FFFFFF !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderLayoutContainer--slider-marcas-mobile{
+    background: #f7f7f7;
+}
+
+
+@media (min-width:1920px) and (max-width:2560px){
+    .slideChildrenContainer--carousel-vitrina1 {
+        width: 100%;
+    border-radius: 0;
+    margin-left: 1.5rem;
+    }
+    .caretIcon--carousel-vitrina1{
+        color: #00FFE1;
+        width: 90%;
+        padding: 1rem;
+        margin-left: -0.6rem;
+        margin-right: -1.5rem;
+        background-color: #FFFFFF !important;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:1600px) and (max-width:1919px){
+    .slideChildrenContainer--carousel-vitrina1 {
+        
+    }
+    .caretIcon--carousel-vitrina1{
+        color: #00FFE1;
+        width: 90%;
+        padding: 1rem;
+        margin-left: -0.6rem;
+        margin-right: -1.5rem;
+        background-color: #FFFFFF !important;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 767px){
+    .sliderLayoutContainer--carousel-vitrina1{
+        background: #f7f7f7;
+    }
+
+    .slideChildrenContainer--carousel-vitrina1 {
+        
+    }
+
+    .caretIcon--carousel-vitrina1{
+        width: 90%;
+        padding: 1rem;
+        margin-left: -0.2rem;
+        margin-right: -0.2rem;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .sliderLayoutContainer--carousel-vitrina1 :global(.vtex-slider-layout-0-x-caretIcon--carousel-vitrina1){
+        display: none;
+    }
+
+    .sliderLayoutContainer--footiconos{
+        margin: 1rem 0%;
+        width: 100%;
+        padding-right: 1.5rem;    
+    }
+}
+
+
+@media(min-width: 1024px){
+    .sliderLayoutContainer--carouselBeneficios .slide--firstVisible{
+        position: relative;
+        padding-bottom: 7px;
+    }
+    .sliderLayoutContainer--carouselBeneficios .slide--firstVisible::before{
+        content: "Pagá con crédito y débito";
+        z-index:5;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -115px;
+        font-size: 15.5px;
+        font-weight: 700;
+        font-family: 'Montserrat' sans-serif;
+        color: #414141;
+    }
+    .slideChildrenContainer--carousel-vitrina1{
+        margin-left: 1.5rem;
+    }
+} 

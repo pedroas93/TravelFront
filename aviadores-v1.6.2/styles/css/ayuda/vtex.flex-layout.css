@@ -1,0 +1,337 @@
+/* MÉTODOS DE PAGOS */
+.flexRow--tipos-pagos,
+.flexRowContent--tipos-pagos {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: flex-start;
+  
+}
+.flexCol--metodos-pagos {
+  background-color: #f9f9f9;
+  display: flex;
+  align-items: center !important;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 1.1rem 0 1rem 0;
+  width: 250px;
+}
+/* FIN DE MÉTODOS DE PAGOS */
+
+.flexRow--main-ayuda,
+.flexRow--main-formas-entrega,
+.flexRow--main-faqs-ayuda,
+.flexRow--main-terminos,
+.flexRow--main-politicas,
+.flexRow--main-arrepentimiento,
+.flexRow--main-contacto{
+    background: #f7f7f7;
+    padding: 1rem 0;
+}
+
+/* .flexRowContent--main-faqs-ayuda{
+    background: #f7f7f7;
+    padding-bottom: 1rem;
+} */
+
+.flexCol--help-list{
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.flexCol--help-list :global(.vtex-flex-layout-0-x-flexColChild--help-list){
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+/* guia de compra */
+
+@media (max-width:768px) and (min-width:640px){
+    .flexColChild--paso-1,
+    .flexColChild--paso-2,
+    .flexColChild--paso-3
+    {
+        max-width: 200px;
+    }
+}
+
+@media (max-width:1024px) and (min-width:769px){
+    .flexColChild--paso-1,
+    .flexColChild--paso-2,
+    .flexColChild--paso-3
+    {
+        max-width: 280px;
+    }
+}
+
+
+
+.flexRow--paso-1-title,
+.flexRow--paso-2-title,
+.flexRow--paso-3-title{
+    height: 130px !important;
+}
+
+/* fIN guia de compra */
+
+.flexCol--build-container-ayuda-talles{
+    padding-top: 3.2rem !important;
+}
+
+.flexCol--build-container-ayuda{
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding-bottom: 1rem;
+}
+
+
+/* pagina contacto */
+.flexRowContent--contactos-2{
+    border: 1px solid rgb(104, 104, 104);
+}
+
+.flexCol--col-contact-1,.flexCol--col-contact-2{
+    border-right: 1px solid rgb(170, 170, 170);
+}
+
+@media (max-width:639px){
+    .flexRowContent--contact-name-lastname,
+    .flexRowContent--contact-mail-phone{
+        margin-bottom: 0;
+    }
+    .flexRowContent--contact-name-lastname :global(.vtex-input-prefix__group),
+    .flexRowContent--contact-mail-phone :global(.vtex-input-prefix__group)
+    {
+        margin-bottom: 1.2rem;
+    }
+}
+
+/* FIN pagina contacto */
+
+/* ARREPENTIMIENTO DE COMPRA */
+@media (max-width:639px){
+    .flexRowContent--arrepentimiento-name-lastname,
+    .flexRowContent--arrepentimiento-dni-mail,
+    .flexRowContent--arrepentimiento-phone-orden
+    {
+        margin-bottom: 0;
+    }
+    .flexRowContent--arrepentimiento-name-lastname :global(.vtex-input-prefix__group),
+    .flexRowContent--arrepentimiento-dni-mail :global(.vtex-input-prefix__group),
+    .flexRowContent--arrepentimiento-phone-orden :global(.vtex-input-prefix__group)
+    {
+        margin-bottom: 1.2rem;
+    }
+}
+
+/* FIN ARREPENTIMIENTO DE COMPRA */
+
+/* Acerca de */
+.flexRow--rowacercade,
+.flexRow--rowacercade2
+{
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width:640px){
+    .flexCol--text-acerca-de-nh{
+        margin-left: 0 !important;
+    }
+}
+/* FIN Acerca de */
+
+/* Sucursales */
+.flexRow--main-row-sucursales{
+    padding: 0 15%;
+    margin: auto;
+}
+
+.flexRow--row2-sucursales-desk{    
+    padding: 0 15%;
+    margin: auto;
+}
+
+.flexRow--row3-sucursales-desk{      
+    margin-left: 15%;
+}
+
+.flexRow--row1-sucursales-tablet{    
+    padding-left: 10%;
+    padding-right: 15%;
+    margin: auto;
+}
+
+.flexRow--row2-sucursales-tablet{    
+    padding: 0 10%;
+    margin: auto;
+}
+
+.flexRow--row3-sucursales-tablet{    
+    padding-left: 5%;
+    margin-left: 5%;
+}
+
+.flexRow--row3-sucursales-mobile{    
+    padding: 0 10%;
+    margin: auto;
+}
+/* FIN Sucursales */
+
+/* Politicas */
+.flexRow--row-check-texto1{
+    justify-content: space-around;
+}
+/* FIN Politicas */
+
+
+
+
+
+@media (min-width:1025px){
+    .flexCol--help-list{
+        width: 286px !important;
+    }   
+}
+
+/* RESPONSIVE CONTAINER */
+@media (max-width:640px){
+    .flexCol--help-list,.flexCol--build-container-ayuda, .flexCol--build-container-ayuda-talles{
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        margin: 0px !important;
+    }  
+    
+}
+
+@media (min-width:640px) and (max-width:800px){
+    .flexCol--help-list,.flexCol--build-container-ayuda, .flexCol--build-container-ayuda-talles{
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        margin: 0px !important;
+    }
+}
+
+@media (max-width:1024px) and (min-width:801px){
+    .flexCol--help-list,.flexCol--build-container-ayuda, .flexCol--build-container-ayuda-talles{
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        margin: 0px !important;
+    }
+}
+
+
+/* hacer version tablet de 1024px */
+@media (max-width:1024px) and (min-width:640px){
+    /* ayuda */
+    .flexRowContent--main-ayuda{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexRowContent--main-ayuda :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 100% !important;
+    }
+    /* terminos */
+    .flexRowContent--main-terminos{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexRowContent--main-terminos :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 100% !important;
+    }
+    /* politica */
+    .flexRowContent--main-politicas{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexRowContent--main-politicas :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 100% !important;
+    }
+    /* frecuentes */
+    .flexRowContent--main-faqs-ayuda{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexRowContent--main-faqs-ayuda :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 100% !important;
+    }
+    /* pagos */
+    .flexRowContent--main-metodos-pagos{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexRowContent--main-metodos-pagos :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 100% !important;
+    }
+    /* entrega */
+    .flexRowContent--main-formas-entrega{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexRowContent--main-formas-entrega :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 100% !important;
+    }
+    /* contacto */
+    .flexRowContent--main-contacto{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexRowContent--main-contacto :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 100% !important;
+    }
+    /* arrepentimiento */
+    .flexRowContent--main-arrepentimiento{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexRowContent--main-arrepentimiento :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 100% !important;
+    }
+    /* Tabla talles */
+    .flexRowContent--main-tabla-talles :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        width: 100% !important;
+    }
+}
+
+.flexRowContent :global(.vtex-store-locator-0-x-addressListLink){
+    display: none;
+}
+
+.flexRowContent :global(.vtex-store-locator-0-x-addressStoreName){
+    color: #ED1C24;
+}
+
+@media (max-width:767px){
+    .flexRowContent :global(.vtex-store-locator-0-x-container){
+        display: block;
+        flex-direction: row;
+    }
+
+    .flexRowContent :global(.vtex-store-locator-0-x-storesListCol){
+        display: contents;
+        flex-direction: row;                
+    }
+
+    .flexRowContent :global(.vtex-store-locator-0-x-storesMapCol){
+        display: inline;
+        flex-direction: row;         
+    }     
+
+    .flexRow :global(.vtex-store-locator-0-x-listingMapContainer){
+        overflow-y: auto;
+        max-height: 70%;                 
+    }   
+
+    .flexRow :global(.vtex-store-locator-0-x-storesList){
+        overflow-y: auto;
+        max-height: 34%;                 
+    }
+    
+    .flexRow--row-check-texto1{
+        display: none;
+    }
+    
+}
+

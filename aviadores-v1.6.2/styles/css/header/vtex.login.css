@@ -1,0 +1,160 @@
+/* 1-Se oculta el icono que viene por defecto */
+.profileIcon{
+    display: none;
+}
+
+.label{
+    display: none;
+}
+
+/* 2-Se pone el icono deseado como fondo al contenedor */
+.container{
+    background-image: url(assets/header/profile2.svg);
+    background-position: center;   
+    background-repeat: no-repeat;
+    background-size: 25px;
+} 
+
+@media(max-width: 640px){
+    .container{
+        background-size: 20px;
+    } 
+}
+
+/* 3-El hover al botton se lo pone transparente */
+.container :global(.vtex-button){
+    background-color: transparent;
+}
+/* *********** */
+/*    LOGIN    */
+/* *********** */
+.contentContainer{
+    border-radius: 4px;
+}
+.formTitle{
+    font-size: 0px;
+}
+
+.formTitle::before{
+    content: "Selecciona una opción";
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: #646464;
+}
+
+.accessCodeOptionBtn :global(.vtex-button),
+.emailPasswordOptionBtn :global(.vtex-button)
+{
+    border-radius: 0px;
+    border: 2px solid #444343;
+    background-color: transparent;
+}
+
+.accessCodeOptionBtn :global(.vtex-button):hover,
+.emailPasswordOptionBtn :global(.vtex-button):hover
+{
+    background-color: #f1f1f1;
+}
+.accessCodeOptionBtn :global(.vtex-button__label),
+.emailPasswordOptionBtn :global(.vtex-button__label){
+    color: #444343;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    text-transform: none;
+}
+
+.sendButton :global(.vtex-button){
+    background-color:  #FFFFFF;
+    border: 2px solid #444343;
+}
+.sendButton :global(.vtex-button):hover{
+    background-color:  #f1f1f1;
+}
+.sendButton :global(.vtex-button__label){
+    color: #444343;
+}
+.sendButton :global(.vtex-button__label):hover{
+    color: #444343;
+}
+
+.sendButton :global(.t-small){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.backButton :global(.vtex-button__label){
+    font-family: 'Montserrat', sans-serif;
+    color: #444343;
+    font-weight: 500 !important;
+}
+.backButton :global(.t-small){
+    font-family: 'Montserrat', sans-serif;
+    color: #444343;
+    font-weight: 500 !important;
+}
+
+.backButton :global(.vtex-button){
+    border: 2px solid #444343;
+}
+
+.backButton :global(.vtex-button):hover{
+    background-color: #f1f1f1;
+}
+
+.inputContainer :global(.vtex-input-prefix__group){
+    border: 1px solid #444343;
+    border-radius: 0px;
+}
+.inputContainer:hover :global(.vtex-input-prefix__group){
+    border: 1px solid #999999;
+}
+
+.forgotPasswordLink, .dontHaveAccount{
+    font-family: 'Montserrat', sans-serif;
+    color: #444343;
+    font-weight: 500 !important;
+}
+
+@media (max-width:640px){
+    .dontHaveAccount{
+        margin-top: 1rem;
+    }
+}
+
+.accountOptions :global(.vtex-login-2-x-button),
+.accountOptions :global(.vtex-button)
+{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #444343;
+    text-decoration: none;
+    border: 1px solid #444343;
+    border-radius: 10px;
+    text-transform: none !important;
+}
+
+.accountOptions :global(.vtex-login-2-x-button):hover,
+.accountOptions :global(.vtex-button):hover
+{
+    background-color: #f1f1f1;
+}
+
+
+.box :global(.vtex__icon-spinner)
+{
+    color: #00FF10 !important;
+}
+
+:global(.vtex__icon-spinner)
+{
+    color: #00FF10 !important;
+}
+
+/* @media (max-width: 767px){
+    
+    .box 
+} */

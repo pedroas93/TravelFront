@@ -1,0 +1,133 @@
+{
+
+"product-summary.shelf#vitrina-product": {
+  "children": [
+    
+    "add-to-list-btn",
+    
+    "flex-layout.col#imagen-flags",
+
+    //"product-specification-group#vitrina-product",
+    // "product-specifications#vitrina-product",
+    //"product-rating-inline",
+    // "product-summary-space",
+    "product-summary-space",
+    "product-price#vitrina-product" ,//<--Precio del producto
+    "product-summary-name#vitrina-product", //<--Nombre del producto
+    "flex-layout.row#agregar"
+
+   
+  ],
+  "props": {
+    "blockClass": "vitrina-product"
+  }
+},
+"flex-layout.row#agregar":{
+  "children":["add-to-cart-button"],
+  "props":{
+    "blockClass": "agregar"
+  }
+},
+"add-to-cart-button":{
+  "props":{
+    "text": "Agregar al Carrito"
+  }
+},
+"flex-layout.col#imagen-flags":{
+  "children":[
+    "product-summary-image#vitrina-product","flex-layout.row#flags"],
+  "props":{
+    "blockClass": "imagen"
+  }
+},
+"flex-layout.row#flags":{
+  "children":["vtex.product-highlights@2.x:product-highlights#collection","vtex.product-highlights@2.x:product-highlights#promo"],
+  "props":{
+    "blockClass":"bandera"
+  }
+},
+"vtex.product-highlights@2.x:product-highlights#promo": {
+  "children": ["product-highlight-text#promo"],
+  "props":{
+  "type": "promotion"
+
+
+  }
+
+},
+
+"product-highlight-text#promo": {
+  "props": {
+    "message": "{highlightName}",
+    "blockClass": "flag"
+  }
+},
+"vtex.product-highlights@2.x:product-highlights#collection":{
+  "children": ["product-highlight-text#collection"]
+
+},
+"product-highlight-text#collection": {
+  "props": {
+    "message": "{highlightName}",
+    "blockClass": "flag"
+  }
+},
+
+// "product-specifications#vitrina-product": {
+//   "props": {
+//     "shoudCollapseOnTabChange": false,
+//     "collapsible": "never",
+//     "blockClass":"marca-vitrina-product",
+//     "visibleSpecifications":["Marca Vehículo"]
+//   }
+// },
+  // BLOCK CLASS PARA ESTILOS
+  // "product-specification-group#vitrina-product": {
+  //   "props":{
+  //     "filter":{
+  //       "specificationGroups":["Vehículos"],
+  //       "type":"show"
+  //     }
+  //   },
+  //   "children": ["product-specification#vitrina-product"]
+  // },
+
+  "product-specification#vitrina-product": {
+    "children": [
+      "product-specification-values#vitrina-product"
+    ]
+  },
+  "product-specification-values#vitrina-product": {
+    "children": [
+      "product-specification-text#value-product"
+    ]
+  },
+  "product-specification-text#value-product": {
+    "props": {
+      "message": "{specificationValue}",
+      "blockClass":"marca-vitrina-product"
+    }
+  },
+
+"product-summary-name#vitrina-product": {
+  "props": {
+    "blockClass": "nombre-vitrina-product"
+  }
+},
+"product-summary-image#vitrina-product": {
+  "props": {
+    "blockClass": "imagen-vitrina-product"
+  }
+},
+"product-price#vitrina-product": {
+  "props": {
+    "blockClass": "precio-vitrina-product"
+  }
+},
+"product-installments#vitrina-product": {
+  "props": {
+    "message":"{installmentsNumber}x CUOTAS DE {installmentValue}",
+    "blockClass": "cuotas-vitrina-product"
+  }
+}//FIN SHELF DE PRODUCTOS
+}

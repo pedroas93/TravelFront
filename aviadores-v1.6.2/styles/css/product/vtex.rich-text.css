@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+:global(.vtex-rich-text-0-x-container){
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+
+.container--faq{
+    color: #646464;
+    border-bottom: 1px solid rgba(130, 130, 130, 50%);
+
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+.paragraph--faq{
+    margin: 0.5rem ;
+    margin-left: 0;
+    font-size: 1.1rem;
+}
+.paragraph--pregunta{
+    padding: 0 0.4rem;
+}
+:global(.vtex-product-availability-0-x-highStockText ){
+    color: #929292;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+:global(.vtex-product-quantity-1-x-quantitySelectorTitle){
+    font-size: 1rem;
+    color: #3E3E3E;
+    padding-top: 10px;
+
+}
+:global(.vtex-product-quantity-1-x-availableQuantityContainer){
+    font-size: 0.9rem;
+    color: #828282;
+}
+:global(.vtex-product-quantity-1-x-quantitySelectorDropdownMobileContainer){
+    width: 35%;
+    margin-left: 0.5rem;
+
+}
+.wrapper--texto-trigger{
+    font-size: 0.9rem;
+    color: #929292;
+}
+@media (min-width: 768px){
+    .container--faq{
+        width: 40% !important;
+        margin: 0;
+        margin-bottom: 2rem;
+
+    }
+    .paragraph--faq{
+       
+        font-size: 1.3rem;
+    }
+}
+:global(.vtex-breadcrumb-1-x-term){
+    font-weight: bolder;
+}
+.container--relacionados{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: #000;
+}
+.wrapper--relacionados{
+    border-bottom: 3px solid;
+    border-image: linear-gradient(
+135deg, #FFEA00, #00FFE1) 10;
+height: 60px;
+}
+.wrapper--caracteristicas-title{
+    color: #646464;
+    margin: 2rem auto;
+    width: 95%;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5px solid #828282;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.paragraph--direccion{
+    color: #03C98F;
+    font-weight: bold;
+    background: url("assets/producto/location.svg");
+    background-position: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding-top: 0.2rem;
+    padding-left: 1.5rem;
+    height: 27px;
+
+}
+.container--titulo-modal-retiro{
+    display: flex;
+    justify-content: center;
+    color: #646464;
+    font-weight: 600;
+    width: 100%;
+}
+.paragraph--pago{
+    padding: 0 !important;
+    margin-top: 0!important;
+}
+.wrapper--pago{
+    color: #929292;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+:global(.vtex-modal-layout-0-x-paperScrollContent ){
+    overflow-x: hidden;
+}
+@media (min-width: 768px){
+    .container--titulo-modal-retiro{
+     
+        position: absolute;
+        margin-bottom: 2rem;
+
+    }
+
+}

@@ -1,0 +1,94 @@
+{
+    // SHELF DE PRODUCTOS
+  "product-summary.shelf#innew": {
+    "children": [
+    "vtex.product-highlights@2.x:product-highlights",
+
+    "add-to-list-btn",
+
+      "product-summary-image#NH",
+      "product-specification-group#vitrina",
+      //"product-rating-inline",
+      //"product-summary-space", //<--Esto alinea los products
+
+      "product-price#NH" ,//<--Precio del producto
+      "flex-layout.col#hover"
+      
+      //"product-installments#NH", //<--Cuotas
+      //"add-to-cart-button#sin-stock" //<-- Para mostrar label cuando el product esta sin stock
+    ],
+    "props": {
+      "blockClass": "vitrinaNH"
+    }
+  },
+  "flex-layout.col#hover":{
+    "children":["product-summary-name#NH", "add-to-cart-button"],
+      "props":{
+      "blockClass": "hover"
+
+
+      }
+  },
+
+  // marca de vehiculo
+  "product-specification-group#vitrina": {
+    "props":{
+      "filter":{
+        "specificationGroups":["Vehículos"],
+        "type":"show"
+      }
+    },
+    "children": ["product-specification#vitrina"]
+  },
+
+  "product-specification#vitrina": {
+    "children": [
+      "product-specification-values#vitrina"
+    ]
+  },
+  "product-specification-values#vitrina": {
+    "children": ["product-specification-text#value-vitrina"]
+  },
+  "product-specification-text#value-vitrina": {
+    "props": {
+      "message": "{specificationValue}",
+      "blockClass":"marca-vitrina"
+    }
+  },
+  // imagen de vitrina
+  // "flex-layout.row#imagen-vitrina":{
+  //     "props":{
+  //       "blockClass":"imagenVitrina"
+  //     },
+  //     "children":["product-summary-image#NH"]//<--Imagen del producto]
+  // },
+  // BLOCK CLASS PARA ESTILOS
+  "product-summary-name#NH": {
+    "props": {
+      "blockClass": "nombreNH"
+    }
+  },
+  "product-summary-image#NH": {
+    "props": {
+      "blockClass": "imagenNH"
+    }
+  },
+  "product-price#NH": {
+    "props": {
+      "blockClass": "precioNH"
+    }
+  },
+  "product-installments#NH": {
+    "props": {
+      "message":"{installmentsNumber}x CUOTAS DE {installmentValue}",
+      "blockClass": "cuotasNH"
+    }
+  },
+  "add-to-cart-button#sin-stock":{
+    "props":{
+      "text":".",
+      "unavailableText":"SIN STOCK",
+      "blockClass":"shelf-sin-stock"
+    }
+  }  //FIN SHELF DE PRODUCTOS
+}

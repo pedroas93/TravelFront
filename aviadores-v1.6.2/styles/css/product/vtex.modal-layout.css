@@ -1,0 +1,45 @@
+.triggerContainer{
+    z-index: 1;
+}
+.headerContainer{
+    border: none;
+}
+:global(.vtex-address-form__postalCode) :global(.vtex-input__label){
+    color: #646464;
+    font-weight: 600;
+}
+:global(.vtex-address-form__postalCode) :global(.vtex-input-prefix__group){
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border: 1px solid #ACACAC;
+}
+:global(.vtex-address-form__postalCode-forgottenURL){
+    color: #0029FF;
+}
+:global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-button){
+    border: none;
+    height: 45px;
+    background: linear-gradient(
+        145deg,rgba(255,234,0,1) 10%,#81F46F 30%,#42FAA7 70%,rgba(0,255,148,1) 100%);
+}
+:global(.vtex-store-components-3-x-shippingContainer) :global(.vtex-button__label){
+    color: #fff;
+    font-weight: 600;
+}
+.paper {
+    padding: 2rem;
+    width: 95%;
+}
+@media (min-width: 768px){
+    .paper {
+        padding: 2rem;
+        width: 50%;
+    }
+
+}
+.paperScrollContent :global(.vtex-flex-layout-0-x-stretchChildrenWidth ){
+    flex-wrap: wrap;
+}

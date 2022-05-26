@@ -1,0 +1,159 @@
+{
+  "store.custom#arrepentimiento": {
+      "blocks": [
+          "flex-layout.row#main-arrepentimiento"
+      ]
+  },
+  "flex-layout.row#main-arrepentimiento":{
+      "props":{
+        "marginTop":8,
+        "marginBottom":8,
+        "blockClass":"main-arrepentimiento"
+      },
+      "children":[
+          "flex-layout.col#help-list",
+          "flex-layout.col#arrepentimiento"
+      ]
+  },
+  "flex-layout.col#arrepentimiento":{
+      "props":{
+          "width":"82%",
+          "paddingLeft":9,
+          "paddingRight":9,
+          "preventVerticalStretch":true,
+          "blockClass":"build-container-ayuda"
+      },
+      "children":[
+          "rich-text#arrepentimiento-title",
+          "flex-layout.row#form"
+      ]
+  },
+  // titulo
+  "rich-text#arrepentimiento-title":{
+      "props":{
+          "text":"Arrepentimiento de compra",
+          "font":"t-heading-4",
+          "textPosition":"CENTER",
+          "blockClass":"rich-formas-entrega"
+      }
+  }, // Fin titulo
+
+  // FORMULARIO
+  "flex-layout.row#form": {
+      "children": [
+        "flex-layout.col#form"
+      ],
+      "props":{
+      "paddingTop":5
+      }
+    },
+    "flex-layout.col#form": {
+      "children": [
+        "form#arrepentimiento"
+      ]
+    },
+    "form#arrepentimiento": {
+      "props": {
+        "entity": "AC",
+        "schema": "arrepentimiento-compra"
+      },
+      "children":[
+        "flex-layout.row#arrepentimiento-name-lastname",
+        "flex-layout.row#arrepentimiento-dni-mail",        
+        "flex-layout.row#arrepentimiento-phone-orden",        
+        "form-input.textarea#arrepentimiento-mensaje",
+        "form-submit"
+      ],
+      "blocks": ["form-success#arrepentimiento"]
+    },
+    "flex-layout.row#arrepentimiento-name-lastname":{
+      "props":{
+        "colGap":8,
+        "marginBottom":6,
+        "blockClass":"arrepentimiento-name-lastname"        
+      },
+      "children":[
+        "form-input.text#ac-nombre"/* ,
+        "form-input.text#ac-apellido" */
+      ]
+    },
+    "flex-layout.row#arrepentimiento-dni-mail":{
+      "props":{
+        "colGap":8,
+        "marginBottom":6,
+        "blockClass":"arrepentimiento-dni-mail"        
+      },
+      "children":[
+        "form-input.text#ac-mail",
+        "form-input.text#ac-dni"
+      ]
+    },
+    "flex-layout.row#arrepentimiento-phone-orden":{
+      "props":{
+        "colGap":8,
+        "marginBottom":6,
+        "blockClass":"arrepentimiento-phone-orden"        
+      },
+      "children":[
+        "form-input.text#ac-telefono",
+        "form-input.text#ac-orden"
+      ]
+    },
+    // mensaje enviado correctamente
+  "form-success#arrepentimiento": {
+    "children": [
+      "rich-text#mensaje-enviado"
+    ]
+  },
+  "rich-text#mensaje-enviado": {
+    "props": {
+      "text": "Tu mensaje fue enviado con éxito!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "formSucess"
+    }
+  },//fin mensaje enviado correctamente
+  // punteros hacia los campos de master data
+  "form-input.text#ac-nombre":{
+    "props":{
+      "pointer": "#/properties/Nombre",
+      "placeholder":"Ej: Juan Perez"
+    }
+  },
+ /*  "form-input.text#ac-apellido":{
+    "props":{
+      "pointer": "#/properties/Apellido",
+      "placeholder":"Ej: Pérez"
+    }
+  }, */
+  "form-input.text#ac-dni":{
+    "props":{
+      "pointer": "#/properties/Cedula",
+      "placeholder":"(Ingrese solo números)"
+    }
+  },
+  "form-input.text#ac-mail":{
+    "props":{
+      "pointer": "#/properties/Email",
+      "placeholder":"Ej: juan.perez@gmail.com"
+    }
+  },
+  "form-input.text#ac-telefono":{
+    "props":{
+      "pointer": "#/properties/Telefono",
+      "placeholder":"Ej: 351 112233"
+    }
+  },
+  "form-input.text#ac-orden":{
+    "props":{
+      "pointer": "#/properties/NumeroOrden",
+      "placeholder":"Ingrese su número de orden."
+    }
+  },
+  "form-input.textarea#arrepentimiento-mensaje":{
+    "props":{
+      "pointer": "#/properties/Motivo",
+      "placeholder":"Escribe aquí el motivo de por que usted quiere cancelar su compra. (750 caracteres máximo)"
+    }
+  }// FIN FORMULARIO
+}

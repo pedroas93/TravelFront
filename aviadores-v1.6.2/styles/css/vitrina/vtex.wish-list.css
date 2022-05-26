@@ -1,0 +1,22 @@
+
+.wishlistIconContainer :global(.vtex-wish-list-1-x-outline){
+  
+    z-index: 2;
+    background: url("assets/vitrina/like.svg");
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+}
+    
+.wishlistIconContainer :global(.vtex-button__label){
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.wishlistIconContainer :global(.vtex-button){
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+}

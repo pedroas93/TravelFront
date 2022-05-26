@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+.searchResultContainer{
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7;
+}
+.searchResultContainer :global(.vtex-breadcrumb-1-x-link):last-child{
+    color: #28292B;
+    font-weight: bolder;
+}
+.galleryTitle--layout{
+    color: #666666;
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+.filterMessage{
+    color: #28292B;
+
+}
+.filterTitle{
+    color: #464545;
+}
+
+.totalProducts--layout{
+    display: flex;
+}
+.filterPopupButton, .orderByButton{
+    border: none;
+   
+margin-bottom: 0.5rem;
+}
+.filterPopupTitle, .orderByText, .filterPopupArrowIcon {
+    color: #646464;
+    font-weight: 600;
+}
+.searchResultContainer :global(.vtex-add-to-cart-button-0-x-buttonText){
+    font-size: 1rem;
+}
+.searchResultContainer :global(.vtex-product-summary-2-x-element--vitrinaNH){
+    position: relative;
+    border-radius: 20px;
+    -webkit-box-shadow: -1px 2px 11px -5px rgba(130,130,130,1);
+    -moz-box-shadow: -1px 2px 11px -5px rgba(130,130,130,1);
+    box-shadow: -1px 2px 11px -5px rgba(130,130,130,1);
+}
+
+.searchResultContainer  :global(.vtex-store-components-3-x-priceContainer){
+    min-height: 50px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+.searchResultContainer  :global(.vtex-store-components-3-x-price_sellingPrice--precioNH){
+    font-size: 1.7rem;
+}
+.galleryItem--normal{
+    padding: 0.3rem;
+}
+.totalProducts--layout{
+    padding: 1rem;
+}
+.filterItem :global(.vtex-checkbox__line-container){
+    align-items: center;
+    color: #464545;
+
+}
+.filterTitle{
+    color: #464545;
+    font-weight: 600;
+}
+@media (min-width: 768px){
+    .orderByButton{
+    background: none;
+    padding: 0.5rem;
+    width: 180px;
+    border: 1px solid #0075FD;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+    .galleryTitle--layout{
+        margin-left: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #e3e4e6;
+    padding-bottom: 1.5rem;
+
+    }
+    .filterMessage, .totalProducts--layout, .totalProductsMessage {
+        color: #28292B;
+    font-family: 'Montserrat', sans-serif;
+
+    }
+    .totalProductsMessage{
+        text-transform: lowercase;
+    font-family: 'Montserrat', sans-serif;
+
+
+    }
+    
+}
+
+.orderByOptionItem{
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+:global(.vtex-breadcrumb-1-x-container){
+    padding-left: 1rem;
+}
+.filterItem :global(.vtex-checkbox__label){
+    text-transform: lowercase;
+}
+.filterItem :global(.vtex-checkbox__label)::first-letter{
+    text-transform: uppercase;
+}
+.filterAccordionItemBox :global(.vtex-checkbox__line-container){
+    align-items: center;
+}
+.filterAccordionItemBox  :global(.vtex-checkbox__label){
+    text-transform: lowercase;
+}
+.filterAccordionItemBox  :global(.vtex-checkbox__label)::first-letter{
+    text-transform: uppercase;
+}
+.filterBreadcrumbsText{
+    margin-right: 0.5rem;
+}
+.filterApplyButtonWrapper :global(.vtex-button){
+    border: none;
+    border-bottom: 2px solid;
+    border:1px solid #0075FD;
+background-color: #fff;
+
+}
+.filterApplyButtonWrapper :global(.vtex-button__label){
+    color: #646464;
+    font-weight: 600;
+}
+.filterBreadcrumbsText, .filterBreadcrumbsItemName{
+    font-size: 1rem;
+}
+.orderByText{
+    display: block !important;
+}
+.buttonShowMore :global(.vtex-button){
+    background: #0075FD;
+    border: none;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+ .filterTemplateOverflow::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+ .filterTemplateOverflow::-webkit-scrollbar-thumb {
+    background: #929292;
+  }
+  
+  /* Handle on hover */
+ .filterTemplateOverflow::-webkit-scrollbar-thumb:hover {
+    background: #C4C4C4;
+  }
+  /* .gallery--list :global(.vtex-product-summary-2-x-container--vitrina-product){
+      max-width: unset !important;
+  }
+  .gallery--list  :global(.vtex-store-components-3-x-priceContainer ){
+      border-top: none !important;
+  }
+  .gallery--list  :global(.vtex-product-summary-2-x-element--vitrina-product){
+      padding-bottom: 0.2rem;
+      padding-top: 0.2rem;
+
+  }
+  .gallery--list :global(.vtex-product-summary-2-x-brandName--nombre-vitrina-product){
+      font-size: 0.9rem;
+  }
+  .gallery--list :global(.vtex-product-summary-2-x-imageWrapper--imagen-vitrina-product){
+      border-right: 1px solid #eeeeee;
+
+  }
+  @media (min-width: 768px){
+    .gallery--list :global(.vtex-product-summary-2-x-brandName--nombre-vitrina-product){
+        font-size: 1.2rem;
+    }
+
+  } */
+  .buttonShowMore--layout{
+      margin-top: 2rem;
+  }
+  .galleryItem--normal{
+      margin-top: 1rem;
+  }
+  .galleryLayoutSwitcher{
+      display: flex;
+      justify-content: flex-end;
+  }

@@ -1,0 +1,20 @@
+{
+    // FLECHAS INDICADORES
+    "disclosure-state-indicator": {
+        "props": {
+            "Show": "icon-caret#down",
+            "Hide": "icon-caret#up"
+        }
+    },
+    "icon-caret#down": {
+        "props": {
+            "orientation": "right"
+        }
+    },
+    "icon-caret#up": {
+        "props": {
+            "orientation": "down"
+        }
+    }
+}
+

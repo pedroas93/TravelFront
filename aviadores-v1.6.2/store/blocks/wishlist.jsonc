@@ -1,0 +1,95 @@
+
+{
+    "my-account-link.wishlist-link": {
+      "props": {
+        "label": "Lista de deseos"
+      }
+    },
+    "my-account-page.wishlist-page": {
+      "children": ["flex-layout.row#top-account", "flex-layout.row#row-vitrina-wishlist-account"]
+    },
+    "store.wishlist": {
+      "blocks": ["flex-layout.row#top", "flex-layout.row#row-vitrina-wishlist"]
+    },
+
+    "flex-layout.row#top-account": {
+      "children": ["rich-text#title-account"],
+      "props": { 
+        "blockClass": "row-Wishlist-account",
+        "preventVerticalStretch": true
+      }
+    },
+
+    "flex-layout.row#top": {
+      "children": ["flex-layout.col#title"],
+      "props": { 
+        "blockClass": "row-Wishlist",
+        "preventVerticalStretch": true
+      }
+    },
+    "flex-layout.col#title": {
+      "children": ["rich-text#title"],
+      "props": {
+        /* "blockClass": "titleWishlist", */
+        "preventVerticalStretch": true
+      }
+    },
+    "rich-text#title": {
+      "props": {
+        "text": "Lista de deseos",
+        "blockClass": "titleWishlist"
+      }
+    },
+    "rich-text#title-account": {
+      "props": {
+        "text": "Lista de deseos",
+        "blockClass": "titleWishlist-account"
+      }
+    },
+    "flex-layout.row#row-vitrina-wishlist-account":{
+      "children":[
+        "list-context.wishlist"
+      ],
+      "props": {
+        "blockClass": "row-vitrina-wishlist-account"
+      }
+    },
+
+    "flex-layout.row#row-vitrina-wishlist":{
+      "children":[
+        "list-context.wishlist"
+      ],
+      "props": {
+        "blockClass": "row-vitrina-wishlist"
+      }
+    },
+
+    "list-context.wishlist": {
+      "blocks": ["product-summary.shelf#vitrina-product"],
+      "children": ["slider-layout#wishlist"]
+    },
+    "product-summary.shelf#wishlist": {
+      "children": [
+        "add-to-list-btn",
+        "product-summary-image",
+        "product-summary-name",
+        "product-summary-space",
+        "product-summary-price",
+        "add-to-cart-button"
+      ]
+    },
+    "slider-layout#wishlist": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 3,
+          "tablet": 2,
+          "phone": 1
+        },
+        "showNavigationArrows": "always",
+        "showPaginationDots": "never",
+        "infinite": false,
+        /* "fullWidth": true, */
+        "blockClass": "vitrina-wishlist"
+      }
+    }
+  }

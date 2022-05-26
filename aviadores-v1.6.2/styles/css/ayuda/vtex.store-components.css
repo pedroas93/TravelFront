@@ -1,0 +1,22 @@
+/* IMAGEN GUIA DE COMPRAS */
+/* .imageElement--paso-1-desktop,
+.imageElement--paso-2-desktop,
+.imageElement--paso-3-desktop{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+} */
+
+
+/* imagen mapa */
+.imageElementLink--image-sucursales-ayuda{
+    display: flex;
+    justify-content: center;
+    max-width: 568px;
+    margin-bottom: 8px;
+}
+
+.imageElementLink--image-sucursales-ayuda:hover{
+    opacity: .7;
+    transform: scale(1.01);
+}

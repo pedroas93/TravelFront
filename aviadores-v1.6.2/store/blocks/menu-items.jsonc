@@ -1,0 +1,1038 @@
+{
+  //******************************************************************************************
+  //   ABERTURAS - CATEGORY SECOND LEVEL
+  "vtex.menu@2.x:submenu#portones-puertas-ventanas": {
+    "props": {
+      "blockClass": "portones-puertas-ventanas"
+    },
+    "children": ["flex-layout.row#portones-puertas-ventanas-row1",
+                "flex-layout.row#portones-puertas-ventanas-row2"
+                /* "flex-layout.row#portones-puertas-ventanas-row3" */]
+  },
+  "flex-layout.row#portones-puertas-ventanas-row1":{
+    "props":{
+      "blockClass":"portones-puertas-ventanas-row1"
+    },
+    "children":[
+      "flex-layout.col#portones-puertas-ventanas-title",
+      "flex-layout.col#portones-puertas-ventanas-lanzamientos"
+    ]
+  },
+  "flex-layout.col#portones-puertas-ventanas-title":{
+    "props":{
+        "width": "15%", 
+        "horizontalAlign": "left",
+        "verticalAlign": "top",
+        /* "marginRight":7, */
+        "blockClass": "row-portones-puertas-ventanas"
+    },
+    "children":[
+      "rich-text#portones-puertas-ventanas-title"
+    ]
+},
+"rich-text#portones-puertas-ventanas-title":{
+    "props":{
+        "text": "[Electrónica](/electrónicos)",
+        "blockClass": "portones-puertas-ventanas-title"
+    }
+},
+"flex-layout.col#portones-puertas-ventanas-lanzamientos":{
+    "props":{
+        "width": "65%",
+        "horizontalAlign": "left",
+        "verticalAlign": "top"
+    },
+    "children":[
+      "rich-text#portones-puertas-ventanas-lanzamientos"
+    ]
+},
+"rich-text#portones-puertas-ventanas-lanzamientos":{
+    "props":{
+        "text": "[Ver todo](/electrónicos)",
+        "blockClass":"electronica-vertodo"
+    }
+},
+  // row-1
+  /* "flex-layout.col#portones-puertas-ventanas-title":{
+    "props":{
+      "width":"65%",
+      "horizontalAlign":"left",
+      "verticalAlign":"top"
+    },
+    "children":["rich-text#portones-puertas-ventanas-title",
+      "flex-layout.col#portones-puertas-ventanas-lanzamientos"]
+  },
+  "flex-layout.col#portones-puertas-ventanas-lanzamientos":{
+    "props":{
+      "width":"35%",
+      "horizontalAlign":"right",
+      "marginRight":6,
+      "verticalAlign":"top"
+    }
+  },
+  "rich-text#portones-puertas-ventanas-title":{
+    "props":{
+      "text":"Electrónica",
+      "blockClass":"portones-puertas-ventanas-title"
+    }
+  },
+  "rich-text#portones-puertas-ventanas-lanzamientos":{
+    "props":{
+      "text":"Ver todo",
+      "blockClass":"portones-puertas-ventanas-lanzamientos"
+    }
+  }, */
+  // row-2
+  "flex-layout.row#portones-puertas-ventanas-row2":{
+    "props":{
+      "blockClass":"portones-puertas-ventanas-row2"
+    },
+    "children":["category-menu#portones-puertas-ventanas"]
+  },
+  "category-menu#portones-puertas-ventanas":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":574}]
+    }
+  },
+  "flex-layout.row#portones-puertas-ventanas-row3":{
+    "props":{
+      "blockClass":"portones-puertas-ventanas-row3"
+    },
+    "children":["image#materiales-gruesos-banner"]
+  },
+  // FIN ABERTURAS - CATEGORY SECOND LEVEL
+  //******************************************************************************************
+
+  //******************************************************************************************
+  //  AISLANTES - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  "vtex.menu@2.x:submenu#aislantes-categorias":{
+    "props": {
+      "blockClass": "aislantes-categorias"
+    },
+    "children":[
+      "flex-layout.row#aislantes-row1",
+      "flex-layout.row#aislantes-row2",
+      "flex-layout.row#aislantes-row3"
+    ]
+  },
+  "flex-layout.row#aislantes-row1":{
+    "props":{
+      "blockClass":"aislantes-row1"
+    },
+    "children":[
+      "flex-layout.col#aislantes-title",
+      "flex-layout.col#aislantes-lanzamientos"
+    ]
+  },
+
+  "flex-layout.col#aislantes-lanzamientos":{
+    "props":{
+        "width": "65%",
+        "horizontalAlign": "left",
+        "verticalAlign": "middle"
+    },
+    "children":[
+      "rich-text#aislantes-lanzamientos"
+    ]
+  },
+  "rich-text#aislantes-lanzamientos":{
+      "props":{
+          "text": "[Ver todo](/computación)",
+          "blockClass":"computacion-vertodo"
+      }
+  },
+
+  "flex-layout.row#aislantes-row2":{
+    "props":{
+      "blockClass":"aislantes-row2"
+    },
+    "children":["category-menu#aislantes"]
+  },
+  "flex-layout.row#aislantes-row3":{
+    "props":{
+      "blockClass":"aislantes-row3"
+    },
+    "children":["image#aislantes-banner"]
+  },
+  "flex-layout.col#aislantes-title":{
+    "props":{
+      "width": "19%",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    },
+    "children":["rich-text#aislantes-title"]
+  },
+  
+  "rich-text#aislantes-title":{
+    "props":{
+      "text":"Computación",
+      "blockClass":"aislantes-title"
+    }
+  },
+  
+  "category-menu#aislantes":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":41}]
+    }
+  },
+  "image#aislantes-banner":{
+    "props":{
+      "src":"",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"aislantes-banner"
+    }
+  },
+  // FIN AISLANTES - CATEGORY SECOND LEVEL
+  //******************************************************************************************
+
+  //******************************************************************************************
+  //  BAÑOS - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  "vtex.menu@2.x:submenu#banos-categorias":{
+    "props": {
+      "blockClass": "banos-categorias"
+    },
+    "children":[
+      "flex-layout.row#banos-row1",
+      "flex-layout.row#banos-row2",
+      "flex-layout.row#banos-row3"
+    ]
+  },
+  "flex-layout.row#banos-row1":{
+    "props":{
+      "blockClass":"banos-row1"
+    },
+    "children":[
+      "flex-layout.col#banos-title",
+      "flex-layout.col#banos-lanzamientos"
+    ]
+  },
+  
+  "flex-layout.row#banos-row2":{
+    "props":{
+      "blockClass":"banos-row2"
+    },
+    "children":["category-menu#banos"]
+  },
+  "flex-layout.row#banos-row3":{
+    "props":{
+      "blockClass":"banos-row3"
+    },
+    "children":["image#banos-banner"]
+  },
+  "flex-layout.col#banos-title":{
+    "props":{
+      "width": "23%",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    },
+    "children":["rich-text#banos-title"]
+  },
+  "flex-layout.col#banos-lanzamientos":{
+    "props":{
+        "width": "65%",
+        "horizontalAlign": "left",
+        "verticalAlign": "middle"
+    },
+    "children":[
+      "rich-text#banos-lanzamientos"
+    ]
+  },
+  "rich-text#banos-lanzamientos":{
+      "props":{
+          "text": "[Ver todo](/electrodomésticos)",
+          "blockClass":"electrodomesticos-vertodo"
+      }
+  },
+  "rich-text#banos-title":{
+    "props":{
+      "text":"Electrodomésticos",
+      "blockClass":"banos-title"
+    }
+  },
+  
+  "category-menu#banos":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":298}]
+    }
+  },
+  "image#banos-banner":{
+    "props":{
+      "src":"",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"banos-banner"
+    }
+  },
+  // FIN BAÑOS - CATEGORY SECOND LEVEL
+  //******************************************************************************************
+
+  //******************************************************************************************
+  //  COCINA Y HOGAR - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  "vtex.menu@2.x:submenu#cocina-hogar-categorias":{
+    "props": {
+      "blockClass": "cocina-hogar-categorias"
+    },
+    "children":[
+      "flex-layout.row#cocina-hogar-row1",
+      "flex-layout.row#cocina-hogar-row2",
+      "flex-layout.row#cocina-hogar-row3"
+    ]
+  },
+  "flex-layout.row#cocina-hogar-row1":{
+    "props":{
+      "blockClass":"cocina-hogar-row1"
+    },
+    "children":[
+      "flex-layout.col#cocina-hogar-title",
+      "flex-layout.col#cocina-hogar-lanzamientos"
+    ]
+  },
+  "flex-layout.row#cocina-hogar-row2":{
+    "props":{
+      "blockClass":"cocina-hogar-row2"
+    },
+    "children":["category-menu#cocina-hogar"]
+  },
+  "flex-layout.row#cocina-hogar-row3":{
+    "props":{
+      "blockClass":"cocina-hogar-row3"
+    },
+    "children":["image#cocina-hogar-banner"]
+  },
+  "flex-layout.col#cocina-hogar-title":{
+    "props":{
+      "width": "14%",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    },
+    "children":["rich-text#cocina-hogar-title"]
+  },
+  "flex-layout.col#cocina-hogar-lanzamientos":{
+    "props":{
+      "width": "65%",
+      "horizontalAlign": "left",
+      "verticalAlign": "middle"
+    },
+    "children":[
+      "rich-text#cocina-hogar-lanzamientos"
+    ]
+  },
+"rich-text#cocina-hogar-lanzamientos":{
+    "props":{
+        "text": "[Ver todo](/deportes-y-tiempo-libre)",
+        "blockClass":"deportes-vertodo"
+    }
+},
+  "rich-text#cocina-hogar-title":{
+    "props":{
+      "text":"Deportes",
+      "blockClass":"cocina-hogar-title"
+    }
+  },
+  
+  "category-menu#cocina-hogar":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":521}]
+    }
+  },
+  "image#cocina-hogar-banner":{
+    "props":{
+      "src":"",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"cocina-hogar-banner"
+    }
+  },
+  // FIN COCINA Y HOGAR - CATEGORY SECOND LEVEL
+  //******************************************************************************************
+
+  //******************************************************************************************
+  //  CONSTRUCCION EN SECO - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  "vtex.menu@2.x:submenu#construccion-seco-categorias":{
+    "props": {
+      "blockClass": "construccion-seco-categorias"
+    },
+    "children":[
+      "flex-layout.row#construccion-seco-row1",
+      "flex-layout.row#construccion-seco-row2",
+      "flex-layout.row#construccion-seco-row3"
+    ]
+  },
+  "flex-layout.row#construccion-seco-row1":{
+    "props":{
+      "blockClass":"construccion-seco-row1"
+    },
+    "children":[
+      "flex-layout.col#construccion-seco-title",
+      "flex-layout.col#construccion-seco-lanzamientos"
+    ]
+  },
+  "flex-layout.row#construccion-seco-row2":{
+    "props":{
+      "blockClass":"construccion-seco-row2"
+    },
+    "children":["category-menu#construccion-seco"]
+  },
+  "flex-layout.row#construccion-seco-row3":{
+    "props":{
+      "blockClass":"construccion-seco-row3"
+    },
+    "children":["image#construccion-seco-banner"]
+  },
+  "flex-layout.col#construccion-seco-title":{
+    "props":{
+      "width": "29%",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    },
+    "children":["rich-text#construccion-seco-title"]
+  },
+  "flex-layout.col#construccion-seco-lanzamientos":{
+      "props":{
+          "width": "65%",
+          "horizontalAlign": "left",
+          "verticalAlign": "middle"
+      },
+      "children":[
+        "rich-text#construccion-seco-lanzamientos"
+      ]
+    },
+    "rich-text#construccion-seco-lanzamientos":{
+        "props":{
+            "text": "[Ver todo](/niños-y-bebés)",
+            "blockClass":"bebes-ninos-juguetes-vertodo"
+        }
+    },
+  "rich-text#construccion-seco-title":{
+    "props":{
+      "text":"Bebés, niños y juguetes",
+      "blockClass":"construccion-seco-title"
+    }
+  },
+  
+  "category-menu#construccion-seco":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":396}]
+    }
+  },
+  "image#construccion-seco-banner":{
+    "props":{
+      "src":"",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"construccion-seco-banner"
+    }
+  },
+  // FIN CONSTRUCCIÓN EN SECO - CATEGORY SECOND LEVEL
+  //******************************************************************************************
+
+  //******************************************************************************************
+  //  GRIFERIAS - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  "vtex.menu@2.x:submenu#griferias-categorias":{
+    "props": {
+      "blockClass": "griferias-categorias"
+    },
+    "children":[
+      "flex-layout.row#griferias-row1",
+      "flex-layout.row#griferias-row2",
+      "flex-layout.row#griferias-row3"
+    ]
+  },
+  "flex-layout.row#griferias-row1":{
+    "props":{
+      "blockClass":"griferias-row1"
+    },
+    "children":[
+      "flex-layout.col#griferias-title",
+      "flex-layout.col#griferias-lanzamientos"
+    ]
+  },
+  "flex-layout.row#griferias-row2":{
+    "props":{
+      "blockClass":"griferias-row2"
+    },
+    "children":["category-menu#griferias"]
+  },
+  "flex-layout.row#griferias-row3":{
+    "props":{
+      "blockClass":"griferias-row3"
+    },
+    "children":["image#griferias-banner"]
+  },
+  "flex-layout.col#griferias-title":{
+    "props":{
+      "width": "23%",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    },
+    "children":["rich-text#griferias-title"]
+  },
+  "flex-layout.col#griferias-lanzamientos":{
+    "props":{
+        "width": "65%",
+        "horizontalAlign": "left",
+        "verticalAlign": "middle"
+    },
+    "children":[
+      "rich-text#griferias-lanzamientos"
+    ]
+  },
+  "rich-text#griferias-lanzamientos":{
+      "props":{
+          "text": "[Ver todo](/estética-y-belleza)",
+          "blockClass":"bienestar-belleza-vertodo"
+      }
+  },
+  "rich-text#griferias-title":{
+    "props":{
+      "text":"Bienestar y belleza",
+      "blockClass":"griferias-title"
+    }
+  },
+  
+  "category-menu#griferias":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":374}]
+    }
+  },
+  "image#griferias-banner":{
+    "props":{
+      "src":"",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"griferias-banner"
+    }
+  },
+  // FIN GRIFERIAS - CATEGORY SECOND LEVEL
+  //******************************************************************************************
+
+  //******************************************************************************************
+  //  HERRAMIENTAS - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  "vtex.menu@2.x:submenu#herramientas-categorias":{
+    "props": {
+      "blockClass": "herramientas-categorias"
+    },
+    "children":[
+      "flex-layout.row#herramientas-row1",
+      "flex-layout.row#herramientas-row2",
+      "flex-layout.row#herramientas-row3"
+    ]
+  },
+  "flex-layout.row#herramientas-row1":{
+    "props":{
+      "blockClass":"herramientas-row1"
+    },
+    "children":[
+      "flex-layout.col#herramientas-title",
+      "flex-layout.col#herramientas-lanzamientos"
+    ]
+  },
+  "flex-layout.row#herramientas-row2":{
+    "props":{
+      "blockClass":"herramientas-row2"
+    },
+    "children":["category-menu#herramientas"]
+  },
+  "flex-layout.row#herramientas-row3":{
+    "props":{
+      "blockClass":"herramientas-row3"
+    },
+    "children":["image#herramientas-banner"]
+  },
+  "flex-layout.col#herramientas-title":{
+    "props":{
+      "width": "29%",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    },
+    "children":["rich-text#herramientas-title"]
+  },
+  "flex-layout.col#herramientas-lanzamientos":{
+    "props":{
+      "width": "65%",
+      "horizontalAlign": "left",
+      "verticalAlign": "middle"
+  },
+  "children":[
+    "rich-text#herramientas-lanzamientos"
+  ]
+  },
+  "rich-text#herramientas-lanzamientos":{
+      "props":{
+          "text": "[Ver todo](/hogar-muebles-y-jardín)",
+          "blockClass":"hogar-muebles-jardin-vertodo"
+      }
+  },
+  "rich-text#herramientas-title":{
+    "props":{
+      "text":"Hogar, muebles y jardín",
+      "blockClass":"herramientas-title"
+    }
+  },
+  
+  "category-menu#herramientas":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":117}]
+    }
+  },
+  "image#herramientas-banner":{
+    "props":{
+      "src":"",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"herramientas-banner"
+    }
+  },
+  // FIN HERRAMIENTAS - CATEGORY SECOND LEVEL
+  //******************************************************************************************
+
+  //******************************************************************************************
+  //  INSTALACIONES - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  "vtex.menu@2.x:submenu#instalaciones-categorias":{
+    "props": {
+      "blockClass": "instalaciones-categorias"
+    },
+    "children":[
+      "flex-layout.row#instalaciones-row1",
+      "flex-layout.row#instalaciones-row2",
+      "flex-layout.row#instalaciones-row3"
+    ]
+  },
+  "flex-layout.row#instalaciones-row1":{
+    "props":{
+      "blockClass":"instalaciones-row1"
+    },
+    "children":[
+      "flex-layout.col#instalaciones-title",
+      "flex-layout.col#instalaciones-lanzamientos"
+    ]
+  },
+  "flex-layout.row#instalaciones-row2":{
+    "props":{
+      "blockClass":"instalaciones-row2"
+    },
+    "children":["category-menu#instalaciones"]
+  },
+  "flex-layout.row#instalaciones-row3":{
+    "props":{
+      "blockClass":"instalaciones-row3"
+    },
+    "children":["image#instalaciones-banner"]
+  },
+  "flex-layout.col#instalaciones-title":{
+    "props":{
+      "width": "14%",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    },
+    "children":["rich-text#instalaciones-title"]
+  },
+  "flex-layout.col#instalaciones-lanzamientos":{
+    "props":{
+      "width": "65%",
+      "horizontalAlign": "left",
+      "verticalAlign": "middle"
+    },
+    "children":[
+      "rich-text#instalaciones-lanzamientos"
+    ]
+  },
+  "rich-text#instalaciones-lanzamientos":{
+      "props":{
+          "text": "[Ver todo](/automotriz)",
+          "blockClass":"vehiculos-vertodo"
+      }
+  },
+  "rich-text#instalaciones-title":{
+    "props":{
+      "text":"Vehículos",
+      "blockClass":"instalaciones-title"
+    }
+  },
+ 
+  "category-menu#instalaciones":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":186}]
+    }
+  },
+  "image#instalaciones-banner":{
+    "props":{
+      "src":"",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"instalaciones-banner"
+    }
+  },
+  // FIN INSTALACIONES - CATEGORY SECOND LEVEL
+  //******************************************************************************************
+
+  //******************************************************************************************
+  //  JARDIN Y PILETA - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  "vtex.menu@2.x:submenu#jardin-pileta-categorias":{
+    "props": {
+      "blockClass": "jardin-pileta-categorias"
+    },
+    "children":[
+      "flex-layout.row#jardin-pileta-row1",
+      "flex-layout.row#jardin-pileta-row2",
+      "flex-layout.row#jardin-pileta-row3"
+    ]
+  },
+  "flex-layout.row#jardin-pileta-row1":{
+    "props":{
+      "blockClass":"jardin-pileta-row1"
+    },
+    "children":[
+      "flex-layout.col#jardin-pileta-title",
+      "flex-layout.col#jardin-pileta-lanzamientos"
+    ]
+  },
+  "flex-layout.row#jardin-pileta-row2":{
+    "props":{
+      "blockClass":"jardin-pileta-row2"
+    },
+    "children":["category-menu#jardin-pileta"]
+  },
+  "flex-layout.row#jardin-pileta-row3":{
+    "props":{
+      "blockClass":"jardin-pileta-row3"
+    },
+    "children":["image#jardin-pileta-banner"]
+  },
+  "flex-layout.col#jardin-pileta-title":{
+    "props":{
+      "width": "21%",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    },
+    "children":["rich-text#jardin-pileta-title"]
+  },
+  "flex-layout.col#jardin-pileta-lanzamientos":{
+    "props":{
+      "width": "65%",
+      "horizontalAlign": "left",
+      "verticalAlign": "middle"
+  },
+  "children":[
+    "rich-text#jardin-pileta-lanzamientos"
+    ]
+  },
+  "rich-text#jardin-pileta-lanzamientos":{
+      "props":{
+          "text": "[Ver todo](/ropa-deportiva-y-calzado)",
+          "blockClass":"moda-deportes-vertodo"
+      }
+  },
+  "rich-text#jardin-pileta-title":{
+    "props":{
+      "text":"Moda y deportes",
+      "blockClass":"jardin-pileta-title"
+    }
+  },
+  
+  "category-menu#jardin-pileta":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":43}]
+    }
+  },
+  "image#jardin-pileta-banner":{
+    "props":{
+      "src":"",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"jardin-pileta-banner"
+    }
+  },
+  // FIN JARDIN Y PILETA - CATEGORY SECOND LEVEL
+  //******************************************************************************************
+
+
+  //******************************************************************************************
+  //  MATERIALES GRUESOS DE CONSTRUCCIÓN - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  "vtex.menu@2.x:submenu#materiales-gruesos-categorias":{
+    "props": {
+      "blockClass": "materiales-gruesos-categorias"
+    },
+    "children":[
+      "flex-layout.row#materiales-gruesos-row1",
+      "flex-layout.row#materiales-gruesos-row2",
+      "flex-layout.row#materiales-gruesos-row3"
+    ]
+  },
+  "flex-layout.row#materiales-gruesos-row1":{
+    "props":{
+      "blockClass":"materiales-gruesos-row1"
+    },
+    "children":[
+      "flex-layout.col#materiales-gruesos-title",
+      "flex-layout.col#materiales-gruesos-lanzamientos"
+    ]
+  },
+  "flex-layout.row#materiales-gruesos-row2":{
+    "props":{
+      "blockClass":"materiales-gruesos-row2"
+    },
+    "children":["category-menu#materiales-gruesos"]
+  },
+  "flex-layout.row#materiales-gruesos-row3":{
+    "props":{
+      "blockClass":"materiales-gruesos-row3"
+    },
+    "children":["image#materiales-gruesos-banner"]
+  },
+  "flex-layout.col#materiales-gruesos-title":{
+    "props":{
+      "width": "29%",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    },
+    "children":["rich-text#materiales-gruesos-title"]
+  },
+  "flex-layout.col#materiales-gruesos-lanzamientos":{
+    "props":{
+      "width": "65%",
+      "horizontalAlign": "left",
+      "verticalAlign": "middle"
+  },
+  "children":[
+    "rich-text#materiales-gruesos-lanzamientos"
+    ]
+  },
+  "rich-text#materiales-gruesos-lanzamientos":{
+      "props":{
+          "text": "[Ver todo](/instrumentos-musicales)",
+          "blockClass":"instrumentos-musicales-vertodo"
+      }
+  },
+  "rich-text#materiales-gruesos-title":{
+    "props":{
+      "text":"Instrumentos musicales",
+      "blockClass":"materiales-gruesos-title"
+    }
+  },
+  
+  "category-menu#materiales-gruesos":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":219}]
+    }
+  },
+  "image#materiales-gruesos-banner":{
+    "props":{
+      "src":"",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"materiales-gruesos-banner"
+    }
+  },
+  // FIN MATERIALES GRUESOS DE CONSTRUCCIÓN - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  //**********************************************************************************************
+
+  //******************************************************************************************
+  //  PISOS Y REVESTIMIENTOS - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  "vtex.menu@2.x:submenu#pisos-revestimientos-categorias":{
+    "props": {
+      "blockClass": "pisos-revestimientos-categorias"
+    },
+    "children":[
+      "flex-layout.row#pisos-revestimientos-row1",
+      "flex-layout.row#pisos-revestimientos-row2",
+      "flex-layout.row#pisos-revestimientos-row3"
+    ]
+  },
+  "flex-layout.row#pisos-revestimientos-row1":{
+    "props":{
+      "blockClass":"pisos-revestimientos-row1"
+    },
+    "children":[
+      "flex-layout.col#pisos-revestimientos-title",
+      "flex-layout.col#pisos-revestimientos-lanzamientos"
+    ]
+  },
+  "flex-layout.row#pisos-revestimientos-row2":{
+    "props":{
+      "blockClass":"pisos-revestimientos-row2"
+    },
+    "children":["category-menu#pisos-revestimientos"]
+  },
+  "flex-layout.row#pisos-revestimientos-row3":{
+    "props":{
+      "blockClass":"pisos-revestimientos-row3"
+    },
+    "children":["image#pisos-revestimientos-banner"]
+  },
+  "flex-layout.col#pisos-revestimientos-title":{
+    "props":{
+      "width": "12%",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    },
+    "children":["rich-text#pisos-revestimientos-title"]
+  },
+  "flex-layout.col#pisos-revestimientos-lanzamientos":{
+    "props":{
+      "width": "65%",
+      "horizontalAlign": "left",
+      "verticalAlign": "middle"
+  },
+  "children":[
+    "rich-text#pisos-revestimientos-lanzamientos"
+    ]
+  },
+  "rich-text#pisos-revestimientos-lanzamientos":{
+      "props":{
+          "text": "[Ver todo](/supermercados-y-bodegones)",
+          "blockClass":"mercado-vertodo"
+      }
+  },
+  "rich-text#pisos-revestimientos-title":{
+    "props":{
+      "text":"Mercado",
+      "blockClass":"pisos-revestimientos-title"
+    }
+  },
+  
+  "category-menu#pisos-revestimientos":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":596}]
+    }
+  },
+  "image#pisos-revestimientos-banner":{
+    "props":{
+      "src":"",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"pisos-revestimientos-banner"
+    }
+  },
+  // FIN PISOS Y REVESTIMIENTOS - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  //**********************************************************************************************
+
+  //******************************************************************************************
+  //  PISOS Y REVESTIMIENTOS - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  "vtex.menu@2.x:submenu#industrias-oficinas-categorias":{
+    "props": {
+      "blockClass": "pisos-revestimientos-categorias"
+    },
+    "children":[
+      "flex-layout.row#industrias-oficinas-row1",
+      "flex-layout.row#industrias-oficinas-row2",
+      "flex-layout.row#industrias-oficinas-row3"
+    ]
+  },
+  "flex-layout.row#industrias-oficinas-row1":{
+    "props":{
+      "blockClass":"pisos-revestimientos-row1"
+    },
+    "children":[
+      "flex-layout.col#industrias-oficinas-title",
+      "flex-layout.col#industrias-oficinas-lanzamientos"
+    ]
+  },
+  "flex-layout.row#industrias-oficinas-row2":{
+    "props":{
+      "blockClass":"pisos-revestimientos-row2"
+    },
+    "children":["category-menu#industrias-oficinas"]
+  },
+  "flex-layout.row#industrias-oficinas-row3":{
+    "props":{
+      "blockClass":"pisos-revestimientos-row3"
+    },
+    "children":["image#industrias-oficinas-banner"]
+  },
+  "flex-layout.col#industrias-oficinas-title":{
+    "props":{
+      "width": "25%",
+      "horizontalAlign": "left",
+      "verticalAlign": "top"
+    },
+    "children":["rich-text#industrias-oficinas-title"]
+  },
+  "flex-layout.col#industrias-oficinas-lanzamientos":{
+    "props":{
+      "width": "65%",
+      "horizontalAlign": "left",
+      "verticalAlign": "middle"
+  },
+  "children":[
+    "rich-text#industrias-oficinas-lanzamientos"
+    ]
+  },
+  "rich-text#industrias-oficinas-lanzamientos":{
+      "props":{
+          "text": "[Ver todo](/herramientas-y-construcción)",
+          "blockClass":"industrias-oficinas-vertodo"
+      }
+  },
+  "rich-text#industrias-oficinas-title":{
+    "props":{
+      "text":"Industrias y oficinas",
+      "blockClass":"pisos-revestimientos-title"
+    }
+  },
+  
+  "category-menu#industrias-oficinas":{
+    "props": {
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "center",
+      "departments": [{"id":575}]
+    }
+  },
+  "image#industrias-oficinas-banner":{
+    "props":{
+      "src":"",
+      "link":{
+        "url":"#"
+      },
+      "blockClass":"pisos-revestimientos-banner"
+    }
+  }
+  // FIN PISOS Y REVESTIMIENTOS - CATEGORY SECOND LEVEL - CATEGORIAS Y SUB-CATEGORIAS
+  //**********************************************************************************************
+
+}

@@ -1,0 +1,31 @@
+.slide--vitrina-product{
+    margin: 0.5rem;
+  
+}
+.sliderArrows--vitrina-product{
+   
+    height: 100%;
+}
+.caretIcon--vitrina-product{
+    color: #00FFE1;
+    width: 80%;
+    padding: 0.5rem;
+    background-color: #fff !important;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliderTrack--vitrina-product{
+    align-items: flex-start;
+}
+.sliderLeftArrow--vitrina-product{
+    left: -1rem;
+}
+.sliderRightArrow--vitrina-product{
+    right: -1rem;
+}

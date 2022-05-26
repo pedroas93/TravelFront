@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+.sidebarContainer {
+    background-image: url('assets/header/menu25.svg');
+    width: 25px;
+    height: 16px;
+    background-size: 25px; 
+    background-repeat: no-repeat;
+    margin-top: 24px;
+    margin-left: 15px;
+}
+    
+.menuIcon {
+    display: none;
+}
+
+.firstLevelList:hover .secondLevelLink{
+    display: block !important;
+}
+
+.departmentList{
+    justify-content: space-between;    
+}
+
+.departmentLink{
+    font-size: 0.80rem;
+    font-weight: bold;
+    /* color: #28292B; */
+    margin: 0;
+}
+
+.firstLevelLink, .submenuList{
+    display: flex !important;
+    left: 0;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+    text-align: left;
+    padding-bottom: 0;
+    margin: 0;
+    /* font-weight: bold; */
+    color: #28292B;
+}
+
+.secondLevelLink{
+    font-size: 12px;
+    color: #626262;
+    padding-left: 25px;
+    text-transform: lowercase;
+}
+
+.secondLevelLink::first-letter{    
+    text-transform: uppercase;
+}
+
+.submenuList{       
+    overflow-y: auto; 
+    overflow-x: hidden;         
+    flex-direction: row;
+    display: flex !important;
+    align-items: left !important;
+    padding: 0 1rem; 
+    padding-bottom: 20px;
+    padding-top: 10px;    
+}
+
+.submenuList::-webkit-scrollbar {
+    width:10px;
+}
+
+.submenuList::-webkit-scrollbar-thumb{
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    width:10px;
+}
+
+.b--action-primary {
+    background: #42E695;
+}
+
+@media (max-width: 767px){
+    .sidebarContainer {
+        margin-left: auto;
+    }
+}

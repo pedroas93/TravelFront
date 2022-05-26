@@ -1,0 +1,54 @@
+
+{
+    "store.custom#sucursales": {
+      "blocks":[
+        "flex-layout.row#main-row-sucursales"
+    ]
+    },
+    "flex-layout.row#main-row-sucursales":{
+        "props":{
+            "marginTop":8,
+            "marginBottom":8,
+            "marginLeft":9,
+            "marginRight":9,
+            "blockClass":"main-row-sucursales"
+        },
+        "children":[
+          "flex-layout.col#row-sucursales"
+                    
+        ]
+    },
+
+    "flex-layout.col#row-sucursales":{
+      "props":{
+          /* "width":"82%", */
+          "marginLeft":9,
+          "marginRight":9,
+          "preventVerticalStretch":true,
+          "blockClass":"build-container-ayuda"
+      },
+      "children":[
+        "rich-text#sucursales-title-desk"
+          /* "flex-layout.row#container"   */ //Componente Store Locator       
+        ]
+      },
+
+    /* "flex-layout.row#row1-sucursales-desk": {
+      "children": [
+        "rich-text#sucursales-title-desk" 
+      ],
+      "props": {
+          "blockClass":"row1-sucursales-desk"
+      }
+    },  */     
+
+    "rich-text#sucursales-title-desk": {
+      "props": {
+        "text": "**ENCONTRÁ NUESTRAS SUCURSALES EN TODO EL NOA**",
+        "blockClass":"sucursales-title-desk",
+        "textPosition":"CENTER",
+        "textAlignment":"CENTER"
+      }
+    }
+    
+}

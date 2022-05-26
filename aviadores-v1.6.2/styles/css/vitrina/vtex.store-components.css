@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+
+.price_className--precio-vitrina-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+.imageElement--busqueda-vacia{
+    width: 40%;
+}
+
+
+.price_sellingPrice--precioNH{
+    padding-bottom: 1rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+
+}
+:global(.vtex-product-summary-2-x-container) .priceContainer {
+    padding-top: 0.5rem;
+    width: 90%;
+    align-self: center;
+    min-height: 50px;
+}
+.price_sellingPrice--precio-vitrina-product{
+    font-size: 12px;
+    color: #3E3E3E;
+    font-weight: 500;
+    
+}
+.listPriceValue {
+    color: #828282;
+}
+.currencyDecimal--precio-vitrina-product{
+    display: none;
+}
+.currencyFraction--precio-vitrina-product{
+    font-size: 0.5rem;
+    position: absolute;
+    top: 0;
+}
+.currencyContainer--precio-vitrina-product{
+    position: relative;
+    
+}
+@media (min-width: 768px){
+    .price_sellingPrice--precio-vitrina-product{
+        font-size: 25px;
+        
+    }
+    .currencyFraction--precio-vitrina-product{
+        font-size: 0.9rem;
+    }
+}
+
+.currencyCode--precio-vitrina-search, .currencyInteger--precio-vitrina-search,
+.currencyDecimal--precio-vitrina-search,
+.currencyFraction--precio-vitrina-search{
+    font-size: 17px !important;
+}
+
+:global(.vtex-store-components-3-x-price_sellingPrice--precio-vitrina-product){
+    font-size: 1.2rem !important;
+}

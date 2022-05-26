@@ -1,0 +1,770 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+/* TOP HEADER */
+.flexRow--header-top{
+    
+        height: 30px;
+        background-color: #111111;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+}
+/* FIN TOP HEADER */
+
+/* HEADER MIDDLE */
+/* LOGO */
+/* .flexCol--logo-desktop,.flexCol--logo-mobile{
+    background-color: #FFCC00;
+} */
+
+.flexRow--header-middle{
+    background: #FFFFFF;
+    /* border-bottom: 1px solid #EBEBEB;   */  
+}
+
+.flexRowContent--header-middle{
+    justify-content: space-between;
+}
+
+.flexRow--row-category-access{
+    background: #FFFFFF;
+    /* height: 8vh; */
+} 
+
+.flexRowContent--row-category-access{
+    display: flex;
+    justify-content: flex-start !important;
+    gap: .2rem;
+}  
+
+/* busqueda */
+.flexCol--barra-busqueda{
+    margin-top: 0.8%;
+    margin-left: 2rem;
+}
+
+.flexCol--datos-search{
+    margin-left: 1rem;
+}
+
+.flexRowContent--minicart-row{
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.flexRowContent--minicart-footer :global(.vtex-checkout-summary-0-x-summaryItemContainer ):nth-child(even){
+    color: #000000; 
+    font-weight: 600; 
+}
+.flexRowContent--minicart-footer :global(.vtex-checkout-summary-0-x-summaryItemContainer ):nth-child(odd){
+    color: #787878;  
+}
+
+:global(.vtex-checkout-summary-0-x-summaryItemPrice){
+    font-weight: bold;
+}
+
+.flexRow--row-vitrina-wishlist{    
+    padding-bottom: 3%;
+    padding-left: 13%;
+    padding-right: 13%;
+    height: auto;
+    background: #f7f7f7;
+    align-items: center;
+}
+
+.flexRow--row-Wishlist{
+    background: #f7f7f7;
+    padding-top: 2%;
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.flexRow--row-vitrina-wishlist-account{    
+    padding-bottom: 3%;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    height: auto;
+    /* background: #f7f7f7; */
+    justify-content: start;
+}
+
+@media (max-width: 767px){
+    .flexRow--row-vitrina-wishlist{    
+        padding-bottom: 3%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    
+    .flexRow--row-Wishlist{
+        
+        padding-top: 2%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+/* wishlist cart login */
+@media (max-width:1366px){
+    .flexCol--cart-login{
+        
+    }
+}
+@media (min-width:1367px){
+    .flexCol--cart-login{
+        
+    }
+}
+
+
+
+/* FIN HEADER MIDDLE */
+
+/* CART - LISTA DE PRODUCTOS */
+.flexRowContent--lista-productos{
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+}
+.flexRow--conteiner-product-total{
+    border-bottom: 2px solid rgb(224, 224, 224);
+}
+/* selector cantidad */
+.flexColChild--selector-cantidad{
+    display: flex;
+    align-items: flex-end;
+}
+/* precio col */
+.flexColChild--precio-total-producto{
+    width: 100px !important;
+}
+@media (max-width:410px){
+    .flexRowContent--contenedor-precio-contamobile{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* FIN CART - LISTA DE PRODUCTOS */
+/* CART EMPTY */
+.flexColChild--cart-empty :global(.vtex-store-icons-0-x-cartIcon--minicart-empty-state){
+    transform: rotateZ(20deg);
+}
+/* FIN CART EMPTY */
+
+/* ---------------------- */
+/* -----VERSION MOBILE--- */
+/* ---------------------- */
+.flexRowContent--main-header-mobile{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.flexRow--main-header-mobile{
+    /* border-bottom: 1px solid #cecece; */
+    background-color: white;
+}
+.flexRow--search-mobile{
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+
+/* ---------------------- */
+/* --fin VERSION MOBILE-- */
+/* ---------------------- */
+
+
+/* ---------------------- */
+/* -----VERSION TABLET--- */
+/* ---------------------- */
+
+/*  (min-width:640px) and (max-width:1024px){
+    .flexRow--wish-login-cart-mobile{
+        width: 300px;
+    }
+} */
+/* ---------------------- */
+/* ---FIN VERSION TABLET- */
+/* ---------------------- */
+
+/* HEADER BOTTOM */
+/* HEADER BOTTOM */
+.flexColChild--custom-access{
+    margin: auto;
+    display: flex;
+    align-items: center;
+} 
+/* FIN HEADER BOTTOM */
+/* FIN HEADER BOTTOM */
+
+/* .flexRowContent--contenedor-precio-contamobile{
+    justify-content: space-around;
+    padding-right: 15%;
+    margin-top: -1%;
+} */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+.flexRowContent--portones-puertas-ventanas-row1,
+.flexRowContent--aislantes-row1,
+.flexRowContent--banos-row1,
+.flexRowContent--cocina-hogar-row1,
+.flexRowContent--construccion-seco-row1,
+.flexRowContent--griferias-row1,
+.flexRowContent--herramientas-row1,
+.flexRowContent--instalaciones-row1,
+.flexRowContent--jardin-pileta-row1,
+.flexRowContent--pisos-revestimientos-row1,
+.flexRowContent--materiales-gruesos-row1
+{
+    border-bottom: 1px solid #f1f1f1;
+    margin: 0 1rem;
+    padding-bottom: 0.3rem;
+    /* width: 1000px; */
+}
+
+/* 
+.flexRow--portones-puertas-ventanas-row2,
+.flexRow--aislantes-row2,
+.flexRow--banos-row2,
+.flexRow--cocina-hogar-row2,
+.flexRow--construccion-seco-row2,
+.flexRow--griferias-row2,
+.flexRow--herramientas-row2,
+.flexRow--instalaciones-row2,
+.flexRow--jardin-pileta-row2,
+.flexRow--pisos-revestimientos-row2,
+.flexRow--materiales-gruesos-row2
+{
+    height: 650px;
+}  */
+
+@media (min-width:1920px) /* and (max-width:1919px) */{  
+    .flexRow--aislantes-row1,
+    .flexRowContent--portones-puertas-ventanas-row1,
+    .flexRowContent--aislantes-row1,
+    .flexRowContent--banos-row1,
+    .flexRowContent--cocina-hogar-row1,
+    .flexRowContent--construccion-seco-row1,
+    .flexRowContent--griferias-row1,
+    .flexRowContent--herramientas-row1,
+    .flexRowContent--instalaciones-row1,
+    .flexRowContent--jardin-pileta-row1,
+    .flexRowContent--pisos-revestimientos-row1,
+    .flexRowContent--materiales-gruesos-row1
+    {
+        width: 1200px !important;
+    }
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-submenuList)
+    {
+         height: 490px; 
+    }
+}   
+
+@media (min-width:1600px) and (max-width:1919px){  
+    .flexRow--aislantes-row1,
+    .flexRowContent--portones-puertas-ventanas-row1,
+    .flexRowContent--aislantes-row1,
+    .flexRowContent--banos-row1,
+    .flexRowContent--cocina-hogar-row1,
+    .flexRowContent--construccion-seco-row1,
+    .flexRowContent--griferias-row1,
+    .flexRowContent--herramientas-row1,
+    .flexRowContent--instalaciones-row1,
+    .flexRowContent--jardin-pileta-row1,
+    .flexRowContent--pisos-revestimientos-row1,
+    .flexRowContent--materiales-gruesos-row1
+    {
+        width: 1200px !important;
+    }
+
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-submenuItem){
+        width: 280px;
+    }
+
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-submenuList)
+    {
+         height: 467px; 
+    }
+
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-firstLevelLink)
+    {
+        white-space: normal;
+    }
+    
+}
+
+@media (min-width:1440px) and (max-width:1599px){
+    .flexRow--portones-puertas-ventanas-row2,
+    .flexRow--aislantes-row2,
+    .flexRow--banos-row2,
+    .flexRow--cocina-hogar-row2,
+    .flexRow--construccion-seco-row2,
+    .flexRow--griferias-row2,
+    .flexRow--herramientas-row2,
+    .flexRow--instalaciones-row2,
+    .flexRow--jardin-pileta-row2
+    {
+        height: 290px;
+    }
+    
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-submenuList)
+    {
+        height: 460px;
+    }
+
+    .flexRowContent--portones-puertas-ventanas-row1,
+    .flexRowContent--aislantes-row1,
+    .flexRowContent--banos-row1,
+    .flexRowContent--cocina-hogar-row1,
+    .flexRowContent--construccion-seco-row1,
+    .flexRowContent--griferias-row1,
+    .flexRowContent--herramientas-row1,
+    .flexRowContent--instalaciones-row1,
+    .flexRowContent--jardin-pileta-row1,
+    .flexRowContent--pisos-revestimientos-row1,
+    .flexRowContent--materiales-gruesos-row1
+    {
+        width: 1024px !important;
+    }
+
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-firstLevelLink)
+    {
+        white-space: normal;
+    }
+}
+
+@media (min-width:1366px) and (max-width:1439px){
+    .flexRow--portones-puertas-ventanas-row2,
+    .flexRow--aislantes-row2,
+    .flexRow--banos-row2,
+    .flexRow--cocina-hogar-row2,
+    .flexRow--construccion-seco-row2,
+    .flexRow--griferias-row2,
+    .flexRow--herramientas-row2,
+    .flexRow--instalaciones-row2,
+    .flexRow--jardin-pileta-row2
+    {
+        height: 300px;
+    }
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-submenuList)
+    {
+        height: 355px;
+    }
+
+    /* .flexRow--pisos-revestimientos-row2{
+        height: 350px;
+        width: fit-content;
+    }
+    .flexRow--materiales-gruesos-row2{
+        height: 350px;
+        width: fit-content;
+    } */
+
+    .flexRowContent--portones-puertas-ventanas-row1,
+    .flexRowContent--aislantes-row1,
+    .flexRowContent--banos-row1,
+    .flexRowContent--cocina-hogar-row1,
+    .flexRowContent--construccion-seco-row1,
+    .flexRowContent--griferias-row1,
+    .flexRowContent--herramientas-row1,
+    .flexRowContent--instalaciones-row1,
+    .flexRowContent--jardin-pileta-row1,
+    .flexRowContent--pisos-revestimientos-row1,
+    .flexRowContent--materiales-gruesos-row1
+    {
+        width: 950px !important;
+    }
+    
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-firstLevelLink)
+    {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width:1280px) and (max-width:1365px) {
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-submenuList)
+    {
+        height: 425px;
+        /* width: fit-content; */
+    }
+
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer){
+        background-color: white;
+    }
+
+    .flexRowContent--portones-puertas-ventanas-row1,
+    .flexRowContent--aislantes-row1,
+    .flexRowContent--banos-row1,
+    .flexRowContent--cocina-hogar-row1,
+    .flexRowContent--construccion-seco-row1,
+    .flexRowContent--griferias-row1,
+    .flexRowContent--herramientas-row1,
+    .flexRowContent--instalaciones-row1,
+    .flexRowContent--jardin-pileta-row1,
+    .flexRowContent--pisos-revestimientos-row1,
+    .flexRowContent--materiales-gruesos-row1
+    {
+        width: 920px !important;
+    }
+
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+    .flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-firstLevelLink)
+    {
+        white-space: normal;
+    }
+}
+
+.flexRow--portones-puertas-ventanas-row3,
+.flexRow--aislantes-row3,
+.flexRow--banos-row3,
+.flexRow--cocina-hogar-row3,
+.flexRow--construccion-seco-row3,
+/* .flexRow--griferias-row3, */
+.flexRow--herramientas-row3,
+.flexRow--instalaciones-row3,
+.flexRow--jardin-pileta-row3,
+.flexRow--pisos-revestimientos-row3,
+.flexRow--materiales-gruesos-row3{
+    margin-left: 1rem;    
+}
+
+.flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-departmentLink),
+.flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-departmentLink),
+.flexRow--banos-row2 :global(.vtex-category-menu-2-x-departmentLink),
+.flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-departmentLink),
+.flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-departmentLink),
+.flexRow--griferias-row2 :global(.vtex-category-menu-2-x-departmentLink),
+.flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-departmentLink),
+.flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-departmentLink),
+.flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-departmentLink),
+.flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-departmentLink),
+.flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-departmentLink)
+{
+    display: none;
+}
+
+.flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--banos-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--griferias-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-itemContainer--category)
+{
+    display: inline-block !important;
+    top: 76px !important;
+    border-bottom: none !important;
+    padding: 0 1rem;
+}
+
+
+
+/* MARGIN CUANDO TIENE POCAS CATEGORIAS */
+/* .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-itemContainer--category)
+{
+     padding: 0 8rem; 
+
+}  */
+
+
+/* .flexRow--banos-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-itemContainer--category),
+.flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-itemContainer--category)
+{
+    padding-right: 18rem;
+} */
+
+@media (min-width:1050px) and (max-width:1279px){
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-submenuList)
+    {
+        height: 420px;
+        /* width: fit-content; */
+    }
+
+    .flexRowContent--portones-puertas-ventanas-row1,
+    .flexRowContent--aislantes-row1,
+    .flexRowContent--banos-row1,
+    .flexRowContent--cocina-hogar-row1,
+    .flexRowContent--construccion-seco-row1,
+    .flexRowContent--griferias-row1,
+    .flexRowContent--herramientas-row1,
+    .flexRowContent--instalaciones-row1,
+    .flexRowContent--jardin-pileta-row1,
+    .flexRowContent--pisos-revestimientos-row1,
+    .flexRowContent--materiales-gruesos-row1
+    {
+        width: 840px !important;
+    }
+}   
+
+/* @media (min-width:1367px){
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-submenuList),
+    .flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-submenuList)
+    {
+         height: 470px; 
+    }
+} */
+.flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-submenuList),
+.flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-submenuList),
+.flexRow--banos-row2 :global(.vtex-category-menu-2-x-submenuList),
+.flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-submenuList),
+.flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-submenuList),
+.flexRow--griferias-row2 :global(.vtex-category-menu-2-x-submenuList),
+.flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-submenuList),
+.flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-submenuList),
+.flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-submenuList),
+.flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-submenuList),
+.flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-submenuList)
+{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+.flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+.flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+.flexRow--banos-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+.flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+.flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+.flexRow--griferias-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+.flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+.flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+.flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+.flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-firstLevelLink),
+.flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-firstLevelLink)
+{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.22px;
+    padding-bottom: 16px;
+    font-size: 15px;
+}
+
+
+.flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-secondLevelLink),
+.flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-secondLevelLink),
+.flexRow--banos-row2 :global(.vtex-category-menu-2-x-secondLevelLink),
+.flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-secondLevelLink),
+.flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-secondLevelLink),
+.flexRow--griferias-row2 :global(.vtex-category-menu-2-x-secondLevelLink),
+.flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-secondLevelLink),
+.flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-secondLevelLink),
+.flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-secondLevelLink),
+.flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-secondLevelLink),
+.flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-secondLevelLink)
+{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 0;
+    /* margin-left: -2px; */
+    font-size: 12px;
+    line-height: 1;
+}
+
+.flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer),
+.flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer),
+.flexRow--banos-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer),
+.flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer),
+.flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer),
+.flexRow--griferias-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer),
+.flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer),
+.flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer),
+.flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer),
+.flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer),
+.flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-secondLevelLinkContainer){
+    margin-left: 1rem;
+}
+
+.flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-firstLevelList),
+.flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-firstLevelList),
+.flexRow--banos-row2 :global(.vtex-category-menu-2-x-firstLevelList),
+.flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-firstLevelList),
+.flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-firstLevelList),
+.flexRow--griferias-row2 :global(.vtex-category-menu-2-x-firstLevelList),
+.flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-firstLevelList),
+.flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-firstLevelList),
+.flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-firstLevelList),
+.flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-firstLevelList),
+.flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-firstLevelList)
+{
+    padding-left: 0 !important;
+}
+
+/* 
+@media (min-width:1367px){
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-submenuItem){
+        width: 280px;
+    }
+} */
+
+/* @media (max-width:1366px){
+    .flexRow--portones-puertas-ventanas-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--aislantes-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--banos-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--cocina-hogar-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--construccion-seco-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--griferias-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--herramientas-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--instalaciones-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--jardin-pileta-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--pisos-revestimientos-row2 :global(.vtex-category-menu-2-x-submenuItem),
+    .flexRow--materiales-gruesos-row2 :global(.vtex-category-menu-2-x-submenuItem){
+        width: 270px;
+    }
+} */
+
+@media (min-width: 740px){
+    .flexRowContent--main-nav{
+        display: grid;
+        grid-template-columns: 23% 77%;
+    }
+}
+
+/* LOGO DE FAVORITOS, LOGIN Y CARRITO */
+.flexColChild--cart, .flexColChild--login{
+    display: flex;
+    justify-content: center;
+}
+.flexColChild--favoritos{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.flexRow--login-carrito{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end;
+}
+
+/* FIN DE  LOGO DE FAVORITOS, LOGIN Y CARRITO*/

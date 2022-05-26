@@ -1,0 +1,114 @@
+{
+    "store.custom#politica-envios":{
+        "blocks":[
+            "flex-layout.row#main-formas-envio"
+        ]
+    },
+    "flex-layout.row#main-formas-envio":{
+        "props":{
+            "paddingTop":8,
+            "paddingBottom":8,
+            "blockClass":"main-formas-entrega"
+        },
+        "children":[
+            "flex-layout.col#help-list",
+            "flex-layout.col#formas-envio"           
+        ]
+    },
+
+    
+    "flex-layout.col#formas-envio":{
+        "props":{
+            "width":"82%",
+            "paddingLeft":9,
+            "paddingRight":9,
+            "preventVerticalStretch":true,
+            "blockClass":"build-container-ayuda"
+        },
+        "children":[
+            "rich-text#formas-envio-title",
+            "rich-text#formas-envio-subtitle",
+            "rich-text#rich-sucursales-title1",
+            "rich-text#rich-sucursales-title2",
+            "flex-layout.row#row-check-texto-envios1",
+            "rich-text#rich-refuerzos-envios-mobile"
+            
+        ]
+    },
+
+    "rich-text#formas-envio-title": {
+        "props": {
+            "text": "Política de envíos",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "font": "t-heading-4",
+            "blockClass":"rich-formas-entrega"
+        }
+    },
+
+    "rich-text#formas-envio-subtitle":{
+        "props":{
+            "text":"**AviadoresGo** puede aplicar diferentes políticas comerciales en relación al envío de los productos",
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "font":"t-heading-5",
+            "blockClass":"subrich-formas-entrega"
+        }
+    },
+
+    "flex-layout.row#row-check-texto-envios1":{
+        "props":{
+            "blockClass":"row-check-texto1"
+        },
+        "children":[
+            "rich-text#check",
+            "rich-text#rich-refuerzos-envios"           
+        ]
+    },
+
+    "rich-text#check":{
+        "props":{
+            "text":"![check](assets/ayuda/check-circle.svg)&ensp;",
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "width":"4%",
+            "blockClass":"row-check-texto1"
+        }
+    },
+
+    "rich-text#rich-refuerzos-envios":{
+        "props":{
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "text":"**Tiempo de envío y plazo de entrega:** \n 24 horas: Envíos Express (Pedidos Ya, Yummy, Turbo y otras opciones de delivery. Más de 24 hs: Uso de operadores logísticos.",            
+            "blockClass":"rich-refuerzos-envios"
+        }
+    },
+
+    "rich-text#rich-refuerzos-envios-mobile":{
+        "props":{
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "text":"![check](assets/ayuda/check-circle.svg)&ensp;**Tiempo de envío y plazo de entrega:** \n 24 horas: Envíos Express (Pedidos Ya, Yummy, Turbo y otras opciones de delivery. Más de 24 hs: Uso de operadores logísticos.",            
+            "blockClass":"rich-refuerzos-envios-mobile"
+        }
+    },
+
+    "rich-text#rich-sucursales-title1":{
+        "props":{
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "text":"![check](assets/ayuda/check-circle.svg)&ensp;**AviadoresGo!** Está constantemente negociando tarifas corporativas para ofrecerles la mejor opción..",            
+            "blockClass":"rich-sucursales-title"
+        }
+    },
+
+    "rich-text#rich-sucursales-title2":{
+        "props":{
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "text":"![check](assets/ayuda/check-circle.svg)&ensp;**Precio del envío:** El costo lo asume el cliente (excepto en las entregas identificadas como **“envío gratis”** por el seller.",            
+            "blockClass":"rich-sucursales-title"
+        }
+    }
+}

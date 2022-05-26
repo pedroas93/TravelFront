@@ -1,0 +1,104 @@
+{
+    "store.custom#politica-entregas":{
+        "blocks":[
+            "flex-layout.row#main-formas-entrega"
+        ]
+    },
+    "flex-layout.row#main-formas-entrega":{
+        "props":{
+            "marginTop":8,
+            "marginBottom":8,
+            "blockClass":"main-formas-entrega"
+        },
+        "children":[
+            "flex-layout.col#help-list",
+            "flex-layout.col#formas-entrega"           
+        ]
+    },
+
+    
+    "flex-layout.col#formas-entrega":{
+        "props":{
+            "width":"82%",
+            "paddingLeft":9,
+            "paddingRight":9,
+            "preventVerticalStretch":true,
+            "blockClass":"build-container-ayuda"
+        },
+        "children":[
+            "rich-text#formas-entrega-title",
+            "rich-text#formas-entrega-subtitle",
+            "flex-layout.row#row-check-texto1",
+            "rich-text#rich-refuerzos-entregas-mobile", 
+            "rich-text#rich-sucursales-title3"
+             
+        ]
+    },
+
+    "rich-text#formas-entrega-title": {
+        "props": {
+            "text": "Política de entregas",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "font": "t-heading-4",
+            "blockClass":"rich-formas-entrega"
+        }
+    },
+
+    "rich-text#formas-entrega-subtitle":{
+        "props":{
+            "text":"Tenemos diferentes opciones",
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "font":"t-heading-5",
+            "blockClass":"subrich-formas-entrega"
+        }
+    },
+
+    "flex-layout.row#row-check-texto1":{
+        "props":{
+            "blockClass":"row-check-texto1"
+        },
+        "children":[
+            "rich-text#check",
+            "rich-text#rich-refuerzos-entregas"         
+        ]
+    },
+
+    "rich-text#check":{
+        "props":{
+            "text":"![check](assets/ayuda/check-circle.svg)&ensp;",
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "width":"4%",
+            "blockClass":"row-check-texto1"
+        }
+    },
+
+    "rich-text#rich-refuerzos-entregas":{
+        "props":{
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "text":"**Pickup:** AviadoresGo dispondrá de una ubicación privilegiada para que los usuarios retiren los productos adquiridos a través de la plataforma de una manera fácil y rápida.",            
+            "blockClass":"rich-refuerzos-envios"
+        }
+    },
+
+    "rich-text#rich-refuerzos-entregas-mobile":{
+        "props":{
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "text":"![check](assets/ayuda/check-circle.svg)&ensp;**Pickup:** AviadoresGo dispondrá de una ubicación privilegiada para que los usuarios retiren los productos adquiridos a través de la plataforma de una manera fácil y rápida.",            
+            "blockClass":"rich-refuerzos-envios-mobile"
+        }
+    },
+
+    "rich-text#rich-sucursales-title3":{
+        "props":{
+            "textPosition":"LEFT",
+            "textAlignment":"LEFT",
+            "text":"![check](assets/ayuda/check-circle.svg)&ensp;**Valet Parking:** AviadoresGo dispondrá de un área de Valet Parking.",            
+            "blockClass":"rich-sucursales-title"
+        }
+    }
+}

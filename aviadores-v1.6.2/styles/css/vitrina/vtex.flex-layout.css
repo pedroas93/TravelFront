@@ -1,0 +1,184 @@
+.flexCol--build-container{
+    padding: 0;
+}
+.flexCol--build-container :global(.vtex-slider-0-x-dotsContainer ){
+    display: none;
+}
+.flexCol--build-container :global(.vtex-shelf-1-x-arrow){
+    display: none;
+}
+.flexCol--build-container :global(.vtex-wish-list-1-x-wishlistIconContainer){
+    display: flex ;
+    justify-content: end;
+    align-items: flex-start;
+    position: absolute;
+    right: -10px;
+    top: 0px;
+}
+.flexCol--build-container :global(.vtex-store-components-3-x-listPriceValue){
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+.flexCol--build-container :global(.vtex-store-components-3-x-sellingPriceValue){
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    color:  #828282;
+}
+@media (min-width: 768px){
+    .flexCol--build-container :global(.vtex-shelf-1-x-arrow){
+        display: block;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        height: 54px;
+        width: 54px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+}
+}
+.flexRow--add-to-cart-button :global(.vtex-button){
+    border-radius: 0 0 20px 20px;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    -ms-border-radius: 0 0 20px 20px;
+    -o-border-radius: 0 0 20px 20px;
+    border: none;
+    background: #0075FD;
+
+}
+@media (min-width: 1024px){
+    .flexCol--hover{
+        display: none;
+        transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+}
+
+}
+.flexColChild--hover{
+    height: auto !important;
+}
+@media (max-width: 768px){
+    .flexColChild--build-container-search-vacio :global(.vtex-rich-text-0-x-paragraph ){
+        font-size: 1.05rem;
+    }
+
+}
+
+:global(.vtex-product-highlights-2-x-productHighlightText--flag){
+    background-color: #004393;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    text-align: center;
+    font-size: 1rem;
+   
+}
+
+
+:global(.vtex-wish-list-1-x-wishlistIconContainer) :global(.vtex-button):hover{
+    background: unset !important;
+}
+
+:global(.vtex-product-summary-2-x-container--vitrina-product) :global(.vtex-product-summary-2-x-productNameContainer--nombre-vitrina-product){
+    width: 95%;
+}
+.flexCol--imagen{
+    position: relative;
+}
+.flexCol--imagen .flexColChild--imagen:last-child{
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+    height: auto !important;
+
+}
+
+.flexRowContent--bandera .stretchChildrenWidth{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 0.2rem;
+    padding-bottom: 0.5rem;
+}
+.flexRowContent--bandera .stretchChildrenWidth :global(.vtex-product-highlights-2-x-productHighlightText--flag){
+    font-size: 10px;
+    padding: 0.1rem 0.4rem;
+    width: auto;
+    max-width: 41%;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    height: 28px;
+}
+
+.flexCol--imagen{
+    height: auto;
+}
+@media (min-width: 768px){
+    .flexRowContent--bandera .stretchChildrenWidth :global(.vtex-product-highlights-2-x-productHighlightText--flag){
+        font-size: 11px;
+        height: 22px;
+    }
+}
+.flexCol--imagen{
+    width: 90%;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 0.5rem;
+    align-self: center;
+}
+.flexRowContent--add-to-cart-button :global(.vtex-add-to-cart-button-0-x-buttonText) {
+  
+    height: 80%;
+}
+.flexRowContent--agregar :global(.vtex-add-to-cart-button-0-x-buttonText){
+    color: #fff;
+    position: relative;
+    bottom: 5px;
+    text-transform: initial;
+}
+.flexRow--agregar{
+    background-color: #0075FD;
+    height: 31px;
+}
+.flexRow--agregar :global(.vtex-button){
+    background-color: #0075FD;
+    border: none;
+    
+}
+.flexRow--agregar  :global(.vtex-button__label){
+    padding-top: 0;
+}
+@media (max-width: 768px){
+    .flexRow--agregar :global(.vtex-add-to-cart-button-0-x-buttonText){
+        font-size: 12px !important;
+    }
+
+}
+.flexRow--bandera, .flexRowContent--bandera {
+    background: transparent;
+}
+.flexRowContent--agregar :global(.vtex-button__label){
+    padding: 0 !important;
+}
+.flexRowContent--bandera{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.flexRowContent--bandera .stretchChildrenWidth{
+    width: 100% !important;
+}

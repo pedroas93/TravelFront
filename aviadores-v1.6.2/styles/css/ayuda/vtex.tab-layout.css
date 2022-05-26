@@ -1,0 +1,132 @@
+.contentItem--container-pagos-online{
+    display:flex ;
+    flex-direction: row !important;
+    justify-content:flex-start;
+    flex-wrap: wrap ;
+    gap: 15px ;
+}
+
+.contentItem--container-pagos-offline{
+    display:flex ;
+    flex-direction: row !important;
+    justify-content:flex-start;
+    align-items:stretch ;
+    flex-wrap: wrap ;
+    gap: 15px ;
+}
+
+@media (max-width: 888px){
+    .contentItem--container-pagos-online, .contentItem--container-pagos-offline{
+        justify-content:center;
+    }
+}
+@media (max-width: 640px){
+    .listContainer{
+        display: flex;
+        justify-content: center;
+    
+    }
+}
+
+.listContainer--terminos-condiciones {
+    justify-content: start;
+    text-align: start; 
+    padding-left: 2.9rem;
+    margin-bottom: 1.5rem;   
+}
+
+.listItem--terminos-condiciones :global(.vtex-button),
+.listItem--politica-privacidad :global(.vtex-button){
+    justify-content: center;
+    text-align: center;
+    color:#B1B5B6;
+    font-weight: bold;
+    margin-right: 5rem; 
+}
+
+.listItemActive--terminos-condiciones :global(.vtex-button){
+    background: #FFFFFF;
+    color: #646464;
+    border-top:transparent;
+    border-right:transparent;
+    border-left:transparent;
+    border-bottom: 3px solid #646464;
+}
+
+.listItemActive--politica-privacidad :global(.vtex-button){
+    background-color: #FFFFFF;
+    color: #646464;
+    border-top:transparent;
+    border-right:transparent;
+    border-left:transparent;
+    border-bottom: 3px solid #646464;
+}
+
+/* .contentItem--terminos-condiciones,
+.contentItem--politica-privacidad
+{
+    margin-top: -.7rem;
+    border-top: 1px solid #D5D6DB;
+} */
+
+
+.listItemActive--entregas-garantias :global(.vtex-button__label)::before,
+.listItem--entregas-garantias :global(.vtex-button__label)::before
+{
+    /* content: url(assets/ayuda/entrega-garantia.svg); */
+    padding-bottom: 2px;
+    margin-right: 1rem;
+}
+.listItemActive--cambios-y-devoluciones :global(.vtex-button__label)::before,
+.listItem--cambios-y-devoluciones :global(.vtex-button__label)::before
+{
+    /* content: url(assets/ayuda/icon-nav6.svg); */
+    margin-right: 1rem;
+}
+
+.listItemActive--terminos-condiciones :global(.vtex-button__label)::before,
+.listItem--terminos-condiciones :global(.vtex-button__label)::before{
+    /* content: url(assets/ayuda/termino-condiciones.svg); */
+    padding-bottom: 2px;
+    margin-right: 4rem;
+    background: #FFFFFF;
+}
+
+.listItemActive--politica-privacidad :global(.vtex-button__label)::before,
+.listItem--politica-privacidad :global(.vtex-button__label)::before{
+    /* content: url(assets/ayuda/icon-nav5.svg); */
+    margin-right: 4rem;
+    background: #FFFFFF;
+}
+
+@media (max-width:1280px){
+    .listItem--terminos-condiciones :global(.vtex-button),
+    .listItem--politica-privacidad :global(.vtex-button)
+    {
+        font-size: 12px !important;
+    }
+    .contentItem--terminos-condiciones,
+    .contentItem--politica-privacidad
+    {
+    margin-top: -.7rem;
+    border-top: transparent;
+    }
+    .listContainer--terminos-condiciones {
+        justify-content: left;
+        text-align: left;    
+    }
+}
+
+@media (max-width:767px){
+    
+    .listContainer--terminos-condiciones{        
+        flex-wrap: nowrap;     
+        padding: 0 !important;
+        margin-right: 0;   
+    }
+
+    .listItem--terminos-condiciones :global(.vtex-button),
+    .listItem--politica-privacidad :global(.vtex-button){
+        margin-right: 0; 
+    }
+}

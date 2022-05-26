@@ -1,0 +1,85 @@
+
+.slideChildrenContainer--carousel-help-list{
+    /* width: 89%; */
+    /* height: 100%; */
+    /* margin: 0 !important; */
+    padding: 0 !important;
+    background: #FFFFFF;
+    /* border-right: 1px solid #cecece;
+    border-left: 1px solid #cecece;
+    border-bottom: 1px solid #cecece; */
+    padding-bottom: 1rem;
+}
+
+.slideChildrenContainer--carousel-help-list::hover{
+    color:#42FAA7
+}
+
+.sliderTrack--carousel-help-list{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sliderLayout--carousel-help-list{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.sliderLayout--carousel-help-list :global(.vtex-slider-layout-0-x-slide--carousel-help-list--lastVisible){
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.flexCol--help-list{
+    justify-items: left;
+}
+
+.slideChildrenContainer--carousel-help-list::active{
+    border-bottom: 2px solid #ED1C24;
+}
+
+@media (min-width:1025px){
+    .sliderTrack--carousel-help-list{
+        display: inline-block;
+        margin: 0 !important;
+        padding: 0 !important;
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
+    }
+
+    .slide--carousel-help-list{
+        margin: 0 !important;
+        padding: 0 !important;
+        width: auto !important;
+    }
+
+
+    /* .slideChildrenContainer--carousel-help-list:hover{
+        background: #dfdfdf;
+    } */
+    .slideChildrenContainer--carousel-help-list{
+        display: flex;
+        justify-content: start !important;
+        
+        margin: 0 !important;
+        padding: 0 !important;
+        /* border-right: 1px solid #cecece;
+        border-left: 1px solid #cecece;
+        border-bottom: 1px solid #cecece; */
+    }
+}
+
+@media (max-width:1024px){
+    .sliderLayoutContainer--carousel-help-list{
+        padding-top: 12px;
+        /* border: 1px solid #cecece; */
+    }
+    .caretIcon--carousel-help-list{
+        margin-top: 55px;
+        width: 13px !important;
+    }
+}
+
+.caretIcon--sliacercade{
+    color: #FBFAF9;
+}

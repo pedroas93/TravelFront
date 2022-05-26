@@ -1,0 +1,205 @@
+{
+    "store.custom#contacto": {
+      "children": [
+        "flex-layout.row#main-contacto"
+      ]
+    },
+    "flex-layout.row#main-contacto":{
+        "props":{
+          "marginTop":8,
+          "marginBottom":8,
+          "blockClass":"main-contacto"
+        },
+        "children":[
+            "flex-layout.col#help-list",
+            "flex-layout.col#contacto"
+        ]
+    },
+
+    "flex-layout.col#contacto":{
+        "props":{
+            "width":"82%",
+            "paddingLeft":9,
+            "paddingRight":9,
+            "preventVerticalStretch":true,
+            "blockClass":"build-container-ayuda"
+        },
+        "children":[
+            "rich-text#contacto",
+            "flex-layout.row#contactos-2",
+            "form#contacto" 
+        ]
+    },
+
+    // titulo
+    "rich-text#contacto": {
+        "props": {
+          "text":"Mantente en contacto",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "font": "t-heading-4",
+            "blockClass":"rich-cambios-y-devoluciones"     
+        }
+    },//FIN titulo
+
+    // CONTACTOS EXTERNOS
+    "flex-layout.row#contactos-2":{
+      "props":{
+        "blockClass":"contactos-2",
+        "horizontalAlign":"center",
+        "paddingTop":4,
+        "paddingBottom":4,
+        "marginBottom":6,
+        "rowGap":4
+      },
+      "children":[
+        "flex-layout.col#contact-1",
+        "flex-layout.col#contact-2",
+        "flex-layout.col#contact-3"
+      ]
+    },
+
+    "flex-layout.col#contact-1":{
+      "props":{
+        "blockClass":"col-contact-1"
+      },
+      "children":[
+        "rich-text#contact-1"
+      ]
+    },
+
+    "flex-layout.col#contact-2":{
+      "props":{
+        "blockClass":"col-contact-2"
+      },
+      "children":[
+        "rich-text#contact-2"
+      ]
+    },
+
+    "flex-layout.col#contact-3":{
+      "props":{
+        "blockClass":"col-contact-3"
+      },
+      "children":[
+        "rich-text#contact-3"
+      ]
+    },
+
+    "rich-text#contact-1":{
+      "props":{
+        "text":"[Escribinos a<br>**contacto@aviadoresgo.com**](mailto:contacto@aviadoresgo.com)",
+        "textPosition":"CENTER",
+        "textAlignment":"CENTER",
+        "blockClass":"contact-1"
+      }
+    },
+    "rich-text#contact-2":{
+      "props":{
+        "text":"[Contactanos en<br>**@CCParqueLosAviadores**](https://es-la.facebook.com/CCParqueLosAviadores/?target=_blank)",
+        "textPosition":"CENTER",
+        "textAlignment":"CENTER",
+        "blockClass":"contact-2"
+      }
+    },
+    "rich-text#contact-3":{
+      "props":{
+        "text":"[Llamanos al<br>**+58 4121594643**](tel:+584121594643)",
+        "textPosition":"CENTER",
+        "textAlignment":"CENTER",
+        "blockClass":"contact-3"
+      }
+    },
+    //FIN CONTACTOS EXTERNOS
+
+
+    // FORMULARIO
+    "form#contacto": {
+      "props": {
+        "entity": "CO",
+        "schema": "contacto",
+        "blockClass":"form-contact"
+      },
+      "children":[
+        "flex-layout.row#contact-name-lastname",
+        "flex-layout.row#contact-mail-phone",        
+        "form-input.textarea#contact-mensaje",
+        "form-submit"
+      ],
+      "blocks": ["form-success#contacto"]
+    },
+
+    // estructura
+    "flex-layout.row#contact-name-lastname":{
+      "props":{
+        "colGap":8,
+        "marginBottom":6,
+        "blockClass":"contact-name-lastname"
+      },
+      "children":[
+        "form-input.text#nombre",
+        "form-input.text#apellido"
+      ]
+    },
+    "flex-layout.row#contact-mail-phone":{
+      "props":{
+        "colGap":8,
+        "marginBottom":6,
+        "blockClass":"contact-mail-phone"        
+      },
+      "children":[
+        "form-input.text#email",
+        "form-input.text#telefono"
+      ]
+    },//fin estructura
+
+
+    // mensaje enviado correctamente
+    "form-success#contacto": {
+      "children": [
+        "rich-text#successSubmit"
+      ]
+    },
+    "rich-text#successSubmit": {
+      "props": {
+        "text": "Tu mensaje fue enviado con éxito!",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      }
+    },//fin mensaje enviado correctamente
+
+    // punteros hacia los campos de master data
+    "form-input.text#nombre":{
+      "props":{
+        "pointer": "#/properties/Nombre",
+        "placeholder":"Ej: Juan"
+      }
+    },
+    "form-input.text#apellido":{
+      "props":{
+        "pointer": "#/properties/Apellido",
+        "placeholder":"Ej: Pérez"
+      }
+    },
+    "form-input.text#email":{
+      "props":{
+        "pointer": "#/properties/Email",
+        "placeholder":"Ej: juan.perez@gmail.com"
+      }
+    },
+    "form-input.text#telefono":{
+      "props":{
+        "pointer": "#/properties/Telefono",
+        "placeholder":"Ej: 351 112233"
+      }
+    },
+    "form-input.textarea#contact-mensaje":{
+      "props":{
+        "pointer": "#/properties/Mensaje",
+        "placeholder":"Escribe aquí el motivo de tu contacto. (750 caracteres máximo)"
+      }
+    }
+    //FIN FORMULARIO
+
+  }
+  

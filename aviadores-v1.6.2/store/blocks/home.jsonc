@@ -1,0 +1,1348 @@
+
+{
+  "store.home": { 
+    "blocks": [ 
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.phone"     
+      
+    ]
+  },
+
+  "responsive-layout.desktop": {
+    "children": [ "list-context.image-list#carousel",
+      "flex-layout.row#beneficios",
+      "flex-layout.row#row-rich-marcas",          
+      "flex-layout.row#row-banpuertas",      
+      "flex-layout.row#row-vitrina-desk1",      
+      "flex-layout.row#row-rich-banner-grid",
+      "flex-layout.row#row-banner-grilla1", 
+      "flex-layout.row#row-vitrina-desk2",
+      "flex-layout.row#row-vitrina-desk2a",
+      "flex-layout.row#row-rich-comercial1",
+      "flex-layout.row#banner-comercial1",
+      "flex-layout.row#row-vitrina-desk3",
+      "flex-layout.row#row-vitrina-desk3a",
+      "flex-layout.row#row-rich-comercial2",
+      "flex-layout.row#banner-comercial2",
+      "flex-layout.row#row-vitrina-desk3b",
+      "flex-layout.row#row-rich-mas-categorias",
+      "flex-layout.row#row-list-mas-categorias"      
+    ]
+  },
+  "responsive-layout.tablet": {
+    "children": [ "list-context.image-list#carousel",
+      "flex-layout.row#beneficios",
+      "flex-layout.row#row-vitrina-desk1",
+      "flex-layout.row#row-vitrina-desk1",
+                  "rich-text#rich-marcas",
+                  "list-context.image-list#banpuertas",
+                  "flex-layout.row#row-vitrina-desk1",
+                  "rich-text#rich-mas-categorias-mobile",
+                  "slider-layout#slider-banner-grid-mobile",
+                  "flex-layout.row#row-vitrina-desk2",   
+                  "flex-layout.row#row-rich-comercial1",
+                  "flex-layout.row#banner-comercial1",
+                  "flex-layout.row#row-vitrina-desk3",
+                  "flex-layout.row#row-rich-comercial2",
+                  "flex-layout.row#banner-comercial2",
+                  "flex-layout.row#row-rich-mas-categorias",
+                  "flex-layout.row#row-list-mas-categorias"          
+    ]      
+  },
+  "responsive-layout.phone": {
+    "children": [ "list-context.image-list#carouselmobile",
+      "flex-layout.row#beneficios",
+      "flex-layout.row#row-vitrina-desk1",
+      "flex-layout.row#row-vitrina-desk1",
+                  "flex-layout.row#row-rich-marcas", 
+                   "list-context.image-list#list-marcas-mobile",
+                   "flex-layout.row#row-banners-mobile1",                   
+                   "flex-layout.row#row-rich-banner-grid",
+                   "slider-layout#slider-banner-grid-mobile",
+                   "flex-layout.row#row-banners-mobile2",
+                   "flex-layout.row#row-vitrina-desk2",
+                   "rich-text#rich-mas-categorias-mobile",
+                   "slider-layout#slider-banner-grid-mobile",
+                   "flex-layout.row#row-banners-mobile3",
+                   "flex-layout.row#row-rich-mas-categorias",
+                   "list-context.image-list#list-mas-categorias-mobile"
+                   
+    ]
+  },
+
+
+  "list-context.image-list#carousel": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "/arquivos/slide-main1.jpg",
+          "link": {"url":"/138?map=productClusterIds"}
+        },
+        {
+          "image": "/arquivos/slide-main2.jpg",
+          "link": {"url":"/niños-y-bebés"}
+
+        },
+        {
+          "image": "/arquivos/slide-main3.jpg",
+          "link": {"url":"/hogar-muebles-y-jardín"}
+        } ,
+        {
+          "image": "/arquivos/slide-main4.jpg",
+          "link": {"url":"/electrónicos"}
+        }      
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "autoplay": {
+        "timeout": 4500,
+        "stopOnHover": true        
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "carousel"
+    }
+  },
+
+  
+  "list-context.image-list#carouselmobile": {
+    "children": ["slider-layout#carouselmobile"],
+    "props": {
+      "height": 650,
+      "images": [
+        {
+          "image": "/arquivos/slide-main1-mobile.jpg",
+          "link": {"url":"/138?map=productClusterIds"}
+        },
+        {
+          "image": "/arquivos/slide-main2-mobile.jpg",
+          "link": {"url":"/niños-y-bebés"}
+        },
+        {
+          "image": "/arquivos/slide-main3-mobile.jpg",
+          "link": {"url":"/hogar-muebles-y-jardín"}
+        },
+        {
+          "image": "/arquivos/slide-main4-mobile.jpg",
+          "link": {"url":"/electrónicos"}
+        }
+        
+      ]
+    }
+  },
+  "slider-layout#carouselmobile": {
+    "props": {
+      "autoplay": {
+        "timeout": 4500,
+        "stopOnHover": true        
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": false,
+      "blockClass": "carouselmobile"
+    }
+  },
+
+  "flex-layout.row#beneficios": {
+    "children":[
+      "list-context.image-list#banbeneficiosdesktop"
+    ],
+    "props":{
+      "blockClass": "beneficios",
+      "fullWidth": true,
+      "horizontalAlign": "center",
+      "marginTop": 0
+    }
+  },
+  "list-context.image-list#banbeneficiosdesktop": {
+    "children": ["slider-layout#banbeneficiosdesktop"],
+    "props": {
+      "width": "94%",
+      "margin": "auto",
+      "images": [
+        {
+          "image": "assets/home/paga-cuotas.svg",
+          "mobileImage": "assets/home/paga-cuotas.png",
+          "link": {
+            "url": "/ayuda/metodos-pagos"
+          }
+        },
+        {
+          "image": "assets/home/envio-gratis.svg",
+          "mobileImage": "assets/home/envio-gratis.svg",
+          "link": {
+            "url": "/144?map=productClusterIds"
+          }
+          
+        },
+        {
+          "image": "assets/home/compra-segura.svg",
+          "mobileImage": "assets/home/compra-segura.svg",
+          "link": {
+            "url": "/ayuda"
+          }
+        },
+        {
+          "image": "assets/home/nuevas-ofertas.svg",
+          "mobileImage": "assets/home/nuevas-ofertas.svg",
+          
+          "link": {
+            "url": "/145?map=productClusterIds"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#banbeneficiosdesktop": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 1
+      },
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      /* "autoplay": {
+        "timeout": 4500,
+        "stopOnHover": true        
+      }, */
+      "centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "to-the-left"
+      },
+      "blockClass": "carouselBeneficios"
+    }
+  },
+
+  "flex-layout.row#row-refuerzos-mobile":{
+    "props":{
+      "blockClass":"row-refuerzos-mobile"
+    },
+    "children":["list-context.image-list#list-refuerzos"]
+  },  
+
+  "list-context.image-list#list-refuerzos": {
+    "children": ["slider-layout#slider-refuerzos"],
+    "props": {      
+      "images": [
+        {
+          "mobileImage": "assets/home/refuerzo1.svg",
+          "alt":""
+          /* "maxWidth":400 */
+        },
+        {
+          "mobileImage": "assets/home/refuerzo2.svg",
+          "alt":""
+          /* "maxWidth":400 */
+        },
+        {
+          "mobileImage": "assets/home/refuerzo3.svg",
+          "alt":""
+          /* "maxWidth":400 */
+        }        
+      ]
+    }
+  },
+  
+  "slider-layout#slider-refuerzos": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2.2
+      },
+      "infinite": false,
+      "navigationStep": 2,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "fullWidth": true,
+      "blockClass": "slider-refuerzos"
+    }
+  },
+
+  "slider-layout#slider-refuerzos-mobile": {
+    "props": {
+      "autoplay": {
+        "timeout": 2500,
+        "stopOnHover": true        
+      },
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showPaginationDots":"never",
+      "showNavigationArrows":"false",
+      "blockClass": "slider-refuerzos-mobile"
+    },
+    "children": ["image#refuerzo1", "image#refuerzo2", "image#refuerzo3"]
+  },
+
+  "image#refuerzo1": {
+    "props": {
+      "src": "assets/home/refuerzo1.svg"
+    }
+  },
+  "image#refuerzo2": {
+    "props": {
+      "src": "assets/home/refuerzo2.svg"
+    }
+  },
+  "image#refuerzo3": {
+    "props": {
+      "src": "assets/home/refuerzo3.svg"
+    }
+  },
+
+
+
+  "flex-layout.row#row-rich-marcas":{
+    "props":{
+      "blockClass":"rich-marcas"
+    },
+    "children":["rich-text#rich-marcas"]
+  },  
+  "rich-text#rich-marcas": { 
+    "props": { 
+      "text": "Elegí las mejores marcas",      
+      "textPosition": "center",      
+      "blockClass": "rich-marcas"      
+    }
+  },
+
+  "flex-layout.row#row-banpuertas":{
+    "props":{     
+      "blockClass": "banpuertas"
+    },
+    "children":["list-context.image-list#banpuertas"]
+  }, 
+  "list-context.image-list#banpuertas": {
+    "children": ["slider-layout#banpuertas"],
+    "props": {      
+      "images": [
+        {
+          "image": "/arquivos/1slide-hp.png",
+          "link": {"url":"/computación"},
+          "maxWidth":120
+        },
+        {
+          "image": "/arquivos/2slide-cuisinart.png",
+          "link": {"url":"#"},
+          "maxWidth":120
+        },
+        {
+          "image": "/arquivos/3slide-tplink.png",
+          "link": {"url":"/computacion/contectividad-y-redes"},
+          "maxWidth":120
+        },
+        {
+          "image": "/arquivos/4slide-fisherprice.png",
+          "link": {"url":"/niños-y-bebés"},
+          "maxWidth":120
+        },
+        {
+          "image": "/arquivos/5slide-mattel.png",
+          "link": {"url":"/niños-y-bebés"},
+          "maxWidth":120
+        },      
+        {
+          "image": "/arquivos/6slide-blackdecker.png",
+          "link": {"url":"/herramientas-y-construcción"},
+          "maxWidth":120
+        }      
+      ]
+    }
+  },
+  "slider-layout#banpuertas": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 3
+      },
+      "showNavigationArrows": "never", 
+      "paginationDot--isActive": true,     
+      "blockClass": "banpuertas"
+    }
+  },
+
+  "list-context.image-list#list-marcas-mobile": {
+    "children": ["slider-layout#slider-marcas-mobile"],
+    "props": {      
+      "images": [
+        {
+          "image": "/arquivos/1slide-hp.png",
+          "link": {"url":"/computación"}
+        },
+        {
+          "image": "/arquivos/2slide-cuisinart.png",
+          "link": {"url":"#"}
+        },
+        {
+          "image": "/arquivos/3slide-tplink.png",
+          "link": {"url":"/computacion/contectividad-y-redes"}
+        },
+        {
+          "image": "/arquivos/4slide-fisherprice.png",
+          "link": {"url":"/niños-y-bebés"}
+        },
+        {
+          "image": "/arquivos/5slide-mattel.png",
+          "link": {"url":"/niños-y-bebés"}
+        },      
+        {
+          "image": "/arquivos/6slide-blackdecker.png",
+          "link": {"url":"/herramientas-y-construcción"}
+        }     
+      ]
+    }
+  },
+  "slider-layout#slider-marcas-mobile": {
+    "props": {
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true        
+      },      
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 4,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "slider-marcas-mobile"
+    }
+  },
+
+  
+  "flex-layout.row#row-rich-comercial1":{
+    "props":{
+      "blockClass":"rich-comercial1"
+    },
+    "children":["rich-text#rich-comercial1"]
+  }, 
+  "rich-text#rich-comercial1": { 
+    "props": { 
+      "text": "Los descuentos para vos!",      
+      "textPosition": "center",      
+      "blockClass": "rich-comercial1"      
+    }
+  },  
+
+  "flex-layout.row#banner-comercial1":{
+    "props":{
+      "blockClass":"row-comercial1"
+    },
+    "children":["image#card-comercial1"]
+  },  
+
+  "image#card-comercial1":{
+    "props":{
+      "link":{
+        "url":"/138?map=productClusterIds"
+      },
+      "src":"assets/home/bannerOfertas1.jpg",
+      "blockClass":"card-comercial1"
+    }
+  },
+
+  /* "info-card#card-comercial1": {
+    "props": {
+      "width": "75%",
+      "id": "card-comercial1",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://testalan--parquelosaviadores.vtexassets.com/arquivos/bannerComercial1vacio.png",
+      "imageActionUrl": "/computación",
+      "headline": "40%OFF",
+      "subhead": "en productos seleccionados",
+      "callToActionText": "/computación",
+      "callToActionUrl": "/computación",
+      "blockClass": "card-comercial1"
+    }
+  }, */
+
+  "flex-layout.row#row-rich-comercial2":{
+    "props":{
+      "blockClass":"rich-comercial2"
+    },
+    "children":["rich-text#rich-comercial2"]
+  },
+  "rich-text#rich-comercial2": { 
+    "props": { 
+      "text": "¡No te lo pierdas!",      
+      "textPosition": "center",      
+      "blockClass": "rich-comercial2"      
+    }
+  },  
+
+  "flex-layout.row#banner-comercial2":{
+    "props":{
+      "blockClass":"row-comercial1"
+    },
+    "children":["image#card-comercial2"]
+  },  
+
+  "image#card-comercial2":{
+    "props":{
+      "link":{
+        "url":"/138?map=productClusterIds"
+      },
+      "src":"assets/home/bannerOferta2.jpg",
+      "blockClass":"card-comercial1"
+    }
+  },
+
+  /* "info-card#card-comercial2": {
+    "props": {
+      "width": "75%",
+      "id": "card-comercial2",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://testalan--parquelosaviadores.vtexassets.com/arquivos/bannerComercial2vacio.png",
+      "imageActionUrl": "/deportes-y-tiempo-libre",
+      "headline": "DESCUENTOS PARA",
+      "subhead": "ESTAR A LA MODA",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "#",
+      "blockClass": "card-comercial2"
+    }
+  }, */
+
+
+  "flex-layout.row#row-rich-mas-categorias":{
+    "props":{
+      "blockClass":"rich-mas-categorias"
+    },
+    "children":["rich-text#rich-mas-categorias"]
+  },  
+  "rich-text#rich-mas-categorias": { 
+    "props": { 
+      "text": "Más **Categorías**",      
+      "textPosition": "center",      
+      "blockClass": "rich-mas-categorias"      
+    }
+  },
+
+  "flex-layout.row#row-list-mas-categorias":{
+    "props":{     
+      "blockClass": "list-mas-categorias"
+    },
+    "children":["list-context.image-list#list-mas-categorias"]
+  }, 
+  "list-context.image-list#list-mas-categorias": {
+    "children": ["slider-layout#slider-mas-categorias"],
+    "props": {      
+      "images": [
+        {
+          "image": "/arquivos/categoria1.png",
+          "link": {"url":"/niños-y-bebés"},
+          "maxWidth":175
+        },
+        {
+          "image": "/arquivos/categoria2.png",
+          "link": {"url":"/electrónicos"},
+          "maxWidth":175
+        },
+        {
+          "image": "/arquivos/categoria3.png",
+          "link": {"url":"/electrodomésticos"},
+          "maxWidth":175
+        },
+        {
+          "image": "/arquivos/categoria4.png",
+          "link": {"url":"/electrodomésticos"},
+          "maxWidth":175
+        },
+        {
+          "image": "/arquivos/categoria5.png",
+          "link": {"url":"/deportes-y-tiempo-libre"},
+          "maxWidth":175
+        },      
+        {
+          "image": "/arquivos/categoria6.png",
+          "link": {"url":"/deportes-y-tiempo-libre"},
+          "maxWidth":175
+        },
+        {
+          "image": "/arquivos/categoria7.png",
+          "link": {"url":"#"},
+          "maxWidth":175
+        }      
+      ]
+    }
+  },
+  "slider-layout#slider-mas-categorias": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 3
+      },
+      "showNavigationArrows": "never", 
+      "showPaginationDots":"never", 
+      "blockClass": "slider-mas-categorias"
+    }
+  },
+
+  "rich-text#rich-mas-categorias-mobile": { 
+    "props": { 
+      "text": "Más **Categorías**",      
+      "textPosition": "center",      
+      "blockClass": "rich-mas-categorias"      
+    }
+  },
+
+  "list-context.image-list#list-mas-categorias-mobile": {
+    "children": ["slider-layout#slider-mas-categorias-mobile"],
+    "props": {      
+      "images": [
+        {
+          "image": "/arquivos/categoria1.png",
+          "link": {"url":"/niños-y-bebés"},
+          "maxWidth":175
+        },
+        {
+          "image": "/arquivos/categoria2.png",
+          "link": {"url":"/electrónicos"},
+          "maxWidth":175
+        },
+        {
+          "image": "/arquivos/categoria3.png",
+          "link": {"url":"/electrodomésticos"},
+          "maxWidth":175
+        },
+        {
+          "image": "/arquivos/categoria4.png",
+          "link": {"url":"/electrodomésticos"},
+          "maxWidth":175
+        },
+        {
+          "image": "/arquivos/categoria5.png",
+          "link": {"url":"/deportes-y-tiempo-libre"},
+          "maxWidth":175
+        },      
+        {
+          "image": "/arquivos/categoria6.png",
+          "link": {"url":"/deportes-y-tiempo-libre"},
+          "maxWidth":175
+        },
+        {
+          "image": "/arquivos/categoria7.png",
+          "link": {"url":"#"},
+          "maxWidth":175
+        }       
+      ]
+    }
+  },
+  "slider-layout#slider-mas-categorias-mobile": {
+    "props": {
+      "autoplay": {
+        "timeout": 2500,
+        "stopOnHover": true        
+      }, 
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 2
+      },
+      "showNavigationArrows": "never", 
+      "showPaginationDots":"never",     
+      "blockClass": "slider-mas-categorias-mobile"
+    }
+  },
+
+
+  "rich-text#rich-banner-grilla1": { 
+    "props": { 
+      "text": "Elegí las mejores marcas",      
+      "textPosition": "center",      
+      "blockClass": "rich-mas-categorias"      
+    }
+  },
+
+  "flex-layout.row#row-banner-grilla1":{
+    "props":{
+      "blockClass": "row-banner-grilla1"
+    },
+    "children":["list-context.image-list#list-banner-grilla1"]    
+  },
+
+  "list-context.image-list#list-banner-grilla1": {
+    "children": ["slider-layout#slider-banner-grilla1"],
+    "props": {      
+      "images": [
+        {
+          "image": "assets/home/bannersGrilla1.jpg",
+          "link": {"url":"/niños-y-bebés"}
+          /* "maxWidth":350 */
+        },
+        {
+          "image": "assets/home/bannersGrilla2.jpg",
+          "link": {"url":"/niños-y-bebés"}
+          /* "maxWidth":350 */
+        },
+        {
+          "image": "assets/home/bannersGrilla3.jpg",
+          "link": {"url":"/computación"}
+          /* "maxWidth":350 */
+        }/* ,
+        {
+          "image": "/arquivos/bannersGrilla4.jpg",
+          "link": {"url":"/deportes-y-tiempo-libre"},
+          "maxWidth":350
+        } */
+      ]
+    }
+  },
+  "slider-layout#slider-banner-grilla1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 3
+      },
+      "showNavigationArrows": "never", 
+      "paginationDot--isActive": true,     
+      "blockClass": "slider-banner-grilla1"
+    }
+  },
+
+
+  // BANNERS GRID
+
+  "flex-layout.row#row-rich-banner-grid":{
+    "props":{
+      "blockClass":"rich-banner-grid"
+    },
+    "children":["rich-text#rich-banner-grid"]
+  },
+  "rich-text#rich-banner-grid": { 
+    "props": { 
+      "text": "Elegí las mejores marcas",      
+      "textPosition": "center",      
+      "blockClass": "rich-banner-grid"      
+    }
+  },
+
+  /* "flex-layout.row#banners-grid":{
+    "props":{
+      "blockClass": "banners-grid"
+    },
+    "children":[
+      "flex-layout.col#banner-grid-1",
+      "flex-layout.col#banner-grid-2",
+      "flex-layout.col#banner-grid-3"
+    ]    
+  },
+  "flex-layout.col#banner-grid-1":{
+    "children":[
+      "image#banner-grid-1",
+      "image#banner-grid-1-hov"
+    ] 
+  },
+  "flex-layout.col#banner-grid-2":{
+    "children":[
+      "image#banner-grid-2",
+      "image#banner-grid-2-hov"
+    ]
+  },
+  "flex-layout.col#banner-grid-3":{
+    "children":[
+      "image#banner-grid-3",
+      "image#banner-grid-3-hov"
+    ]
+  },
+
+  "image#banner-grid-1":{
+    "props":{
+      "link":{
+        "url":"/computación"
+      },
+      "src":"https://testalan--parquelosaviadores.vtexassets.com/arquivos/bannerGrilla1.png",
+      "blockClass":"banner-grid-1",
+      "maxWidth":310
+    }
+  },
+  "image#banner-grid-1-hov":{
+    "props":{
+      "link":{
+        "url":"/computación"
+      },
+      "src":"https://testalan--parquelosaviadores.vtexassets.com/arquivos/bannerGrilla1Hover.png",
+      "blockClass":"banner-grid-1-hov",
+      "maxWidth":310
+    }
+  },
+
+  "image#banner-grid-2":{
+    "props":{
+      "link":{
+        "url":"/computación"
+      },
+      "src":"https://testalan--parquelosaviadores.vtexassets.com/arquivos/bannerGrilla2.png",
+      "blockClass":"banner-grid-2",
+      "maxWidth":310
+    }
+  },
+  "image#banner-grid-2-hov":{
+    "props":{
+      "link":{
+        "url":"/computación"
+      },
+      "src":"https://testalan--parquelosaviadores.vtexassets.com/arquivos/bannerGrilla2Hover.png",
+      "blockClass":"banner-grid-2-hov",
+      "maxWidth":310
+    }
+  },
+
+  "image#banner-grid-3":{
+    "props":{
+      "link":{
+        "url":"/deportes-y-tiempo-libre"
+      },
+      "src":"https://testalan--parquelosaviadores.vtexassets.com/arquivos/bannerGrilla3.png",
+      "blockClass":"banner-grid-3",
+      "maxWidth":310
+    }
+  },
+  "image#banner-grid-3-hov":{
+    "props":{
+      "link":{
+        "url":"/deportes-y-tiempo-libre"
+      },
+      "src":"https://testalan--parquelosaviadores.vtexassets.com/arquivos/bannerGrilla3Hover.png",
+      "blockClass":"banner-grid-3-hov",
+      "maxWidth":310
+    }
+  }, */
+
+  // SLIDER TRIPLE HOME MOBILE
+  "slider-layout#slider-banner-grid-mobile": {
+    "props": {
+      "autoplay": {
+        "timeout": 4000,
+        "stopOnHover": true        
+      },
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "showPaginationDots":"never",
+      "showNavigationArrows":"false",
+      "blockClass": "slider-banner-grid-mobile"
+    },
+    "children": ["image#grid1", "image#grid2", "image#grid3", "image#grid4"]
+  },
+
+  "image#grid1": {
+    "props": {
+      "src": "assets/home/bannersGrilla1.jpg",
+      "link": {"url":"/niños-y-bebés"}
+    }
+  },
+  "image#grid2": {
+    "props": {
+      "src": "assets/home/bannersGrilla2.jpg",
+      "link": {"url":"/niños-y-bebés"}
+    }
+  },
+  "image#grid3": {
+    "props": {
+      "src": "assets/home/bannersGrilla3.jpg",
+      "link": {"url":"/computación"}
+    }
+  },
+  "image#grid4": {
+    "props": {
+      "src": "assets/home/bannersGrilla4.jpg",
+      "link": {"url":"/electrónicos"}
+    }
+  },
+
+
+
+  // VITRINAS CON BANNER LATERAL DESK
+  "flex-layout.row#row-vitrina-desk1":{
+    "children": [
+      "flex-layout.col#destacadas-frase-home1",
+      "flex-layout.col#destacadas-prod-home1"
+    ],
+
+    "props": {
+      "marginBottom": 1,
+      "marginTop": 1,
+      "blockClass": "catDestacadas",
+      "fullWidth": false
+    }
+
+  },
+
+  "flex-layout.col#destacadas-frase-home1":{
+    "props": {
+      "width": "21%",
+      "blockClass": "catFrase"
+      },
+
+     "children":[
+      "image#destacadas-home1"
+     ] 
+  },
+
+  "image#destacadas-home1": {
+    "props": {
+      "src": "assets/home/BB.jpg",
+      "link": {"url":"/electrodomésticos"},
+      "blockClass":"image-vitrina-home"
+    }
+  },
+
+  "flex-layout.col#destacadas-prod-home1":{
+      "children":[
+        "list-context.product-list#catdest-home1"
+    ],
+    "props": {
+      "blockClass": "carousel-vitrina1"
+    }
+},
+
+
+"list-context.product-list#catdest-home1": {
+  "blocks": ["product-summary.shelf#vitrina-product"],
+  "children": ["slider-layout#demo-products-home1"],
+  "props": {
+    "blockClass": "carousel-vitrina1"
+  }
+
+},
+
+
+"slider-layout#demo-products-home1":
+{
+  "props": {
+    "itemsPerPage": {
+      "desktop": 3,
+      "tablet": 3,
+      "phone": 2
+    },
+    "infinite": true,
+    /* "showNavigationArrows": "desk", */
+    "showPaginationDots": "never",
+    "blockClass": "carousel-vitrina1"
+  }
+},
+
+/* VITRINA 2 */
+"flex-layout.row#row-vitrina-desk2":{
+  "children": [
+    "flex-layout.col#destacadas-frase-home2",
+    "flex-layout.col#destacadas-prod-home2"
+  ],
+
+  "props": {    
+    "marginTop": 3,
+    "marginBottom": 7,
+    "blockClass": "catDestacadas",
+    "fullWidth": false
+  }
+
+},
+
+"flex-layout.col#destacadas-frase-home2":{
+  "props": {
+    "width": "21%",
+    "blockClass": "catFrase"
+    },
+
+   "children":[
+    "image#destacadas-home2"
+   ] 
+},
+
+"image#destacadas-home2": {
+  "props": {
+    "src": "assets/home/A.jpg",
+    "link": {"url":"/deportes-y-tiempo-libre"},
+    "blockClass":"image-vitrina-home"
+  }
+},
+
+"flex-layout.col#destacadas-prod-home2":{
+    "children":[
+      "list-context.product-list#catdest-home2"
+  ]
+},
+
+
+"list-context.product-list#catdest-home2": {
+"blocks": ["product-summary.shelf#vitrina-product"],
+"children": ["slider-layout#demo-products-home2"]
+// "props": {"category": "1"}
+
+},
+
+
+"slider-layout#demo-products-home2":
+{
+  "props": {
+    "itemsPerPage": {
+      "desktop": 3,
+      "tablet": 3,
+      "phone": 2
+    },
+    "infinite": true,
+    /* "showNavigationArrows": "desk", */
+    "showPaginationDots": "never",
+    "blockClass": "carousel-vitrina1"
+  }
+},
+/* FIN VITRINA 2 */
+
+/* VITRINA 2a */
+"flex-layout.row#row-vitrina-desk2a":{
+  "children": [
+    "flex-layout.col#destacadas-frase-home2a",
+    "flex-layout.col#destacadas-prod-home2a"
+  ],
+
+  "props": {    
+    "marginTop": 3,
+    "marginBottom": 7,
+    "blockClass": "catDestacadas",
+    "fullWidth": false
+  }
+
+},
+
+"flex-layout.col#destacadas-frase-home2a":{
+  "props": {
+    "width": "21%",
+    "blockClass": "catFrase"
+    },
+
+   "children":[
+    "image#destacadas-home2a"
+   ] 
+},
+
+"image#destacadas-home2a": {
+  "props": {
+    "src": "assets/home/AA.jpg",
+    "link": {"url":"/deportes-y-tiempo-libre"},
+    "blockClass":"image-vitrina-home"
+  }
+},
+
+"flex-layout.col#destacadas-prod-home2a":{
+    "children":[
+      "list-context.product-list#catdest-home2a"
+  ]
+},
+
+
+"list-context.product-list#catdest-home2a": {
+"blocks": ["product-summary.shelf#vitrina-product"],
+"children": ["slider-layout#demo-products-home2a"]
+// "props": {"category": "1"}
+
+},
+
+
+"slider-layout#demo-products-home2a":
+{
+  "props": {
+    "itemsPerPage": {
+      "desktop": 3,
+      "tablet": 3,
+      "phone": 2
+    },
+    "infinite": true,
+    /* "showNavigationArrows": "desk", */
+    "showPaginationDots": "never",
+    "blockClass": "carousel-vitrina1"
+  }
+},
+/* FIN VITRINA 2a */
+
+/* VITRINA 3 */
+"flex-layout.row#row-vitrina-desk3":{
+  "children": [
+    "flex-layout.col#destacadas-frase-home3",
+    "flex-layout.col#destacadas-prod-home3"
+  ],
+
+  "props": {
+    "marginBottom": 7,
+    "marginTop": 7,
+    "blockClass": "catDestacadas",
+    "fullWidth": false
+  }
+
+},
+
+"flex-layout.col#destacadas-frase-home3":{
+  "props": {
+    "width": "21%",
+    "blockClass": "catFrase"
+    },
+
+   "children":[
+    "image#destacadas-home3"
+   ] 
+},
+
+"image#destacadas-home3": {
+  "props": {
+    "src": "assets/home/B.jpg",
+    "link": {"url":"/computación"},
+    "blockClass":"image-vitrina-home"
+  }
+},
+
+"flex-layout.col#destacadas-prod-home3":{
+    "children":[
+      "list-context.product-list#catdest-home3"
+  ]
+},
+
+
+"list-context.product-list#catdest-home3": {
+"blocks": ["product-summary.shelf#vitrina-product"],
+"children": ["slider-layout#demo-products-home3"]
+// "props": {"category": "1"}
+
+},
+
+
+"slider-layout#demo-products-home3":
+{
+  "props": {
+    "itemsPerPage": {
+      "desktop": 3,
+      "tablet": 3,
+      "phone": 2
+    },
+    "infinite": true,
+    /* "showNavigationArrows": "desk", */
+    "showPaginationDots": "never",
+    "blockClass": "carousel-vitrina1"
+  }
+},
+
+/* VITRINA 3a */
+"flex-layout.row#row-vitrina-desk3a":{
+  "children": [
+    "flex-layout.col#destacadas-frase-home3a",
+    "flex-layout.col#destacadas-prod-home3a"
+  ],
+
+  "props": {
+    "marginBottom": 7,
+    "marginTop": 7,
+    "blockClass": "catDestacadas",
+    "fullWidth": false
+  }
+
+},
+
+"flex-layout.col#destacadas-frase-home3a":{
+  "props": {
+    "width": "21%",
+    "blockClass": "catFrase"
+    },
+
+   "children":[
+    "image#destacadas-home3a"
+   ] 
+},
+
+"image#destacadas-home3a": {
+  "props": {
+    "src": "assets/home/CC.jpg",
+    "link": {"url":"/computación"},
+    "blockClass":"image-vitrina-home"
+  }
+},
+
+"flex-layout.col#destacadas-prod-home3a":{
+    "children":[
+      "list-context.product-list#catdest-home3a"
+  ]
+},
+
+
+"list-context.product-list#catdest-home3a": {
+"blocks": ["product-summary.shelf#vitrina-product"],
+"children": ["slider-layout#demo-products-home3a"]
+// "props": {"category": "1"}
+
+},
+
+
+"slider-layout#demo-products-home3a":
+{
+  "props": {
+    "itemsPerPage": {
+      "desktop": 3,
+      "tablet": 3,
+      "phone": 2
+    },
+    "infinite": true,
+    /* "showNavigationArrows": "desk", */
+    "showPaginationDots": "never",
+    "blockClass": "carousel-vitrina1"
+  }
+},
+/* VITRINA 3a */
+"flex-layout.row#row-vitrina-desk3b":{
+  "children": [
+    "flex-layout.col#destacadas-frase-home3b",
+    "flex-layout.col#destacadas-prod-home3b"
+  ],
+
+  "props": {
+    "marginBottom": 7,
+    "marginTop": 7,
+    "blockClass": "catDestacadas",
+    "fullWidth": false
+  }
+
+},
+
+"flex-layout.col#destacadas-frase-home3b":{
+  "props": {
+    "width": "21%",
+    "blockClass": "catFrase"
+    },
+
+   "children":[
+    "image#destacadas-home3b"
+   ] 
+},
+
+"image#destacadas-home3b": {
+  "props": {
+    "src": "assets/home/C.jpg",
+    "link": {"url":"/computación"},
+    "blockClass":"image-vitrina-home"
+  }
+},
+
+"flex-layout.col#destacadas-prod-home3b":{
+    "children":[
+      "list-context.product-list#catdest-home3b"
+  ]
+},
+
+
+"list-context.product-list#catdest-home3b": {
+"blocks": ["product-summary.shelf#vitrina-product"],
+"children": ["slider-layout#demo-products-home3b"]
+// "props": {"category": "1"}
+
+},
+
+
+"slider-layout#demo-products-home3b":
+{
+  "props": {
+    "itemsPerPage": {
+      "desktop": 3,
+      "tablet": 3,
+      "phone": 2
+    },
+    "infinite": true,
+    /* "showNavigationArrows": "desk", */
+    "showPaginationDots": "never",
+    "blockClass": "carousel-vitrina1"
+  }
+},
+// FIN PRODUCTOS DESTACADOS CON BANNER OCACIONAL
+
+//BANNERS INDIVIDUALES PARA VITRINAS MOBILE
+"flex-layout.row#row-banners-mobile1":{
+  "children": [
+    "image#banners-mobile1"
+  ],
+
+  "props": {    
+    "paddingTop": 7,
+    "paddingBottom": 7,
+    "blockClass": "banners-mobile",
+    "fullWidth": false
+  }
+
+},
+
+
+  "image#banners-mobile1": {
+    "props": {
+      "src": "/arquivos/vitrina-mobile1.png",
+      "link": {"url":"/electrodomésticos"},
+      "blockClass":"banners-mobile1"
+      }
+    },
+
+    "flex-layout.row#row-banners-mobile2":{
+      "children": [
+        "image#banners-mobile2"
+      ],
+    
+      "props": {
+        "paddingTop": 6,
+        "paddingBottom": 7,
+        "blockClass": "banners-mobile",
+        "fullWidth": false
+      }
+    
+    },  
+  "image#banners-mobile2": {
+    "props": {
+      "src": "/arquivos/vitrina-mobile2.png",
+      "link": {"url":"/deportes-y-tiempo-libre"},
+      "blockClass":"banners-mobile2"
+      }
+    },
+  
+    "flex-layout.row#row-banners-mobile3":{
+      "children": [
+        "image#banners-mobile3"
+      ],
+    
+      "props": {
+        "paddingTop": 6,
+        "paddingBottom": 7,
+        "blockClass": "banners-mobile",
+        "fullWidth": false
+      }
+    
+    },
+    "image#banners-mobile3": {
+      "props": {
+        "src": "/arquivos/vitrina-mobile3.png",
+        "link": {"url":"/computación"},
+        "blockClass":"banners-mobile3"
+        }
+      }
+
+
+
+}
+

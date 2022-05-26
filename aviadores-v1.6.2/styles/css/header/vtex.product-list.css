@@ -1,0 +1,36 @@
+
+.productBrandName{
+    display: none;
+}
+
+.productName{
+        /* text-transform: uppercase; */
+        font-weight: bold;
+        font-size: 14px;
+        color: #393536;
+        font-family: "Montserrat", sans-serif;        
+}
+
+
+.price{
+    font-weight: bold;
+    color: #717171;
+}
+
+/* .productImage{
+    padding-top: 0.5rem;
+} */
+
+.removeButtonContainer{
+    margin-top: 0.3rem;
+}
+
+/* .deleteIcon{
+    font-size: 30px;    
+} */
+
+/* .deleteIcon::after{    
+    background-image: url(assets/header/remove.svg);
+    background-position: left;
+    background-repeat: no-repeat;    
+} */

@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+.menuItem--item-department:hover .styledLinkContainer--item-department .styledLinkContent, .menuItem--item-department:hover{
+    background-color: #0075FD; 
+    color: #fff;
+}
+
+
+.menuContainer{
+    display: flex;
+    justify-content: center!important;
+    background: #fff;
+    
+}
+/* .styledLinkContainer--department{
+    margin: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.styledLinkContainer--department:hover{
+ background-color: #0075FD;
+} */
+.styledLinkContent {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    
+}
+.styledLinkContent--all-categories{
+    color: #444343;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 13.3px;
+    margin-top:3px;
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.styledLinkContainer--all-categories:hover .styledLinkContent--all-categories{
+    color: #444343 !important;
+}
+.styledLinkIcon--all-categories {
+    background-image: url('assets/header/menu25.svg');
+    width: 34px;
+    height: 21px;
+    /* margin-top: 14%; */
+    background-size: 25px;
+    background-repeat: no-repeat;
+    
+}
+
+/* DEPARTAMENTOS */
+.styledLink--item-department
+{
+    color: #444343; 
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    
+}
+
+
+
+.styledLinkContent--item-department-0,
+.styledLinkContent--item-department-1,
+.styledLinkContent--item-department-2,
+.styledLinkContent--item-department-3,
+.styledLinkContent--item-department-4,
+.styledLinkContent--item-department-5,
+.styledLinkContent--item-department-6,
+.styledLinkContent--item-department-7,
+.styledLinkContent--item-department-8,
+.styledLinkContent--item-department-9,
+.styledLinkContent--item-department-10
+{
+    display: flex;
+    /* border-bottom: 1px solid #F1F1F1; */
+    
+    /* padding-right: 1rem; */
+    white-space: pre-wrap;
+    width: 185px;
+}
+@media (min-width:1367px){
+    .styledLinkContent--item-department-0,
+    .styledLinkContent--item-department-1,
+    .styledLinkContent--item-department-2,
+    .styledLinkContent--item-department-3,
+    .styledLinkContent--item-department-4,
+    .styledLinkContent--item-department-5,
+    .styledLinkContent--item-department-6,
+    .styledLinkContent--item-department-7,
+    .styledLinkContent--item-department-8,
+    .styledLinkContent--item-department-9,
+    .styledLinkContent--item-department-10{
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+    }
+}
+@media (max-width:1366px) and (min-width:1281px){
+    .styledLinkContent--item-department-0,
+    .styledLinkContent--item-department-1,
+    .styledLinkContent--item-department-2,
+    .styledLinkContent--item-department-3,
+    .styledLinkContent--item-department-4,
+    .styledLinkContent--item-department-5,
+    .styledLinkContent--item-department-6,
+    .styledLinkContent--item-department-7,
+    .styledLinkContent--item-department-8,
+    .styledLinkContent--item-department-9,
+    .styledLinkContent--item-department-10{
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+    }
+}
+@media (max-width:1280px){
+    .styledLinkContent--item-department-0,
+    .styledLinkContent--item-department-1,
+    .styledLinkContent--item-department-2,
+    .styledLinkContent--item-department-3,
+    .styledLinkContent--item-department-4,
+    .styledLinkContent--item-department-5,
+    .styledLinkContent--item-department-6,
+    .styledLinkContent--item-department-7,
+    .styledLinkContent--item-department-8,
+    .styledLinkContent--item-department-9,
+    .styledLinkContent--item-department-10{
+        padding-top: .3rem;
+        padding-bottom: .3rem;
+        width: 150px;
+    }
+}
+.styledLinkContent--item-department-10{
+    border-bottom: none !important;
+}
+
+/* ******************************** */
+/*     CATEGORIAS PRIMER NIVEL      */
+/* ******************************** */
+.submenuContainer--portones-puertas-ventanas,
+.submenuContainer--aislantes-categorias,
+.submenuContainer--banos-categorias,
+.submenuContainer--cocina-hogar-categorias,
+.submenuContainer--construccion-seco-categorias,
+.submenuContainer--griferias-categorias,
+.submenuContainer--herramientas-categorias,
+.submenuContainer--instalaciones-categorias,
+.submenuContainer--jardin-pileta-categorias,
+.submenuContainer--pisos-revestimientos-categorias,
+.submenuContainer--materiales-gruesos-categorias{
+    position: absolute;
+    margin-left: 230px;
+    top: 0;
+}
+
+@media (min-width:1920px) /* and (max-width:2560px) */ {
+    .submenuWrapper--portones-puertas-ventanas,
+    .submenuWrapper--aislantes-categorias,
+    .submenuWrapper--banos-categorias,
+    .submenuWrapper--cocina-hogar-categorias,
+    .submenuWrapper--construccion-seco-categorias,
+    .submenuWrapper--griferias-categorias,
+    .submenuWrapper--herramientas-categorias,
+    .submenuWrapper--instalaciones-categorias,
+    .submenuWrapper--jardin-pileta-categorias,
+    .submenuWrapper--pisos-revestimientos-categorias,
+    .submenuWrapper--materiales-gruesos-categorias
+    {
+        height: 594px;
+        width: 1220px;
+        border-left: 1px solid #444343;
+        /* overflow-y: auto; */
+    }
+}
+
+@media (min-width:1600px) and (max-width:1919px) {
+    .submenuWrapper--portones-puertas-ventanas,
+    .submenuWrapper--aislantes-categorias,
+    .submenuWrapper--banos-categorias,
+    .submenuWrapper--cocina-hogar-categorias,
+    .submenuWrapper--construccion-seco-categorias,
+    .submenuWrapper--griferias-categorias,
+    .submenuWrapper--herramientas-categorias,
+    .submenuWrapper--instalaciones-categorias,
+    .submenuWrapper--jardin-pileta-categorias,
+    .submenuWrapper--pisos-revestimientos-categorias,
+    .submenuWrapper--materiales-gruesos-categorias
+    {
+        height: 558px;
+        width: 1220px;
+        border-left: 1px solid #444343;
+        /* overflow-y: auto; */
+    }
+}
+
+@media (min-width:1440px) and (max-width:1599px){
+    .submenuWrapper--portones-puertas-ventanas,
+    .submenuWrapper--aislantes-categorias,
+    .submenuWrapper--banos-categorias,
+    .submenuWrapper--cocina-hogar-categorias,
+    .submenuWrapper--construccion-seco-categorias,
+    .submenuWrapper--griferias-categorias,
+    .submenuWrapper--herramientas-categorias,
+    .submenuWrapper--instalaciones-categorias,
+    .submenuWrapper--jardin-pileta-categorias,
+    .submenuWrapper--pisos-revestimientos-categorias,
+    .submenuWrapper--materiales-gruesos-categorias
+    {
+        height: 558px;
+        width: 1050px;
+        border-left: 1px solid #444343;
+        /* overflow-y: auto; */
+    }
+}
+@media (min-width:1366px) and (max-width:1439px){
+    .submenuWrapper--portones-puertas-ventanas,
+    .submenuWrapper--aislantes-categorias,
+    .submenuWrapper--banos-categorias,
+    .submenuWrapper--cocina-hogar-categorias,
+    .submenuWrapper--construccion-seco-categorias,
+    .submenuWrapper--griferias-categorias,
+    .submenuWrapper--herramientas-categorias,
+    .submenuWrapper--instalaciones-categorias,
+    .submenuWrapper--jardin-pileta-categorias,
+    .submenuWrapper--pisos-revestimientos-categorias,
+    .submenuWrapper--materiales-gruesos-categorias
+    {
+        height: 443px;
+        width: 980px;
+        border-left: 1px solid #444343;
+        /* overflow-y: auto; */
+    }
+
+    .submenuWrapper--portones-puertas-ventanas,
+    .submenuWrapper--aislantes-categorias,
+    .submenuWrapper--banos-categorias,
+    .submenuWrapper--cocina-hogar-categorias,
+    .submenuWrapper--construccion-seco-categorias,
+    .submenuWrapper--griferias-categorias,
+    .submenuWrapper--herramientas-categorias,
+    .submenuWrapper--instalaciones-categorias,
+    .submenuWrapper--jardin-pileta-categorias,
+    .submenuWrapper--pisos-revestimientos-categorias,
+    .submenuWrapper--materiales-gruesos-categorias
+    {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    } 
+    .submenuWrapper--aislantes-categorias::-webkit-scrollbar-thumb,
+    .submenuWrapper--materiales-gruesos-categorias::-webkit-scrollbar-thumb
+    {
+        color: rgb(230, 141, 141);
+        border-radius: 10px;
+    }
+    .submenuWrapper--aislantes-categorias::-webkit-scrollbar-track,
+    .submenuWrapper--materiales-gruesos-categorias::-webkit-scrollbar-track
+    {
+        width: 10px;
+    }
+}
+
+@media (min-width:1280px) and (max-width:1365px){
+    .submenuContainer--portones-puertas-ventanas,
+    .submenuContainer--aislantes-categorias,
+    .submenuContainer--banos-categorias,
+    .submenuContainer--cocina-hogar-categorias,
+    .submenuContainer--construccion-seco-categorias,
+    .submenuContainer--griferias-categorias,
+    .submenuContainer--herramientas-categorias,
+    .submenuContainer--instalaciones-categorias,
+    .submenuContainer--jardin-pileta-categorias,
+    .submenuContainer--pisos-revestimientos-categorias,
+    .submenuContainer--materiales-gruesos-categorias{
+        margin-left: 195px;
+    }
+    .submenuWrapper--portones-puertas-ventanas,
+    .submenuWrapper--aislantes-categorias,
+    .submenuWrapper--banos-categorias,
+    .submenuWrapper--cocina-hogar-categorias,
+    .submenuWrapper--construccion-seco-categorias,
+    .submenuWrapper--griferias-categorias,
+    .submenuWrapper--herramientas-categorias,
+    .submenuWrapper--instalaciones-categorias,
+    .submenuWrapper--jardin-pileta-categorias,
+    .submenuWrapper--pisos-revestimientos-categorias,
+    .submenuWrapper--materiales-gruesos-categorias
+    {
+        height: 512px;
+        width: 950px;
+        /* overflow-y: auto; */
+    }
+}
+
+@media (min-width:1050px) and (max-width:1279px){
+    .submenuContainer--portones-puertas-ventanas,
+    .submenuContainer--aislantes-categorias,
+    .submenuContainer--banos-categorias,
+    .submenuContainer--cocina-hogar-categorias,
+    .submenuContainer--construccion-seco-categorias,
+    .submenuContainer--griferias-categorias,
+    .submenuContainer--herramientas-categorias,
+    .submenuContainer--instalaciones-categorias,
+    .submenuContainer--jardin-pileta-categorias,
+    .submenuContainer--pisos-revestimientos-categorias,
+    .submenuContainer--materiales-gruesos-categorias{
+        margin-left: 190px;
+    }
+    .submenuWrapper--portones-puertas-ventanas,
+    .submenuWrapper--aislantes-categorias,
+    .submenuWrapper--banos-categorias,
+    .submenuWrapper--cocina-hogar-categorias,
+    .submenuWrapper--construccion-seco-categorias,
+    .submenuWrapper--griferias-categorias,
+    .submenuWrapper--herramientas-categorias,
+    .submenuWrapper--instalaciones-categorias,
+    .submenuWrapper--jardin-pileta-categorias,
+    .submenuWrapper--pisos-revestimientos-categorias,
+    .submenuWrapper--materiales-gruesos-categorias
+    {
+        height: 511px;
+        width: 740px;
+        /* overflow-y: auto; */
+    }
+}
+
+.submenu--portones-puertas-ventanas,
+.submenu--aislantes-categorias,
+.submenu--banos-categorias,
+.submenu--cocina-hogar-categorias,
+.submenu--construccion-seco-categorias,
+.submenu--griferias-categorias,
+.submenu--herramientas-categorias,
+.submenu--instalaciones-categorias,
+.submenu--jardin-pileta-categorias,
+.submenu--pisos-revestimientos-categorias,
+.submenu--materiales-gruesos-categorias
+{
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+}
+
+.submenuWrapper{
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15);
+    border-bottom: none !important;
+}
+
+.submenuWrapper::-webkit-scrollbar {
+    width:10px;
+}
+
+.submenuWrapper::-webkit-scrollbar-thumb{
+    background-color: #e2e2e2;
+    border-radius: 20px;
+}
+
+
+/* ****************************************************************************************************************** */
+/* HEADER BOTTOM */
+/* HEADER BOTTOM */
+.styledLink--custom-access{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.submenuWrapper--acopio-content
+{
+    width: 450px;
+}
+.submenuWrapper--presupuesto-ya-content{
+    width: 300px;
+}
+/* FIN HEADER BOTTOM */
+/* FIN HEADER BOTTOM */
+
+

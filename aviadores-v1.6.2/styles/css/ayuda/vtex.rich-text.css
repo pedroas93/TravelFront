@@ -1,0 +1,654 @@
+/* GUIA DE COMPRA */
+
+.paragraph--paso-1-title,
+.paragraph--paso-2-title,
+.paragraph--paso-3-title {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: bold;
+  line-height: 1 !important;
+  display: flex;
+  align-items: center;
+  color: #5a5a5a;
+}
+
+.container--rich-guia-compra,
+.container--rich-metodos-pagos,
+.container--rich-tabla-talles,
+.container--rich-faqs,
+.container--rich-formas-entrega,
+.container--rich-cambios-y-devoluciones {
+  border-bottom: 1px solid #cecece;
+  margin-bottom: 1.5rem;
+}
+
+.wrapper--rich-guia-compra,
+.wrapper--rich-metodos-pagos,
+.wrapper--rich-tabla-talles,
+.wrapper--rich-faqs,
+.wrapper--rich-formas-entrega,
+.wrapper--rich-cambios-y-devoluciones,
+.wrapper--rich-arrepentimiento {
+  border-bottom: 4px solid#0075FD;
+  margin-bottom: -3px;
+}
+
+.wrapper--guia-compras,
+.wrapper--metodos-pagos,
+.wrapper--politicas,
+.wrapper--faqs,
+.wrapper--formas-entrega,
+.wrapper--cambios-y-devoluciones,
+.wrapper--arrepentimiento,
+.wrapper--terminos-condiciones,
+.wrapper--contacto {
+  margin-left: 1.5rem;
+}
+
+@media (min-width: 1420px) {
+  .paragraph--paso-1,
+  .paragraph--paso-2,
+  .paragraph--paso-3 {
+    height: 80px;
+  }
+}
+
+@media (max-width: 1419px) and (min-width: 640px) {
+  .paragraph--paso-1,
+  .paragraph--paso-2,
+  .paragraph--paso-3 {
+    height: 120px;
+  }
+}
+
+.paragraph--paso-1,
+.paragraph--paso-2,
+.paragraph--paso-3 {
+  font-family: "Montserrat", sans-serif !important;
+  padding-top: 0;
+  margin-top: 0;
+  /* line-height: 1.2 !important; */
+  font-size: 13px;
+  font-weight: 500;
+  color: #5a5a5a;
+}
+
+.link--paso-1-links,
+.link--paso-2-links,
+.link--paso-3-links {
+  font-family: "Montserrat", sans-serif !important;
+  text-decoration: none;
+  color: #646464;
+}
+.link--paso-1-links:hover,
+.link--paso-2-links:hover,
+.link--paso-3-links:hover {
+  color: #28292b;
+}
+
+@media (max-width: 640px) {
+  .paragraph--paso-1-links,
+  .paragraph--paso-2-links {
+    margin-bottom: 2rem;
+  }
+}
+
+/* FIN GUIA DE COMPRA */
+
+.paragraph {
+  font-family: "Montserrat", sans-serif !important;
+}
+/* navegacion lateral */
+
+.paragraph--guia-compras,
+.paragraph--terminos-condiciones,
+.paragraph--politicas,
+.paragraph--faqs,
+.paragraph--metodos-pagos,
+.paragraph--formas-entrega,
+.paragraph--contacto,
+.paragraph--arrepentimiento {
+  justify-content: start;
+}
+
+.container--rich-guia-compra
+  :global(.vtex-rich-text-0-x-link--guia-compras--isOpen) {
+  color: #81f46f;
+}
+
+.link--guia-compras::link {
+  color: #81f46f;
+}
+
+.link--guia-compras,
+.link--terminos-condiciones,
+.link--politicas,
+.link--faqs,
+.link--metodos-pagos,
+.link--formas-entrega,
+.link--contacto,
+.link--arrepentimiento {
+  font-family: "Montserrat", sans-serif !important;
+  text-decoration: none !important;
+  color: #7a7a7a;
+  display: flex;
+  line-height: 1 !important;
+  align-items: center;
+}
+
+.container--ayuda-title {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: bold;
+  /* border: 1px solid #cecece; */
+  color: #5a5a5a;
+  font-size: 29.5px;
+  justify-content: start;
+  background: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.paragraph--ayuda-title {
+  border-bottom: 4px solid #0075fd;
+  /* border-image-slice: 1;
+    border-image-source: linear-gradient(105.81deg, #FFEA00 -0.75%, #81F46F 31.71%, #42FAA7 64.2%, #00FFE1 99.85%);  */
+  margin-left: 1.5rem;
+}
+
+.container--titleWishlist {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+  color: #5a5a5a;
+  font-size: 29.5px;
+  justify-content: start;
+  background: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  justify-content: center;
+}
+
+.paragraph--titleWishlist {
+  border-bottom: 4px solid #0075fd;
+  /* border-image-slice: 1;
+    border-image-source: linear-gradient(105.81deg, #FFEA00 -0.75%, #81F46F 31.71%, #42FAA7 64.2%, #00FFE1 99.85%);  */
+  /* margin-left: 5.8rem;  */
+}
+
+.container--titleWishlist-account {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+  color: #5a5a5a;
+  font-size: 29.5px;
+  justify-content: start;
+  background: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-left: 3rem;
+}
+
+.paragraph--titleWishlist-account {
+  border-bottom: 4px solid #0075fd;
+  /* border-image-slice: 1;
+    border-image-source: linear-gradient(105.81deg, #FFEA00 -0.75%, #81F46F 31.71%, #42FAA7 64.2%, #00FFE1 99.85%);  */
+  /* margin-left: 5.8rem;  */
+}
+
+.container--rich-otros {
+  margin-left: -68%;
+}
+
+.container--rich-tarjetas3 {
+  
+}
+
+/* @media (max-width:1024px) and (min-width:640px) {
+    .link--guia-compras,
+    .link--terminos-condiciones,
+    .link--politicas,.link--faqs,
+    .link--metodos-pagos,
+    .link--formas-entrega,
+    .link--contacto,
+    .link--arrepentimiento {
+        font-size: 11px !important;
+    }
+} */
+@media (max-width: 640px) {
+  .wrapper--contacto {
+    margin-left: -2rem;
+  }
+  .link--terminos-condiciones,
+  .link--faqs,
+  .link--formas-entrega,
+  .link--arrepentimiento {
+    padding-right: 1rem;
+  }
+  .link--politicas,
+  .link--metodos-pagos,
+  .link--tabla-talles {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .link--contacto {
+    padding-left: 0 !important;
+  }
+  .link--guia-compras,
+  .link--tabla-talles,
+  .link--terminos-condiciones,
+  .link--politicas,
+  .link--faqs,
+  .link--metodos-pagos,
+  .link--formas-entrega,
+  .link--contacto,
+  .link--arrepentimiento {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .link--guia-compras,
+  .link--tabla-talles,
+  .link--terminos-condiciones,
+  .link--politicas,
+  .link--faqs,
+  .link--metodos-pagos,
+  .link--formas-entrega,
+  .link--contacto,
+  .link--arrepentimiento {
+    font-size: 12px;
+    display: flex;
+    /* flex-direction: column !important; */
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+  .paragraph--ayuda-title {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .link--guia-compras,
+  .link--tabla-talles,
+  .link--terminos-condiciones,
+  .link--politicas,
+  .link--faqs,
+  .link--metodos-pagos,
+  .link--formas-entrega,
+  .link--contacto,
+  .link--arrepentimiento {
+    /* margin-left: 2.4rem; */
+    font-size: 1.05rem;
+  }
+
+  .link--guia-compras:hover,
+  .link--tabla-talles:hover,
+  .link--terminos-condiciones:hover,
+  .link--politicas:hover,
+  .link--faqs:hover,
+  .link--metodos-pagos:hover,
+  .link--formas-entrega:hover,
+  .link--contacto:hover,
+  .link--arrepentimiento:hover {
+    color: #0075fd;
+    /* padding-right: 12px;
+    padding-bottom: 6px;
+    padding-top: 12px; */
+  }
+
+  .wrapper--guia-compras::hover {
+    border-left: 2px solid #0075fd;
+  }
+
+  .container--guia-compras::active {
+    border-left: 2px solid #0075fd;
+  }
+}
+
+@media (max-width: 1150px) and (min-width: 1024px) {
+  .link--guia-compras,
+  .link--tabla-talles,
+  .link--terminos-condiciones,
+  .link--politicas,
+  .link--faqs,
+  .link--metodos-pagos,
+  .link--formas-entrega,
+  .link--contacto,
+  .link--arrepentimiento {
+    font-size: 14px !important;
+  }
+}
+
+.container--guia-compras {
+  justify-content: start;
+}
+
+.link--guia-compras::before {
+  /* content: url('assets/ayuda/icon-nav1.svg'); */
+  /* padding-left: 1rem; */
+  padding-right: 6px;
+}
+
+.link--tabla-talles::before {
+  /* content: url('assets/ayuda/icon-nav9.svg'); */
+  /* padding-left: 1rem; */
+  padding-right: 6px;
+  margin: 0 !important;
+}
+
+.link--terminos-condiciones::before {
+  /* content: url('assets/ayuda/termino-condiciones.svg'); */
+  padding-left: 1rem;
+  padding-right: 6px;
+}
+
+.link--politicas::before {
+  /*  content: url('assets/ayuda/icon-nav6.svg'); */
+  padding-left: 1rem;
+  padding-right: 6px;
+}
+
+.link--faqs::before {
+  /*  content: url('assets/ayuda/icon-nav2.svg'); */
+  padding-left: 1rem;
+  padding-right: 6px;
+}
+
+.link--metodos-pagos::before {
+  /* content: url('assets/ayuda/icon-nav3.svg'); */
+  padding-left: 1rem;
+  padding-right: 6px;
+}
+
+.link--formas-entrega::before {
+  /* content: url('assets/ayuda/icon-nav4.svg'); */
+  padding-left: 1rem;
+  padding-right: 6px;
+}
+
+.link--contacto::before {
+  /* content: url('assets/ayuda/icon-nav7.svg'); */
+  padding-left: 1rem;
+  /* padding-left: 6px; */
+  padding-right: 12px;
+}
+
+.link--arrepentimiento::before {
+  /* content: url('assets/ayuda/icon-nav8.svg'); */
+  padding-left: 1rem;
+  padding-right: 6px;
+}
+/* FIN navegacion lateral */
+
+/* PAGINA MEDIOS DE PAGO */
+/* @media (min-width: 320px) and (max-width: 1023px){
+    .image--rich-tarjetas1{
+        content: url("assets/ayuda/ahora3612mobile.png");
+    }
+    .image--rich-tarjetas2{
+        content: url("assets/ayuda/ahora3mobile.png");
+    }
+    .image--rich-efectivo{
+        content: url("assets/ayuda/efectivoMobile.png");
+    }
+} */
+
+/* PAGINA METODOS ENVIO */
+/* @media (min-width: 320px) and (max-width: 1023px){
+    .image--rich-refuerzos-envios{
+        content: url("/arquivos/formas-envioMobile.png");
+    }
+} */
+
+/* pagina contacto */
+
+.link--contact-1,
+.link--contact-2,
+.link--contact-3 {
+  text-decoration: none !important;
+  color: rgb(0, 0, 0);
+}
+
+.strong--contact-1,
+.strong--contact-2,
+.strong--contact-3 {
+  color: #646464;
+}
+
+.paragraph--contact-1::before {
+  content: url("assets/ayuda/contact-email1.svg");
+  display: block;
+  align-items: center;
+}
+
+.paragraph--contact-2::before {
+  content: url("assets/ayuda/contact-red2.svg");
+  margin: 6px 0;
+  display: block;
+  align-items: center;
+}
+.paragraph--contact-3::before {
+  content: url("assets/ayuda/contact-phone3.svg");
+  display: block;
+  align-items: center;
+}
+
+/* FIN pagina contacto */
+
+/* FAQs */
+.paragraph--solo-disclosure {
+  margin-top: 8px !important;
+  margin-bottom: 8px !important;
+}
+
+.paragraph--sobre-nuestros,
+.paragraph--sobre-envio,
+.paragraph--sobre-devoluciones {
+  margin-top: 3rem;
+}
+
+.paragraph--faq-respuesta-1,
+.paragraph--faq-respuesta-2,
+.paragraph--faq-respuesta-3,
+.paragraph--faq-respuesta-4,
+.paragraph--desplegable-firefox {
+  background: transparent;
+}
+/* FIN FAQs */
+
+/* Sucursales */
+.paragraph--sucursales-title-desk {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+
+.container--sucursales-title-desk {
+  padding-bottom: 1rem;
+}
+
+.paragraph--titulo-acercade {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0;
+  color: #3d4246;
+}
+.paragraph--titulo-acercade-2 {
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 13.5px;
+  font-weight: 300;
+  color: #28292b;
+}
+
+.paragraph--acerca-de-sistema {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 300;
+  color: #28292b;
+}
+
+.link--sucursales-content-desk {
+  list-style: none;
+  text-decoration: none;
+  color: #02afdf;
+}
+
+.link--sucursales-content-tablet {
+  list-style: none;
+  text-decoration: none;
+  color: #02afdf;
+}
+
+.link--sucursales-content-mobile {
+  list-style: none;
+  text-decoration: none;
+  color: #02afdf;
+}
+
+/* CAMBIOS Y DEVOLUCIONES */
+.paragraph--entregas-garantias-1,
+.paragraph--cambios-y-devoluciones-1,
+.paragraph--terminos-condiciones-1,
+.paragraph--politica-privacidad-1 {
+  font-family: "Montserrat", sans-serif;
+  color: #28292b;
+  margin-top: 2rem;
+  padding: 0 !important;
+}
+
+.paragraph--entregas-garantias-2,
+.paragraph--cambios-y-devoluciones-1,
+.paragraph--terminos-condiciones-1,
+.paragraph--politica-privacidad-1 {
+  font-family: "Montserrat", sans-serif;
+  color: #28292b;
+  font-weight: 300;
+}
+
+.wrapper--rich-tarjetas1,
+.wrapper--rich-efectivo {
+  padding-left: 3.2rem;
+}
+
+@media (max-width: 767px) {
+  .container--rich-tarjetas1,
+  .container--rich-tarjetas2,
+  .container--rich-tarjetas3,
+  .container--rich-efectivo,
+  .container--rich-otros {
+    margin: auto;
+    justify-content: center;
+  }
+
+  .wrapper--rich-tarjetas1,
+  .wrapper--rich-efectivo {
+    padding: 0;
+  }
+
+  .container--ayuda-title {
+    justify-content: center;
+  }
+
+  .container--titleWishlist-account {
+    margin: 0 8%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .container--rich-refuerzos-envios-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .paragraph--entregas-garantias-1,
+  .paragraph--cambios-y-devoluciones-1,
+  .paragraph--terminos-condiciones-1,
+  .paragraph--politica-privacidad-1 {
+    padding: 0 2rem;
+  }
+  .paragraph--entregas-garantias-2,
+  .paragraph--cambios-y-devoluciones-1,
+  .paragraph--terminos-condiciones-1,
+  .paragraph--politica-privacidad-1 {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .paragraph--entregas-garantias-1,
+  .paragraph--cambios-y-devoluciones-1,
+  .paragraph--terminos-condiciones-1,
+  .paragraph--politica-privacidad-1 {
+    padding: 0 0.8rem;
+  }
+  .paragraph--entregas-garantias-2,
+  .paragraph--cambios-y-devoluciones-1,
+  .paragraph--terminos-condiciones-1,
+  .paragraph--politica-privacidad-1 {
+    padding: 0 1.2rem;
+  }
+  .paragraph--slider-title-retira {
+    font-size: 14px;
+  }
+}
+
+/* HELP-LIST */
+.link--ayuda-link {
+  text-decoration: none;
+  font-weight: 500;
+  color: #000 !important;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.link--guia-compras{
+  gap: 3px;
+}
+
+.link--ayuda-link:hover{
+  color: #0075FD !important;
+}
+
+.image--ayuda-link{
+  width: 25px;
+}
+.image--politicas{
+  width: 26px;
+  height: 25px;
+}
+.image--faqs{
+  width: 35px;
+}
+.image--guia-compras{
+  width: 35px;
+}
+.paragraph--ayuda-link{
+  font-weight: 700;
+}
+@media (min-width: 1024px) {
+  .link--ayuda-link{
+    font-size: 17px;
+    gap: 15px;
+    border-left: none;
+    padding: 0;
+    line-height: 1.4rem !important;
+  }
+  .link--contacto{
+    padding-left: 2px;
+  }
+  .link--guia-compras{
+    gap: 6px;
+  }
+  .link--faqs{
+    gap: 7px;
+  }
+  .paragraph--ayuda-link {
+    font-weight: 600;
+    padding-top: 0.3rem;
+  }
+}
+/* FIN HELP-LIST */

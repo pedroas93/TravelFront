@@ -1,0 +1,122 @@
+{
+  "flex-layout.col#help-list": {
+    "props": {
+      "marginLeft": 8,
+      "width": "28%",
+      "preventVerticalStretch":true,
+      "blockClass":"help-list"
+    },
+    "children": [
+      "rich-text#help-list-title",
+      "slider-layout#help-list"
+    ]
+  },
+
+  "rich-text#help-list-title":{
+    "props":{
+      "text":"Ayuda",
+      "textPosition": "CENTER",
+      "font": "t-heading-4",      
+      "blockClass":"ayuda-title"
+    }
+  },
+  
+  // SLIDER
+  "slider-layout#help-list": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 9,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": false,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots":"never",
+      "fullWidth":"false",
+      "blockClass": "carousel-help-list"
+    },
+    "children": [
+      "rich-text#ayuda-1",      
+      "rich-text#ayuda-metodos-pagos5",
+      "rich-text#ayuda-politica-envios",
+      "rich-text#ayuda-politica-entregas",   
+      "rich-text#ayuda-faqs4",  
+      "rich-text#ayuda-terminos-condiciones2",
+      "rich-text#cambios-devoluciones",  
+      "rich-text#ayuda-contacto7"
+      
+    ]
+  },
+  "rich-text#ayuda-1": {
+    "props": {
+      "text": "[![alt img](assets/ayuda/guia.png) Guía de<br> compras](/ayuda)",
+      "font": "t-heading-6",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass":["guia-compras", "ayuda-link"]
+    }
+  },
+  "rich-text#ayuda-terminos-condiciones2": {
+    "props": {
+      "text": "[![alt img](assets/ayuda/file-text.png) Términos y<br> condiciones](/ayuda/terminos-condiciones)",
+      "font": "t-heading-5",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass":["terminos-condiciones", "ayuda-link"]
+    }
+  },
+  "rich-text#ayuda-politica-envios": {
+    "props": {
+      "text": "[![alt img](assets/ayuda/envios.png)Política de<br> envíos](/ayuda/politica-envios)",
+      "font": "t-heading-5",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass":["politicas", "ayuda-link"]
+    }
+  },
+  "rich-text#cambios-devoluciones": {
+    "props": {
+      "text": "[![alt img](assets/ayuda/cambios.png) Cambios y<br> devoluciones](/ayuda/cambios-devoluciones)",
+      "font": "t-heading-5",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass":["politicas", "ayuda-link"]
+    }
+  },
+  "rich-text#ayuda-faqs4": {
+    "props": {
+      "text": "[![alt img](assets/ayuda/preguntas.png) Preguntas<br> Frecuentes](/ayuda/faqs)",
+      "font": "t-heading-5",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass":["faqs", "ayuda-link"]
+    }
+  },
+  "rich-text#ayuda-metodos-pagos5": {
+    "props": {
+      "text": "[![alt img](assets/ayuda/pagos.png) Medios de<br> pago](/ayuda/metodos-pagos)",
+      "font": "t-heading-5",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": ["metodos-pagos", "ayuda-link"]
+    }
+  },
+  "rich-text#ayuda-politica-entregas": {
+    "props": {
+      "text": "[![alt img](assets/ayuda/entregas.png) Política de<br> entregas](/ayuda/politica-entregas)",
+      "font": "t-heading-5",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": ["formas-entrega", "ayuda-link"]
+    }
+  },
+  "rich-text#ayuda-contacto7": {
+    "props": {
+      "text": "[![alt img](assets/ayuda/contacto.svg) Contacto](/ayuda/contacto)",
+      "font": "t-heading-5",
+      "textAlignment": "START",
+      "textPosition": "LEFT",
+      "blockClass": ["contacto", "ayuda-link"]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+
+.container--vitrina-search{
+    border-radius: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.09);
+}
+.price_sellingPrice--precio-vitrina-search{
+    font-size: 10px !important;
+    
+}
+
+.clearLink--vitrina-search :global(.vtex-store-components-3-x-price_sellingPriceContainer--precio-vitrina-search) {
+    border: none;
+    font-size: 10px !important;
+}
+
+.brandName--nombre-vitrina-search{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 6px;
+    color: #929292;
+}
+
+.element--vitrinaMerlino-busqueda{
+    padding-top: 0px !important;
+}
+
+.imageWrapper--imagenMer-busqueda :global(.vtex-store-components-3-x-discountInsideContainer){
+    background-color: black;
+    position: absolute;
+    left: 10px;
+    width: 50px;
+    margin-top: .2rem;
+    text-align: center;
+    /* margin-top: -30px; */
+}
+
+.clearLink--vitrina-product :global(.vtex-wish-list-1-x-fill){
+    z-index: 5;
+    margin: 1rem;
+}
+
+.element--vitrina-search{
+    position: relative;
+}
+.element--vitrina-search :global(.vtex-wish-list-1-x-wishlistIconContainer){
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.nameWrapper--nombre-vitrina-search{
+    min-height: 37px;
+}
+
+.brandName--nombre-vitrina-search{
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /* text-transform: lowercase; */
+}
+
+/* .brandName--nombre-vitrina-search::first-letter{
+    text-transform: uppercase;
+} */

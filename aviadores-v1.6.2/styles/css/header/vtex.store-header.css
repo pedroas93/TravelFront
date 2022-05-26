@@ -1,0 +1,11 @@
+
+.headerRowBackground--secondary-header {
+    background-color: #FFFFFF;  
+}
+
+.headerRowContainer--secondary-header {
+    /* padding-left: 5%; */
+    justify-content: center;
+    margin: auto;  
+}
+

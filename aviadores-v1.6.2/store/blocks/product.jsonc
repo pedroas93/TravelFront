@@ -1,0 +1,818 @@
+{  "store.product": {
+  "children": ["flex-layout.row#main-mobile",  "flex-layout.row#container-desk"]
+},
+  // MIGA DE PAN
+  "flex-layout.row#miga-pan":{
+    "props":{
+      "blockClass":"miga-pan"
+    },
+    "children":[
+      "flex-layout.col#breadcrumb"      
+    ]
+  },
+  "flex-layout.col#breadcrumb":{
+    "props":{
+      "paddingLeft":9,
+      "paddingRight":9,
+      "blockClass":"build-container-1"
+    },
+    "children":["breadcrumb"]
+  },  
+  "breadcrumb":{
+    "props":{
+      "showOnMobile": true
+    }
+  },
+  //FIN MIGA DE PAN
+  "flex-layout.row#container-desk":{
+    "children": ["flex-layout.col#container-desk"],
+    "props": {
+      "blockClass": "container-desk"
+    }
+  },
+  "flex-layout.col#container-desk":{
+    "children": [
+      "flex-layout.row#miga-pan",
+      "flex-layout.row#container-interno-desk"
+     
+    ]
+  },
+  "flex-layout.row#container-interno-desk":{
+    "children":[ "flex-layout.col#container-interno-desk"],
+    "props":{
+      "blockClass": "container-interno-desk"
+    }
+  },
+  "flex-layout.col#container-interno-desk":{
+    "children": [ 
+      "flex-layout.row#main-desk", 
+      "flex-layout.row#container-detalle",
+     "shelf.relatedProducts#sugeridos",
+    "shelf.relatedProducts#similares",
+    "flex-layout.row#faq",
+    "flex-layout.row#reviews"
+    ]
+  },
+  "flex-layout.row#container-detalle":{
+    "children": ["flex-layout.col#container-detalle"],
+    "props":{
+      "blockClass": "container-detalle"
+    }
+
+  },
+  "flex-layout.col#container-detalle": {
+    "children": [  "product-description",
+      "product-specification-group#table"],
+     "props":{
+      "blockClass": "container-detalle"
+    }
+
+  },
+  //REVIEWS
+  "flex-layout.row#reviews":{
+    "props":{
+      "blockClass": "reviews"
+    },
+    "children":["product-reviews"]
+
+  },
+"flex-layout.row#main-desk":{
+  "children":["flex-layout.row#vista-principal"],
+  "props":{
+    "blockClass": "product-main"
+  }
+},
+"flex-layout.row#vista-principal":{
+  "children": [
+    "flex-layout.col#product-images",
+    //"flex-layout.col#info-desk"
+   "flex-layout.col#product-info-desk"
+  ],
+  "props":{
+    "blockClass": "vista-principal"
+  }
+},
+"flex-layout.col#info-desk":{
+  "children":["flex-layout.row#top-info",
+    "vtex.store-components:product-name",
+    "product-price#product-details",
+     "flex-layout.row#cantidad",
+     "flex-layout.row#pago",
+     "product-seller-name",
+       "flex-layout.row#modales",
+     "add-to-cart-button"]
+},
+
+"flex-layout.col#product-images":{
+    
+    "children":[ "product-images","flex-layout.row#flags-producto" ],
+  "props":{
+    "blockClass": "product-images"
+  }
+},
+"flex-layout.col#product-info-desk":{
+  "children": [
+    "flex-layout.row#top-info",
+    "vtex.store-components:product-name",
+    "product-price#product-details",
+    "condition-layout.product#availability",
+     "flex-layout.row#pago",
+    "product-seller-name",
+    "flex-layout.row#modales",
+    "add-to-cart-button"
+    ],
+  "props":{
+    "blockClass": "product-info",
+    "width": "45%"
+  }
+},
+"flex-layout.row#top-info":{
+  "children":["flex-layout.col#nombre-marca", "flex-layout.row#iconos"],
+  "props":{
+    "blockClass": "top-info"
+  }
+},
+"flex-layout.col#nombre-marca":{
+  "children":["vtex.store-components:product-brand"]
+},
+"vtex.store-components:product-brand":{
+  "props":{
+    "withLink": "logoAndText"
+  }
+},
+
+
+"flex-layout.row#iconos":{
+  "children":[ "share","add-to-list-btn"],
+  "props":{
+    "blockClass": "iconos"
+  }
+},
+"share": {
+  "props":{
+    "social": {"Facebook": true, "Twitter": false, "WhatsApp": true, "Pinterest": false}
+
+  }
+},
+"product-seller-name":{
+  "props":{
+    "message": "Vendido por {sellerName}",
+    "blockClass":"seller"
+  }
+},
+
+
+
+//CANTIDAD DISPONIBLE QUE SE MUESTRA CON SELECTOR DE CANTIDAD
+
+"flex-layout.row#cantidad":{
+  "children": ["product-availability", "product-quantity"],
+  "props": {
+    "blockClass": "cantidad"
+  }
+},
+"product-quantity": {
+  "props": {
+    "warningQuantityThreshold": 9999999,
+    "showUnit": true,
+    "selectorType": "dropdown"
+  }
+},
+"flex-layout.row#main-mobile": {
+    "children": ["flex-layout.col#container-mobile"
+
+        ],
+        "props":{
+          "blockClass":"product-main-mobile"
+        }
+  },
+  "flex-layout.col#container-mobile":{
+    "children": [
+      "flex-layout.row#miga-pan",
+      "flex-layout.row#top-info",
+      "vtex.store-components:product-name",
+      "flex-layout.row#flags-fav",
+      "product-images",
+      "flex-layout.col#info-mobile", 
+      "flex-layout.row#container-detalle",
+     "shelf.relatedProducts#sugeridos",
+    "shelf.relatedProducts#similares"
+
+
+    ]
+  },
+  "flex-layout.row#flags-fav":{
+      "children":["flex-layout.row#flags-producto", "add-to-list-btn"],
+      "props":{
+        "blockClass": "flags"
+      }
+  },
+  "flex-layout.row#flags-producto":{
+    "children": ["vtex.product-highlights@2.x:product-highlights#collection", "vtex.product-highlights@2.x:product-highlights#promo"],
+    "props":{
+      "blockClass": "flags-producto"
+    }
+  },
+
+  "condition-layout.product#availability": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#cantidad",
+      "Else":  "flex-layout.row#availability"
+    }
+  },
+  "flex-layout.row#availability": {
+    "props": {
+      "blockClass": "message-availability"
+    },
+    "children": ["availability-notify"]
+  },
+
+ 
+  "flex-layout.col#info-mobile":{
+    "children":[
+      "product-price#product-details",
+      "condition-layout.product#availability",
+      "flex-layout.row#pago",
+      "flex-layout.row#modales",
+      "flex-layout.row#btn-comprar"
+
+      
+    ],
+      "props":{
+        "blockClass": "info-mobile"
+      }
+  },
+  "flex-layout.row#pago":{
+    "props":{
+      "marginBottom": 5,
+      "blockClass": "medios-de-pago"
+    },
+    "children":["flex-layout.col#pago"]
+  },
+  "flex-layout.col#pago":{
+    "props":{
+      "horizontalAlign": "center",
+      "blockClass": "col-medios-pagos"
+    },
+    "children":["rich-text#pago", "flex-layout.row#imagenes-pago"]
+  },
+  "rich-text#pago":{
+    "props":{
+      "text": "Medios de pago",
+      "blockClass": "pago"
+    }
+  }, 
+  "flex-layout.row#imagenes-pago":{
+    "children": ["image#tarjeta1", "image#tarjeta2", "image#tarjeta3","image#tarjeta4", "image#tarjeta5", "image#tarjeta6"],
+    "props":{
+      "blockClass": "medios-de-pago-img"
+    }
+
+  },
+  "image#tarjeta1":{
+    "props":{
+      "src": "assets/producto/tarjeta1.png",
+      "blockClass": "img-tarjeta"
+    }
+  }, 
+  "image#tarjeta2":{
+    "props":{
+      "src": "assets/producto/tarjeta2.png",
+      "blockClass": "img-tarjeta"
+
+    }
+  }, 
+  "image#tarjeta3":{
+    "props":{
+      "src": "assets/producto/tarjeta3.png",
+      "blockClass": "img-tarjeta"
+
+    }
+  },
+  "image#tarjeta4":{
+    "props":{
+      "src": "assets/producto/paypal.png",
+      "blockClass": "img-tarjeta"
+
+    }
+  },
+  "image#tarjeta5":{
+    "props":{
+      "src": "assets/producto/stripe.png",
+      "blockClass": "img-tarjeta"
+
+    }
+  },
+  "image#tarjeta6":{
+    "props":{
+      "src": "assets/producto/efectivo.png",
+      "blockClass": "img-tarjeta"
+
+    }
+  },
+  "flex-layout.row#btn-comprar":{
+    "children": ["add-to-cart-button"],
+    "props": {
+      "blockClass": "btn-comprar"
+    }
+  },
+
+  "flex-layout.col#descripcion":{
+    "children": ["product-description"],
+    "props":{
+      "blockClass": "descripcion"
+    }
+  },
+  "flex-layout.col#caracteristicas":{
+    "children": ["product-specification-group#table"],
+    "props":{
+      "blockClass": "caracteristicas"
+    }
+  },
+  
+
+  //MODALES ENVÍO/RETIRO
+  "flex-layout.row#modales":{
+      
+      "children":["modal-trigger#envio", "modal-trigger#retiro", "modal-trigger#envioExpress"],
+      "props":{
+        "blockClass": "modales-producto"
+      }
+  },
+  
+  "modal-trigger#envio": {
+    "children": [
+      "flex-layout.row#envio",
+      "modal-layout#envio"
+    ]
+  },
+  "flex-layout.row#envio": {
+    "children":["image#envio", "rich-text#envio"],
+    "props": {
+      "blockClass": "trigger"
+    }
+  },
+  "image#envio":{
+    "props": {
+      "src": "assets/producto/envio.svg",
+      "blockClass":"icono-trigger"
+    }
+  },
+  "rich-text#envio":{
+    "props": {
+      "text": "Entrega a domicilio",
+      "blockClass": "texto-trigger"
+    }
+  },
+  
+  "modal-layout#envio": {
+    "children": [
+      "modal-header",
+      "flex-layout.row#shipping-simulator"
+    ]
+  },
+  "flex-layout.row#shipping-simulator": {
+    "children":["shipping-simulator"]
+  },
+  "modal-trigger#retiro": {
+    "children": [
+      "flex-layout.row#retiro",
+      "modal-layout#retiro"
+    ]
+  },
+  "flex-layout.row#retiro": {
+    "children":["image#retiro", "rich-text#retiro"],
+    "props": {
+      "blockClass": "trigger"
+    }
+  },
+  "image#retiro":{
+    "props": {
+      "src": "assets/producto/retiro.svg",
+      "blockClass":"icono-trigger-retiro"
+    }
+  },
+  "rich-text#retiro":{
+    "props": {
+      "text": "Retiro en Aviadores Go",
+      "blockClass": "texto-trigger"
+    }
+  },
+  
+  "modal-layout#retiro": {
+    "children": [
+      "modal-header",
+      "rich-text#titulo-modal-retiro",
+      "flex-layout.row#modal-retiro"
+    ]
+  },
+  "rich-text#titulo-modal-retiro":{
+    "props":{
+      "text": "Retira tu compra en nuestro shopping",
+      "blockClass": "titulo-modal-retiro"
+    }
+  },
+  "flex-layout.row#modal-retiro":{
+      
+      "children": ["image#retiro-modal","flex-layout.row#texto-modal-retiro"],
+      "props":{
+        "blockClass": "modal-retiro"
+      }
+  },
+  "flex-layout.row#texto-modal-retiro":{
+    "children":[ "rich-text#titulo-content-retiro" ,"rich-text#modal-content-retiro"],
+    "props": {
+      "blockClass": "texto-direccion"
+    }
+  },
+  "image#retiro-modal":{
+    "props":{
+      "src": "assets/producto/retiro-modal.svg",
+      "blockClass": "image-retiro"
+    }
+  },
+  "rich-text#titulo-content-retiro":{
+    "props":{
+      "text": "Parque Los Aviadores",
+      "blockClass": "direccion"
+    }
+  },
+
+  "rich-text#modal-content-retiro": {
+    "props": {
+      "text": "Av. Los Aviadores, Palo Negro 2117, Aragua, Venezuela"
+    }
+  },
+  "modal-header":{
+    "props":{
+      "showCloseButton": true
+    }
+  },
+
+  "modal-trigger#envioExpress": {
+    "children": [
+      "flex-layout.row#envioExpress",
+      "modal-layout#envioExpress"
+    ]
+  },
+  "flex-layout.row#envioExpress": {
+    "children":["image#envioExpress", "rich-text#envioExpress"],
+    "props": {
+      "blockClass": "trigger"
+    }
+  },
+  "image#envioExpress":{
+    "props": {
+      "src": "assets/producto/envio.svg",
+      "blockClass":"icono-trigger"
+    }
+  },
+  "rich-text#envioExpress":{
+    "props": {
+      "text": "Delivery express",
+      "blockClass": "texto-trigger"
+    }
+  },
+  
+  "modal-layout#envioExpress": {
+    "children": [
+      "modal-header",
+      "flex-layout.row#shipping-simulator"
+    ]
+  },
+  //FIN MODALES ENVIO/RETIRO
+  "add-to-cart-button":{
+    "props":{
+      "text": "Agregar al carrito"
+    }
+  },
+  "product-price#product-details": {
+    "props": {
+      "showInstallments": false,
+      "showSavings": false,
+      "blockClass":"price-product"
+    }
+   
+  },
+  "product-availability": {
+    "props": {
+      "threshold":"1",
+      "lowStockMessage":"Only {quantity} left!",
+      "highStockMessage":" Stock disponible"
+    }
+  },
+
+  "product-selling-price#summary": {
+    "props": {
+      "markers": [
+        "highlight"
+      ],
+      "blockClass": "summary",
+      "message": "Por {sellingPriceValue}"
+    }
+  },
+  "product-price-savings":{
+    "props":{
+      "message":"Ahorrá {savingsValue}"
+    }
+  },
+  "product-specification-group#table": {
+    "children": ["flex-layout.row#spec-group"]
+  },
+  "flex-layout.row#spec-group": {
+    "props": {
+      "blockClass": "productSpecificationGroup"
+    },
+    "children": ["flex-layout.col#spec-group"]
+  },
+  "flex-layout.col#spec-group": {
+    "children": ["flex-layout.row#spec-group-name", "product-specification"]
+  },
+  "flex-layout.row#spec-group-name": {
+    "props": {
+      "blockClass": "productSpecificationGroupName"
+    },
+    "children": ["product-specification-text#group"]
+  },
+  "product-specification": {
+    "children": ["flex-layout.row#spec-item"]
+  },
+  "flex-layout.row#spec-item": {
+    "props": {
+      "blockClass": "productSpecification"
+    },
+    "children": ["flex-layout.col#spec-name", "flex-layout.col#spec-value"]
+  },
+  "flex-layout.col#spec-name": {
+    "props": {
+      "blockClass": "productSpecificationName",
+      "width": {
+        "mobile": "50%",
+        "desktop": "25%"
+      }
+    },
+    "children": ["product-specification-text#specification"]
+  },
+  "flex-layout.col#spec-value": {
+    "props": {
+      "blockClass": "productSpecificationValue"
+    },
+    "children": ["product-specification-values"]
+  },
+  "product-specification-values": {
+    "children": ["product-specification-text#value"]
+  },
+  "product-specification-text#group": {
+    "props": {
+      "message": "{groupName}"
+    }
+  },
+  "product-specification-text#specification": {
+    "props": {
+      "message": "{specificationName}"
+    }
+  },
+  "product-specification-text#value": {
+    "props": {
+      "message": "{specificationValue}"
+    }
+  },
+  "flex-layout.row#faq":{
+    "children": ["rich-text#faq-titulo",  "flex-layout.col#faq"],
+    "props":{
+      "blockClass": "faq"
+    }
+  },
+  "flex-layout.col#faq":{
+    "children": [ "disclosure-layout#faq1", "disclosure-layout#faq2", "disclosure-layout#faq3", "disclosure-layout#faq4"],
+    "props":{
+      "blockClass":"faq"
+    }
+  },
+  "rich-text#faq-titulo":{
+    "props": {
+      "text": "Preguntas frecuentes",
+      "blockClass": "faq"
+    }
+
+  },
+    "disclosure-layout#faq1": {
+      "children": ["disclosure-trigger#1", "disclosure-content#1"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "disclosure-layout#faq2": {
+      "children": ["disclosure-trigger#2", "disclosure-content#2"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "disclosure-layout#faq3": {
+      "children": ["disclosure-trigger#3", "disclosure-content#3"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "disclosure-layout#faq4": {
+      "children": ["disclosure-trigger#4", "disclosure-content#4"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "disclosure-trigger#1": {
+      "children": ["rich-text#question1"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "disclosure-content#1": {
+      "children": ["rich-text#answer1"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "rich-text#question1": {
+      "props": {
+        "text": "¿Qué debo hacer si mi producto llega rayado o dañado?",
+        "blockClass": "pregunta"
+      }
+    },
+    "rich-text#answer1": {
+      "props": {
+        "text": "Si tu producto ha llegado rayado o dañado, puedes escribirnos a [servicioalcliente@aviadoresgo.com](mailto:servicioalcliente@aviadoresgo.com), llamar al [(0412) 1594643](tel:04121594643) o escribirnos en nuestro chat en línea donde te atenderemos."
+      }
+    },
+    "disclosure-trigger#2": {
+      "children": ["rich-text#question2"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "disclosure-content#2": {
+      "children": ["rich-text#answer2"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "rich-text#question2": {
+      "props": {
+        "text": "¿Qué debo hacer si recibí mi producto incompleto?",
+        "blockClass": "pregunta"
+      }
+    },
+    "rich-text#answer2": {
+      "props": {
+        "text": "Si tu producto ha llegado incompleto, puedes escribirnos a [servicioalcliente@aviadoresgo.com](mailto:servicioalcliente@aviadoresgo.com), llamar al [(0412) 1594643](tel:04121594643) o escribirnos en nuestro chat en línea donde te atenderémos."
+      }
+    },
+    "disclosure-trigger#3": {
+      "children": ["rich-text#question3"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "disclosure-content#3": {
+      "children": ["rich-text#answer3"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "rich-text#question3": {
+      "props": {
+        "text": "¿Qué debo hacer si quiero realizar un cambio o devolución?",
+        "blockClass": "pregunta"
+      }
+    },
+    "rich-text#answer3": {
+      "props": {
+        "text": "Para realizar un cambio o devolución debes escribirnos a [servicioalcliente@aviadoresgo.com](mailto:servicioalcliente@aviadoresgo.com), llamar al [(0412) 1594643](tel:04121594643). Ahora puedes solicitar tu cambio o devolución en la sección Mis Pedidos. Te informamos que hay ciertos plazos y restricciones dependiendo de cada vendedor. Para más información revisa nuestra sección de Cambios y Devoluciones en nuestros términos y condiciones: [https://www.parquelosaviadores.com/terminos-y-condiciones](https://www.parquelosaviadores.com/terminos-y-condiciones)"
+      }
+    },
+    "disclosure-trigger#4": {
+      "children": ["rich-text#question4"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "disclosure-content#4": {
+      "children": ["rich-text#answer4"],
+      "props":{
+        "blockClass": "faq"
+      }
+    },
+    "rich-text#question4": {
+      "props": {
+        "text": "¿Qué debo hacer si mi producto presenta una falla?",
+        "blockClass": "pregunta"
+      }
+    },
+    "rich-text#answer4": {
+      "props": {
+        "text": "Si tu producto presenta alguna falla, puedes escribirnos a [servicioalcliente@aviadoresgo.com](mailto:servicioalcliente@aviadoresgo.com), llamar al [(0412) 1594643](tel:04121594643) o escribirnos en nuestro chat en línea donde te atenderémos."
+      }
+    },
+   
+
+    
+  // PRODUCTOS RELACIONADOS
+
+  // titulo
+  // "flex-layout.row#titulo-vitrina":{
+  //   "children":["rich-text#relacionados"],
+  //   "props":{
+  //     "blockClass": "relacionados"
+
+  //   }
+  // },
+  // "rich-text#relacionados": {
+  //   "props":{
+  //     "text": "Podría ser de tu interés",
+  //     "blockClass": "relacionados"
+  //   }
+  // },
+  // "flex-layout.row#p-relacionados":{
+  //   "props":{
+  //     "fullWidth":false
+  //   },
+  //   "children":[
+  //     "flex-layout.col#p-relac" 
+  //   ]
+  // },
+  // "flex-layout.col#p-relac":{
+  //   "props":{
+  //     "paddingLeft":10,
+  //     "paddingRight":10,
+  //     "blockClass":"build-container"
+  //   },
+  //   "children":["shelf#relacionados"]
+  // },
+
+  // "shelf#relacionados":{
+  //   "blocks": [
+  //     "product-summary.shelf#vitrina-product"
+  //   ],
+  //   "props": {
+  //     "recomendation": "editor.relatedProducts.similars",
+  //     "orderBy": "OrderByTopSaleDESC",
+  //     "productList": {
+  //       "maxItems": 10,
+  //       "itemsPerPage": 4.5,
+  //       "minItemsPerPage": 1.2,
+  //       "scroll": "ONE_BY_ONE",
+  //       "arrows": true,
+  //       "showTitle":false,
+  //       "gap":"ph5"
+  //     },
+  //     "blockClass":"shelf-vitrina"
+  //   }
+  // }
+  //FIN PRODUCTOS RELACIONADOS
+  
+
+  "shelf.relatedProducts#sugeridos":{
+    "blocks": ["product-summary.shelf#vitrina-product"],
+    "props":{
+      "recommendation": "buy",
+       "productList": {
+          
+            "titleText": "Productos similares",
+            "maxItems": 10,
+            "itemsPerPage": 4.2,
+            "infinite": "true",
+            "scroll": "BY_PAGE",
+            "arrows": "true",
+           "minItemsPerPage": 1.5,
+           "gap":"ph2"
+
+        },
+  
+        "blockClass": "shelf-vitrina"
+    }
+  },
+  
+  "shelf.relatedProducts#similares":{
+    "blocks": ["product-summary.shelf#vitrina-product"],
+    "props":{
+      "recommendation": "view",
+       "productList": {
+        "maxItems": 10,
+
+            "titleText": "Podría ser de su interés",
+            "itemsPerPage": 4.2,
+            "scroll": "BY_PAGE",
+            "arrows": "true",
+            "minItemsPerPage": 1.5,
+            "gap":"ph2"
+        },
+  
+        "blockClass": "shelf-vitrina"
+    }
+  }
+              
+}

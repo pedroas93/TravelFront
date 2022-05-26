@@ -1,0 +1,20 @@
+
+/* .summaryItemLabel--tituloTotal{
+    font-weight: bold;
+}
+
+.summaryItemLabel--tituloTotal:nth-child(odd){
+    color: #646464;
+    font-weight: bold;
+}*/
+
+:global(.vtex-checkout-summary-0-x-summaryItemLabel--tituloTotal){
+    font-weight: bold;
+        font-size: 14px;
+        color: #393536;
+        font-family: "Montserrat", sans-serif; 
+} 
+ 
+.summarySmallDisclaimer{
+    display: none;
+}

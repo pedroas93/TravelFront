@@ -1,0 +1,60 @@
+{
+    "store.custom#cambios-devoluciones": {
+        "blocks": [
+            "flex-layout.row#main-politicas"
+        ]
+    },
+    "flex-layout.row#main-politicas": {
+        "props":{
+            "marginTop":8,
+            "marginBottom":8,  
+            "blockClass":"main-politicas"
+        },
+        "children": [
+            "flex-layout.col#help-list",
+            "flex-layout.col#politicas"
+        ]
+    },
+    
+    "flex-layout.col#politicas": {
+        "props": {
+            "width": "82%",
+            "paddingLeft":9,
+            "paddingRight":9,
+            "preventVerticalStretch":true,
+            "blockClass":"build-container-ayuda"
+        },
+        "children": [
+            "rich-text#cambios-y-devoluciones-title",
+            "rich-text#cambios-y-devoluciones"
+        ]
+    },
+
+    "rich-text#cambios-y-devoluciones-title": {
+        "props": {
+            "text":"Cambios y devoluciones",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "font": "t-heading-4",
+            "blockClass":"rich-cambios-y-devoluciones"
+        }
+    },
+
+    //  CAMBIOS Y DEVOLUCIONES
+     "rich-text#cambios-y-devoluciones":{
+         "props":{
+            "blockClass":"cambios-y-devoluciones-1",
+             "text":"**Condiciones para devolución de producto:**  \n  En casos de devoluciones es necesario que el producto esté en perfectas condiciones, con accesorios y empaques originales. En todos los casos se deberá conservar la factura de compra (en su versión física o digital) y remito de entrega, así como el talón de registro de fabricación del producto. \n En el caso de productos de uso personal como colchones, somieres y almohadas −por razones de salubridad e higiene− una vez abierto el empaque los mismos no serán susceptibles a cambios ni reembolsos. \n Si el pedido de devolución es por una compra realizada en un local físico, es necesario que te dirijas a hacer el reclamo al punto de venta donde adquiriste el producto ya que en esta tienda no tenemos forma de cómo gestionar un cambio o devolución por una compra hecha en otro comercio."
+         }
+     }
+    
+
+
+    // FIN POLITICA DE PRIVACIDAD 1
+
+    // **ACLARACIONES **
+    // PARA HACER FUNCIONAR EL DESPLEGABLE, SE NECESITAN CARGAR 2 DEPENDENCIAS:
+    // "vtex.disclosure-layout": "1.x",
+    // "vtex.store-icons": "0.x" <--para hacer funcionar flechas indicadoras **
+
+}

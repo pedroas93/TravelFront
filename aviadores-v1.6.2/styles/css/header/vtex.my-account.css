@@ -1,0 +1,210 @@
+
+.userGreeting{
+    font-size: 0px;
+}
+.userGreeting::after
+{
+    content: "¡Bienvenido";
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.userName{
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+@media (min-width:766px){
+    .menu{
+        width: 22%;
+        border-right: 1px solid #acacac;
+    }
+}
+
+
+
+.userImage{
+    display: none;
+}
+
+.userInfo::before{
+    content: "";
+    /* background-image: url('assets/account/image-perfil.png'); */
+    background-size: 90px;
+    display: inline-block !important;
+    width: 90px;
+    height: 90px;
+    margin-right: 4px;
+}
+
+.menuLinks :global(.b--action-primary){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    border-color: #0075FD;
+    color: #0075FD;
+    white-space: pre-wrap;
+}
+
+.menuLinks{
+    font-family: 'Montserrat', sans-serif;
+    color: #646464;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+:global(.vtex-pageHeader-link__container) :global(.vtex-button){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0075FD;
+}
+:global(.vtex-pageHeader-link__container) :global(.vtex-button):hover{
+    background-color: #f1f1f1;
+}
+:global(.vtex-pageHeader-link__container) :global(.vtex-button) :global(.t-action--small){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #0075FD;
+}
+
+:global(.vtex-pageHeader__title){
+    font-family: 'Montserrat', sans-serif;
+    color: #555555;
+    font-weight: 400;
+}
+
+
+
+.boxContainer{
+    border-radius: 0px;
+    border-color: #0075FD;
+}
+
+.dataEntryLabel,
+.newsletterContainerTitle
+{
+    color: #646464;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.dataEntryChildren{
+    font-family: 'Montserrat', sans-serif;
+    color: #28292B;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.newsletterContainerMessage{
+    font-family: 'Montserrat', sans-serif;
+    color: #28292B;
+}
+
+.boxContainerFooter :global(.vtex-button__label),
+.passwordBox :global(.vtex-checkbox__label)
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    text-transform: none;
+    color: #0075FD !important;
+}
+
+.boxContainerFooter :global(.vtex-button):hover{
+    background-color: transparent;
+    border: 1px solid #0075FD;
+    border-radius: 0px;
+}
+
+.addressList :global(.t-heading-4)
+{
+    font-size: 0px;
+}
+.addressList :global(.t-heading-4)::before
+{
+    content: "Usted no tiene ninguna dirección registrada.";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.cards-list :global(.t-heading-4),
+.orders-list :global(.t-heading-4)
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+:global(.vtex-pageHeader__children) :global(.vtex-button){
+    background-color: #0075FD;
+    border-radius: 0px;
+    border-color: #0075FD;
+}
+
+:global(.vtex-pageHeader__children) :global(.vtex-button):hover{
+    background-color: #0075FD;
+}
+
+:global(.vtex-pageHeader__children) :global(.vtex-button__label){
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.boxContainerBody :global(.vtex-dropdown__label),
+.boxContainerBody :global(.vtex-input__label),
+.boxContainerBody :global(.vtex-address-form__postalCode-forgottenURL)
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.boxContainerBody :global(.vtex-address-form-4-x-container),
+.boxContainerBody :global(.vtex-input-prefix__group),
+.boxContainerBody :global(.vtex-button)
+{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0px;
+    border-color: #555555;
+}
+
+.boxContainerBody :global(.vtex-button){
+    background-color: #0075FD;
+    border-radius: 0px;
+    border-color: #0075FD;
+    color:  #FFFFFF;
+}
+.boxContainerBody :global(.vtex-button):hover{
+    background-color: #0075FD;
+}
+
+:global(.vtex_my-authentication_box_container){
+    border-color: #0075FD;
+}
+
+:global(.vtex-account__page-body) :global(.vtex-button__label){
+    color:  #FFFFFF;
+}
+
+.boxContainerBody :global(.address-summary){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #646464;
+}
+
+:global(.vtex-input__label),
+:global(.vtex-radio__label)
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 767px){
+    
+    .menuLinks{
+        font-family: 'Montserrat', sans-serif;
+        color: #646464;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,889 @@
+{
+    "store.custom#faqs": {
+        "blocks": [
+            "flex-layout.row#main-faqs-ayuda"
+        ]
+    },
+    "flex-layout.row#main-faqs-ayuda": {
+        "props":{
+            "paddingTop":8,
+            "paddingBottom":8,
+            "blockClass":"main-faqs-ayuda"
+        },
+        "children": [
+            "flex-layout.col#help-list",
+            "flex-layout.col#faqs-ayuda"
+        ]
+    },
+    
+    "flex-layout.col#faqs-ayuda": {
+        "props": {
+            "width": "82%",
+            "paddingLeft":9,
+            "paddingRight":9,
+            "preventVerticalStretch":true,
+            "blockClass":"build-container-ayuda"
+        },
+        "children": [
+            "rich-text#faqs-title-ayuda",
+            "flex-layout.row#faq-ayuda"
+        ]
+    },
+    "rich-text#faqs-title-ayuda": {
+        "props": {
+            "text":"Preguntas frecuentes",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "font": "t-heading-4",
+            "blockClass":"rich-faqs"
+        }
+    },
+    "flex-layout.row#faq-ayuda": {
+        "props": {
+            "blockClass": "faq-ayuda"
+        },
+        "children": [
+            "flex-layout.col#faq-ayuda"
+        ]
+    },
+    "flex-layout.col#faq-ayuda": {
+        "props": {"blockClass": "faq-ayuda"},
+        "children": [
+            "rich-text#mi-cuenta",
+            "disclosure-layout-group#faq-cuenta",
+            "rich-text#metodos-pago",
+            "disclosure-layout-group#faq-envio",
+            "rich-text#precios-promociones",
+            "disclosure-layout-group#faq-devolucion",
+            "rich-text#despacho",
+            "disclosure-layout-group#faq-despacho",
+            "rich-text#cambios-devolucion",
+            "disclosure-layout-group#faq-cambios-devolucion",
+            "rich-text#atencion-cliente",
+            "disclosure-layout-group#faq-atencion-cliente"
+        ]
+    },
+    "rich-text#mi-cuenta":{
+        "props":{
+            "text":"**MI CUENTA**",
+            "blockClass":"sobre-nuestros"
+        }
+    },
+    "rich-text#metodos-pago":{
+        "props":{
+            "text":"**MÉTODOS DE PAGO**",
+            "blockClass":"sobre-nuestros"
+        }
+    },
+    "rich-text#precios-promociones":{
+        "props":{
+            "text":"**PRECIOS Y PROMOCIONES**",
+            "blockClass":"sobre-envio"
+        }
+    },
+    "rich-text#despacho":{
+        "props":{
+            "text":"**DESPACHO**",
+            "blockClass":"sobre-devoluciones"
+        }
+    },
+    "rich-text#cambios-devolucion":{
+        "props":{
+            "text":"**CAMBIOS Y DEVOLUCIONES**",
+            "blockClass":"sobre-devoluciones"
+        }
+    },
+    "rich-text#atencion-cliente":{
+        "props":{
+            "text":"**ATENCIÓN AL CLIENTE**",
+            "blockClass":"sobre-devoluciones"
+        }
+    },
+    
+    "disclosure-layout-group#faq-cuenta": {
+        "children": [
+            "disclosure-layout#faq-1",
+            "disclosure-layout#faq-2",
+            "disclosure-layout#faq-3",
+            "disclosure-layout#faq-4"
+        ]
+    },
+    //MI CUENTA
+    // PREGUNTA UNO
+    "disclosure-layout#faq-1": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-1",
+            "disclosure-content#faq-1"
+        ]
+    },
+    "disclosure-trigger#faq-1": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta1",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-1": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta-1"
+        ]
+    },
+    "rich-text#faq-pregunta1": {
+        "props": {
+            "text": "¿Por qué crear una cuenta en Aviadores Go?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta-1": {
+        "props": {
+            "blockClass":"faq-respuesta-1",
+            "text": "En nuestro sitio para comprar, se requiere una cuenta. Es muy sencillo, solo debes ingresar tu correo electrónico y los datos necesarios para la compra. Al crear una cuenta podrás hacerles seguimiento a todos tus pedidos, guardar tus preferencias de compra y datos de envío, tarjetas usadas, entre otros beneficios que harán que tu proceso de compra sea mucho más fácil y rápido. Además, ¡crear tu cuenta en AviadoresGO es completamente gratis!"
+        }
+    }, //FIN PREGUNTA UNO
+    // PREGUNTA DOS
+    "disclosure-layout#faq-2": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-2",
+            "disclosure-content#faq-2"
+        ]
+    },
+    "disclosure-trigger#faq-2": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta2",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-2": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta2"
+        ]
+    },
+    "rich-text#faq-pregunta2": {
+        "props": {
+            "text": "¿Cómo creo mi cuenta en Aviadores Go?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta2": {
+        "props": {
+            "blockClass":"faq-respuesta-2",
+            "text": "Ubica el ícono de Mi cuenta en la barra superior."
+        }
+    }, //FIN PREGUNTA DOS
+    // PREGUNTA TRES
+    "disclosure-layout#faq-3": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-3",
+            "disclosure-content#faq-3"
+        ]
+    },
+    "disclosure-trigger#faq-3": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta3",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-3": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta3"
+        ]
+    },
+    "rich-text#faq-pregunta3": {
+        "props": {
+            "text": "¿Cómo puedo cambiar o recuperar mi contraseña?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta3": {
+        "props": {
+            "blockClass":"faq-respuesta-3",
+            "text": "Ubica el ícono de Mi cuenta en la barra superior."
+        }
+    }, //FIN PREGUNTA TRES
+    // PREGUNTA CUATRO
+    "disclosure-layout#faq-4": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-4",
+            "disclosure-content#faq-4"
+        ]
+    },
+    "disclosure-trigger#faq-4": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta4",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-4": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta4"
+        ]
+    },
+    "rich-text#faq-pregunta4": {
+        "props": {
+            "text": "¿Cómo edito los datos de mi cuenta?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta4": {
+        "props": {
+            "blockClass":"faq-respuesta-4",
+            "text": "1- Ingresa tu correo electrónico en la parte inferior de nuestra página principal. Al hacer clic en enviar, verás el formulario que debes de llenar con tus datos para proceder. \n\n 2- Antes de terminar tu compra puedes aceptar en la primera y segunda casilla para poder enviarte las promociones a tu correo. Recuerda que es importante dar clic en la segunda casilla para continuar con tu compra. \n\n 3- Una vez que ya hayas creado tu cuenta, ingresa a tu perfil y selecciona la opción para recibir los boletines informativos promocionales."
+        }
+    }, //FIN PREGUNTA CUATRO
+
+    // MÉTODOS DE PAGO 
+    "disclosure-layout-group#faq-envio":{
+        "children":[
+            "disclosure-layout#faq-1-envio",
+            "disclosure-layout#faq-2-envio"
+        ]
+    },
+    // PREGUNTA UNO
+    "disclosure-layout#faq-1-envio": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-1-envio",
+            "disclosure-content#faq-1-envio"
+        ]
+    },
+    "disclosure-trigger#faq-1-envio": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta1-envio",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-1-envio": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta-1-envio"
+        ]
+    },
+    "rich-text#faq-pregunta1-envio": {
+        "props": {
+            "text": "¿Cuáles son los métodos de pago aceptados?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta-1-envio": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "Por el momento aceptamos pagos a través de la pasarela de pago o botón de pago de Banesco BancaUniversal, Banco Mercantil y PayPal para pagos en divisas. Asegúrate que tu tarjeta de débito (Banesco y Mercantil)."
+        }
+    }, //FIN PREGUNTA UNO
+    // PREGUNTA DOS
+    "disclosure-layout#faq-2-envio": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-2-envio",
+            "disclosure-content#faq-2-envio"
+        ]
+    },
+    "disclosure-trigger#faq-2-envio": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta2-envio",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-2-envio": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta2-envio"
+        ]
+    },
+    "rich-text#faq-pregunta2-envio": {
+        "props": {
+            "text": "¿Puedo pagar en Parquelosaviadores.com con tarjetas de crédito extranjeras?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta2-envio": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "El cliente deberá constatar el buen estado general del embalaje de la mercadería recibida por el Transporte antes de firmar la conformidad de la recepción.<br><br>Si se encontrare en mal estado, FIRMAR LA RECEPCIÓN EN DISCONFORMIDAD. "
+        }
+    }, //FIN PREGUNTA DOS
+    // FIN SOBRE EL ENVIO 
+
+    // SOBRE CAMBIOS Y DEVOLUCIONES
+    "disclosure-layout-group#faq-devolucion":{
+        "children":[
+            "disclosure-layout#faq-1-devolucion",
+            "disclosure-layout#faq-2-devolucion",
+            "disclosure-layout#faq-3-devolucion"
+        ]
+    },
+
+    // PREGUNTA UNO
+    "disclosure-layout#faq-1-devolucion": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-1-devolucion",
+            "disclosure-content#faq-1-devolucion"
+        ]
+    },
+    "disclosure-trigger#faq-1-devolucion": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta1-devolucion",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-1-devolucion": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta-1-devolucion"
+        ]
+    },
+    "rich-text#faq-pregunta1-devolucion": {
+        "props": {
+            "text": "Los precios expresados en Parquelosaviadores.com ¿pueden variar?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta-1-devolucion": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "Sí, esta y otra información como stocks, servicios, promociones y demás podrían ser modificadas encualquier momento y sin previo aviso; estos cambios no afectarán a las solicitudes de compra quehayan sido aprobadas y comunicadas con anterioridad."
+        }
+    }, //FIN PREGUNTA UNO
+    // PREGUNTA DOS
+    "disclosure-layout#faq-2-devolucion": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-2-devolucion",
+            "disclosure-content#faq-2-devolucion"
+        ]
+    },
+    "disclosure-trigger#faq-2-devolucion": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta2-devolucion",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-2-devolucion": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta2-devolucion"
+        ]
+    },
+    "rich-text#faq-pregunta2-devolucion": {
+        "props": {
+            "text": "¿Los precios de los productos incluyen IVA?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta2-devolucion": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "Todos los precios incluyen IVA."
+        }
+    }, //FIN PREGUNTA DOS
+    
+    // PREGUNTA TRES
+    "disclosure-layout#faq-3-devolucion": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-3-devolucion",
+            "disclosure-content#faq-3-devolucion"
+        ]
+    },
+    "disclosure-trigger#faq-3-devolucion": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta3-devolucion",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-3-devolucion": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta3-devolucion"
+        ]
+    },
+    "rich-text#faq-pregunta3-devolucion": {
+        "props": {
+            "text": "Si quiero saber la disponibilidad de un producto ¿Dónde puedo consultar?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta3-devolucion": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "Los podrás consultar en la misma página del producto o en nuestro chat en línea."
+        }
+    }, //FIN PREGUNTA TRES
+
+
+    //FIN SOBRE CAMBIOS Y DEVOLUCIONES
+
+     // DESPACHO
+     "disclosure-layout-group#faq-despacho":{
+        "children":[
+            "disclosure-layout#faq-1-despacho",
+            "disclosure-layout#faq-2-despacho",
+            "disclosure-layout#faq-3-despacho",
+            "disclosure-layout#faq-4-despacho"
+        ]
+    },
+
+    
+    // PREGUNTA CUATRO
+    "disclosure-layout#faq-1-despacho": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-1-despacho",
+            "disclosure-content#faq-1-despacho"
+        ]
+    },
+    "disclosure-trigger#faq-1-despacho": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta1-despacho",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-1-despacho": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta1-despacho"
+        ]
+    },
+    "rich-text#faq-pregunta1-despacho": {
+        "props": {
+            "text": "¿Cuáles son las modalidades de despacho?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta1-despacho": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "Con las modalidades siguientes: \n • Delivery Express (máximo 24 horas) \n • Despacho Nacional (currier o empresas de encomiendas nacionales. Más de 24 horas) \n • Entrega en Centro Comercial Parque Los Aviadores ( lo que te permite recoger tupedido, siempre tomando las precauciones y siguiendo todos los protocolos por tu seguridad y bienestar): \n • PickUpo \n • Valet Parking"
+        }
+    }, //FIN PREGUNTA CUATRO
+    // PREGUNTA CINCO
+    "disclosure-layout#faq-2-despacho": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-2-despacho",
+            "disclosure-content#faq-2-despacho"
+        ]
+    },
+    "disclosure-trigger#faq-2-despacho": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta2-despacho",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-2-despacho": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta2-despacho"
+        ]
+    },
+    "rich-text#faq-pregunta2-despacho": {
+        "props": {
+            "text": "¿Dónde realizan envíos?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta2-despacho": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "La cobertura de envíos depende en la información al momento del checkout en la compra onlinea. Así mismo, se podrá visualizar los tipos de envíos ofrecidos."
+        }
+    }, //FIN PREGUNTA CINCO
+    // PREGUNTA SEIS
+    "disclosure-layout#faq-3-despacho": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-3-despacho",
+            "disclosure-content#faq-3-despacho"
+        ]
+    },
+    "disclosure-trigger#faq-3-despacho": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta3-despacho",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-3-despacho": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta3-despacho"
+        ]
+    },
+    "rich-text#faq-pregunta3-despacho": {
+        "props": {
+            "text": "¿Cuánto cuesta y cuánto demora el envío de los productos?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta3-despacho": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "El plazo mínimo de entrega es de un día hábil y el plazo máximo varía de acuerdo a las políticas de entrega de AviadoresGO. El costo del despacho varía y depende del volumen y distancia. Contamos con ciertos productos que se pueden enviar el mismo día con la modalidad Delivery Express."
+        }
+    },
+    //FIN PREGUNTA SEIS
+
+    // PREGUNTA SEIS
+    "disclosure-layout#faq-4-despacho": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-4-despacho",
+            "disclosure-content#faq-4-despacho"
+        ]
+    },
+    "disclosure-trigger#faq-4-despacho": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta4-despacho",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-4-despacho": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta4-despacho"
+        ]
+    },
+    "rich-text#faq-pregunta4-despacho": {
+        "props": {
+            "text": "¿Qué pasa si no me encuentro cuando van a dejarme el pedido?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta4-despacho": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "Los despachadores podrán esperarte hasta 10 minutos. Si no te encuentras, nos comunicaremos contigo para reprogramar la entrega. Solo se aceptará 1 reprogramación sin cargo adicional"
+        }
+    }, //FIN PREGUNTA SEIS
+
+    // SOBRE CAMBIOS Y DEVOLUCIONES
+    "disclosure-layout-group#faq-cambios-devolucion":{
+        "children":[
+            "disclosure-layout#faq-1-cambios-devolucion",
+            "disclosure-layout#faq-2-cambios-devolucion",
+            "disclosure-layout#faq-3-cambios-devolucion"
+        ]
+    },
+
+    // PREGUNTA UNO
+    "disclosure-layout#faq-1-cambios-devolucion": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-1-cambios-devolucion",
+            "disclosure-content#faq-1-cambios-devolucion"
+        ]
+    },
+    "disclosure-trigger#faq-1-cambios-devolucion": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta1-cambios-devolucion",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-1-cambios-devolucion": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta-1-cambios-devolucion"
+        ]
+    },
+    "rich-text#faq-pregunta1-cambios-devolucion": {
+        "props": {
+            "text": "¿Qué debo hacer para realizar un cambio o devolución?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta-1-cambios-devolucion": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "Para realizar un cambio o devolución debes escribirnos a servicioalcliente@aviadoresgo.com o llamar al (0412) 1594643. Ahora puedes solicitar tu cambio o devolución en la sección Mis Pedidos. Te informamos que hay ciertos plazos y restricciones dependiendo de cada vendedor. Para más información revisa nuestra sección de Cambios y Devoluciones en nuestros términos y condiciones: https://www.parquelosaviadores.com/terminos-y-condiciones"
+        }
+    }, //FIN PREGUNTA UNO
+    // PREGUNTA DOS
+    "disclosure-layout#faq-2-cambios-devolucion": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-2-cambios-devolucion",
+            "disclosure-content#faq-2-cambios-devolucion"
+        ]
+    },
+    "disclosure-trigger#faq-2-cambios-devolucion": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta2-cambios-devolucion",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-2-cambios-devolucion": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta2-cambios-devolucion"
+        ]
+    },
+    "rich-text#faq-pregunta2-cambios-devolucion": {
+        "props": {
+            "text": "¿Qué plazo tengo para hacer un cambio o devolución?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta2-cambios-devolucion": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "Podrás realizar el cambio o devolución, sin costo alguno, dentro de los DIEZ (10) días corridos contando desde la fecha en que recibiste el producto."
+        }
+    }, //FIN PREGUNTA DOS
+    
+    // PREGUNTA TRES
+    "disclosure-layout#faq-3-cambios-devolucion": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-3-cambios-devolucion",
+            "disclosure-content#faq-3-cambios-devolucion"
+        ]
+    },
+    "disclosure-trigger#faq-3-cambios-devolucion": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta3-cambios-devolucion",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-3-cambios-devolucion": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta3-cambios-devolucion"
+        ]
+    },
+    "rich-text#faq-pregunta3-cambios-devolucion": {
+        "props": {
+            "text": "¿En qué productos no se aceptan devoluciones?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta3-cambios-devolucion": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "No se aceptan devoluciones por cambio de parecer en las siguientes categorías de productos: \n • Productos cortados a medida o preparados (pinturas). \n • Productos con servicio de instalación o armado. \n • Productos con último stock. \n • Productos sujetos a promociones (descuento por volumen, ítem gratis, etc). \n • Tapas de inodoro. \n • Vitaminas, suplementos alimenticios y /o productos naturales. \n • Libros (sólo en casos de error de impresión). \n • Ropa Interior. \n • Ropa de baño.• Fajas. \n • Pantymedias. \n • Productos de lactancia o alimentación para bebés. \n • Bisutería. \n • Tarjetas de memoria para PC. \n • Colchones. \n • Consumibles. \n • Termómetros. \n • Juguetes sexuales. \n • Productos de copia inmediata (CD, DVD, Software, Videojuegos). \n • Disfraces (sólo aplica por cambio de talla)."
+        }
+    }, //FIN PREGUNTA TRES
+
+    // MÉTODOS DE PAGO 
+    "disclosure-layout-group#faq-atencion-cliente":{
+        "children":[
+            "disclosure-layout#faq-1-atencion-cliente",
+            "disclosure-layout#faq-2-atencion-cliente"
+        ]
+    },
+    // PREGUNTA UNO
+    "disclosure-layout#faq-1-atencion-cliente": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-1-atencion-cliente",
+            "disclosure-content#faq-1-atencion-cliente"
+        ]
+    },
+    "disclosure-trigger#faq-1-atencion-cliente": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta1-atencion-cliente",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-1-atencion-cliente": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta-1-atencion-cliente"
+        ]
+    },
+    "rich-text#faq-pregunta1-atencion-cliente": {
+        "props": {
+            "text": "¿Cuál es el horario del Centro de Servicio al Cliente?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta-1-atencion-cliente": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "Nuestro horario es de Lunes a Domingo de 8:00am a 8:00pm. ¡Pero nuestro chatbot funciona las 24 horas del día!"
+        }
+    }, //FIN PREGUNTA UNO
+    // PREGUNTA DOS
+    "disclosure-layout#faq-2-atencion-cliente": {
+        "props": {
+            "animated": true
+        },
+        "children": [
+            "disclosure-trigger#faq-2-atencion-cliente",
+            "disclosure-content#faq-2-atencion-cliente"
+        ]
+    },
+    "disclosure-trigger#faq-2-atencion-cliente": {
+        "props": {
+            "blockClass": "question-ayuda",
+            "as": "div"
+        },
+        "children": [
+            "rich-text#faq-pregunta2-atencion-cliente",
+            "disclosure-state-indicator"
+        ]
+    },
+    "disclosure-content#faq-2-atencion-cliente": {
+        "props": {
+            "blockClass": "answer-ayuda"
+        },
+        "children": [
+            "rich-text#faq-respuesta2-atencion-cliente"
+        ]
+    },
+    "rich-text#faq-pregunta2-atencion-cliente": {
+        "props": {
+            "text": "¿Cómo me puedo comunicar con Servicio al Cliente?",
+            "blockClass":"solo-disclosure"
+        }
+    },
+    "rich-text#faq-respuesta2-atencion-cliente": {
+        "props": {
+            "blockClass":"desplegable-firefox",
+            "text": "Puedes escribirnos al correo electrónico: servicioalcliente@aviadoresgo.com o llamar al (0412) 1594643 y te atenderemos con mucho gusto. Adicionalmente, contamos con un chat en línea en nuestro chatbot donde podrás hablar con un agente dentro de nuestro horario de atención."
+        }
+    } //FIN PREGUNTA DOS
+    // FIN SOBRE EL ENVIO 
+}

@@ -1,0 +1,378 @@
+{
+    "store.custom#metodos-pagos": {
+        "blocks": [
+            "flex-layout.row#main-metodos-pagos"
+        ]
+    },
+    "flex-layout.row#main-metodos-pagos": {
+        "props":{
+            "paddingTop":8,
+            "paddingBottom":8,
+            "blockClass":"main-metodos-pagos"
+        },
+        "children": [
+            "flex-layout.col#help-list",
+            "flex-layout.col#medios-pagos"
+        ]
+    },
+
+    
+    "flex-layout.col#medios-pagos": {
+        "props": {
+            "width": "82%",
+            "paddingLeft": 5,
+            "paddingRight": 5,
+            "preventVerticalStretch":true,
+            "blockClass":"build-container-ayuda"
+        },
+        "children": [
+            "rich-text#medios-pagos-title",
+            "tab-layout#tab-medios-pagos"
+        ]
+    },
+    "rich-text#medios-pagos-title": {
+        "props": {
+            "blockClass": "rich-metodos-pagos",
+            "text": "**Medios de pago**",
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "font": "t-heading-4"
+        }
+    },
+
+    //TABS CON LAS OPCIONES ONLINE OFFLINE MIXTO
+    "tab-layout#tab-medios-pagos": {
+        "children": [
+            "tab-list#tipos-pagos",
+            "tab-content#descripcion-pagos" 
+        ],
+        "props": {
+            "blockClass": "medios-pagos",
+            "defaultActiveTabId": ""
+        }
+    },
+    "tab-list#tipos-pagos": {
+       "children": [
+        "flex-layout.row#tipos-title"
+       ],
+       "props": {  
+          "blockClass":"terminos-condiciones"
+       }
+
+
+     },
+     "flex-layout.row#tipos-title": {
+      "props": {
+          "blockClass":"tipos-pagos",
+          "fullWidth": true,
+          "colSizing": "auto"
+      },
+      "children": [
+        "tab-list.item#pagos-online",
+        "tab-list.item#pagos-offline"
+      ]
+  },
+     "tab-list.item#pagos-online": {
+       "props": {
+         "blockClass": "terminos-condiciones",
+         "tabId": "pagos-online",
+         "label": "online",
+         "defaultActiveTab": true
+       }
+     },
+     "tab-list.item#pagos-offline": {
+       "props": {
+         "blockClass": "terminos-condiciones",
+         "tabId": "pagos-offline",
+         "label": "Offline"
+       }
+     },
+     "tab-list.item#pagos-mixtos": {
+       "props": {
+         "blockClass": "medios-pagos",
+         "tabId": "pagos-mixtos",
+         "label": "mixto"
+       }
+     },
+
+     //TIPOS DE PAGOS
+     "tab-content#descripcion-pagos": {
+       "children": [
+         "tab-content.item#online",
+         "tab-content.item#offline",
+         "tab-content.item#mixto"
+       ]
+     },
+     //PAGOS ONLINE
+     "tab-content.item#online": {
+       "children": [
+        "flex-layout.col#col-visa",
+        "flex-layout.col#col-mastercard",
+        "flex-layout.col#col-stripe",
+        "flex-layout.col#col-paypal",
+        "flex-layout.col#col-amex"/*
+        "flex-layout.row#row1-pagos-online" ,
+        "flex-layout.row#row2-pagos-online" */
+       ],
+       "props": {
+         "tabId": "pagos-online",
+         "blockClass": "container-pagos-online"
+       }
+     },
+
+     /* "flex-layout.row#row1-pagos-online": {
+      "props": {
+          "blockClass":"container-pagos-online"
+      },
+      "children": [
+        "flex-layout.col#col-visa",
+        "flex-layout.col#col-mastercard",
+        "flex-layout.col#col-cordobesa",
+        "flex-layout.col#col-naranja"
+      ]
+    }, */
+    "flex-layout.col#col-visa": {
+      "props": {
+          "blockClass":"metodos-pagos"
+      },
+      "children": [
+          "image#visa",
+          "rich-text#text-visa"
+      ]
+    },
+    "image#visa":{
+      "props":{
+        "width": "100%",
+        "height": "100%",
+        "maxWidth": 80,
+        "maxHeight": 80,
+        "src": "assets/ayuda/visa.png",
+        "alt": "logo-visa"
+      }
+    },
+    "rich-text#text-visa":{
+      "props":{
+        "blockClass":"",
+        "text": "Tarjetas Visa"
+      }
+    },
+
+    "flex-layout.col#col-mastercard": {
+      "props": {
+          "blockClass":"metodos-pagos"
+      },
+      "children": [
+          "image#mastercard",
+          "rich-text#text-mastercard"
+      ]
+    },
+    "image#mastercard":{
+      "props":{
+        "width": "100%",
+        "height": "100%",
+        "maxWidth": 80,
+        "maxHeight": 80,
+        "src": "assets/ayuda/master.png",
+        "alt": "logo-master"
+      }
+    },
+    "rich-text#text-mastercard":{
+      "props":{
+        "text": "Tarjetas MasterCard"
+      }
+    },
+
+    "flex-layout.col#col-stripe": {
+      "props": {
+          "blockClass":"metodos-pagos"
+      },
+      "children": [
+        "image#stripe",
+        "rich-text#text-stripe"
+      ]
+    },
+
+    "image#stripe":{
+      "props":{
+        "width": "100%",
+        "height": "100%",
+        "maxWidth": 80,
+        "maxHeight": 80,
+        "src": "assets/ayuda/stripe.png",
+        "alt": "logo-stripe"
+      }
+    },
+    "rich-text#text-stripe":{
+      "props":{
+        "text": ""
+      }
+    },
+
+    
+    /* "flex-layout.row#row-visa": {
+      "props": {
+          "blockClass":"container-pagos-online",
+          "horizontalAlign": "center",
+          "colGap": 8,
+          "marginTop": 5
+      },
+      "children": [
+        "flex-layout.col#col-paypal"
+      ]
+    }, */
+    "flex-layout.col#col-paypal": {
+      "props": {
+          "blockClass":"metodos-pagos"
+      },
+      "children": [
+          "image#paypal",
+          "rich-text#text-paypal"
+      ]
+    },
+    "image#paypal":{
+      "props":{
+        "width": "100%",
+        "height": "100%",
+        "maxWidth": 80,
+        "maxHeight": 80,
+        "src": "assets/ayuda/paypal.png",
+        "alt": "logo-paypal"
+      }
+    },
+    "rich-text#text-paypal":{
+      "props":{
+        "text": "Paypal"
+      }
+    },
+
+    "flex-layout.col#col-amex": {
+      "props": {
+          "blockClass":"metodos-pagos"
+      },
+      "children": [
+          "image#amex",
+          "rich-text#text-amex"
+      ]
+    },
+    "image#amex":{
+      "props":{
+        "width": "100%",
+        "height": "100%",
+        "maxWidth": 80,
+        "maxHeight": 80,
+        "src": "assets/ayuda/amex.png",
+        "alt": "logo-amex"
+      }
+    },
+    "rich-text#text-amex":{
+      "props":{
+        "text": ""
+      }
+    },
+    /* "flex-layout.col#col-": {
+      "props": {
+        "blockClass":"metodos-pagos",
+        "verticalAlign": "middle"
+      },
+      "children": [
+        "image#cordobesa",
+        "rich-text#text-"
+      ]
+    },
+
+    "image#":{
+      "props":{
+        "width": "100%",
+        "height": "100%",
+        "maxWidth": 80,
+        "maxHeight": 80,
+        "src": "assets/ayuda/banesco.png",
+        "alt": "logo-visa"
+      }
+    },
+    "rich-text#text-":{
+      "props":{
+        "text": "OTRO"
+      }
+    },
+ */
+    "flex-layout.col#col-vacia": {
+      "props": {
+          "blockClass":"col-vacia"
+      },
+      "children": [
+      ]
+    },
+
+     //FIN DE PAGOS ONLINE
+
+     //PAGOS OFFLINE
+
+     "tab-content.item#offline": {
+       "children": [
+        "flex-layout.col#col-efectivo"/* ,
+        "flex-layout.col#col-pago-facil" */
+       ],
+       "props": {
+         "tabId": "pagos-offline",
+         "blockClass": "container-pagos-offline"
+       }
+     },
+
+     "flex-layout.col#col-efectivo": {
+      "props": {
+          "blockClass":"metodos-pagos"
+      },
+      "children": [
+          "image#efectivo",
+          "rich-text#text-efectivo"
+      ]
+    },
+    "image#efectivo":{
+      "props":{
+        "width": "100%",
+        "height": "100%",
+        "maxWidth": 80,
+        "maxHeight": 80,
+        "src": "assets/ayuda/efectivo.png",
+        "alt": "logo-efectivo"
+      }
+    },
+    "rich-text#text-efectivo":{
+      "props":{
+        "text": ""
+      }
+    },
+    /* "flex-layout.col#col-pago-facil": {
+      "props": {
+          "blockClass":"metodos-pagos"
+      },
+      "children": [
+          "image#pago-facil",
+          "rich-text#text-pago-facil"
+      ]
+    },
+    "image#pago-facil":{
+      "props":{
+        "width": "100%",
+        "height": "100%",
+        "maxWidth": 80,
+        "maxHeight": 80,
+        "src": "assets/ayuda/pago-facil.png",
+        "alt": "logo-rapipago"
+      }
+    },
+    "rich-text#text-pago-facil":{
+      "props":{
+        "text": "RAPIPAGO"
+      }
+    }, */
+     //FIN DE PAGOS OFFLINE
+     "tab-content.item#mixto": {
+       "children": [
+       ],
+       "props": {
+         "tabId": "pagos-mixtos"
+       }
+     }
+}

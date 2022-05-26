@@ -1,0 +1,22 @@
+.formSubmitButton{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.formSubmitButton :global(.vtex-button){
+    background: #0075FD;
+    border: 0px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+/* PARA TRANSFORMAR EN "Enviar" el label del boton */
+.formSubmitButton :global(.vtex-button__label){   
+    text-transform: capitalize;
+}
+
+/* .formSubmitButton :global(.vtex-button):hover{
+    background-color: #0089af;
+} */

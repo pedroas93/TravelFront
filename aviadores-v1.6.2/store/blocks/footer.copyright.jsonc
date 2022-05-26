@@ -1,0 +1,124 @@
+{
+    "footer-row#copyright": {
+      "title": "Derechos",
+      "props": {
+        "inverted": true,
+        "fullWidth": false,
+        "blockClass":"copyright"
+      },
+      "children": [
+        "rich-text#footer-copyright"/* ,
+        "footer-spacer",
+        "list-context.image-list#image#copyiconos" */
+        
+      ]
+    },
+    "rich-text#footer-copyright": {
+      "props": {
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "text": "© 2021 Todos los derechos reservados",        
+        "font": "t-mini",
+        "blockClass": "footer-copyright"
+      }
+    } /*,
+  
+    "list-context.image-list#image#copyiconos": {
+      "children": ["slider-layout#copyiconos"],
+      "props": {     
+        "images": [
+          {
+            "image": "assets/footer/foot1sale.png",
+            "link": {
+              "url":"https://www.hotsale.com.ar/",
+              "openNewTab":true
+            }
+          },
+          
+
+          {
+            "image": "assets/footer/foot9innew.png",
+            "link":{
+              "url":"https://innew.la",
+              "openNewTab":true
+            }
+          },      
+          {
+            "image": "assets/footer/foot10vtex-pci.png",
+            "link": {
+              "url":"https://secure.vtex.com/?an=www.aviadoresgo.com",
+              "openNewTab":true
+            }   
+          },
+          {
+            "image": "assets/footer/foot11vtex.png",
+            "link":{
+              "url":"https://vtex.com/ar-es/",
+              "openNewTab":true
+            }    
+          }
+          {
+            "image": "assets/footer/foot8cace.png",
+            "link":{
+              "url":"https://vtex.com/ar-es/",
+              "openNewTab":true
+            }          
+          }      
+        ]
+      }
+    },
+    "slider-layout#copyiconos": {
+      "props": {
+        
+        "itemsPerPage": {
+          "desktop": 12,
+          "tablet": 5,
+          "phone": 5
+        },
+        "infinite": true,
+        "showPaginationDots":"never",
+        "showNavigationArrows":"false",
+        "blockClass": "footiconos"
+
+      }
+    },
+  
+    "list-context.image-list#image#copyiconosmobile": {
+      "children": ["slider-layout#copyiconosmobile"],
+      "props": {      
+        "images": [      
+          {
+            "image": "assets/footer/foot9innew.png",
+            "description": "something something",
+            "link": {
+              "url":"https://innew.la/",
+              "openNewTab":true
+            }   
+          },
+
+          {
+            "image": "assets/footer/foot11vtex.png",
+            "description": "something something",
+            "link":{
+              "url":"https://vtex.com/ar-es/",
+              "openNewTab":true
+            } 
+          }      
+        ]
+      }
+    },
+    "slider-layout#copyiconosmobile": {
+      "props": {
+        
+        "itemsPerPage": {
+          "desktop": 12,
+          "tablet": 5,
+          "phone": 5
+        },
+        "infinite": true,
+        "arrows":"false",
+        "blockClass": "crediconos"
+      }
+    } */
+  }
+  

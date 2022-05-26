@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.containerNormal--vitrina-product{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-box-shadow: 0px 5px 16px 3px rgba(224,224,224,1);
+    -moz-box-shadow: 0px 5px 16px 3px rgba(224,224,224,1);
+    box-shadow: 0px 5px 16px 3px rgba(224,224,224,1);
+    margin-top: 0.5rem;
+    background-color: #fff;
+    transition: 300ms all ease-in-out ;
+    -webkit-transition: 300ms all ease-in-out ;
+    -moz-transition: 300ms all ease-in-out ;
+    -ms-transition: 300ms all ease-in-out ;
+    -o-transition: 300ms all ease-in-out ;
+    -webkit-box-shadow: -1px 2px 11px -5px rgba(130,130,130,1);
+    -moz-box-shadow: -1px 2px 11px -5px rgba(130,130,130,1);
+    box-shadow: -1px 2px 11px -5px rgba(130,130,130,1);
+}
+.container--vitrinaNH{
+    background-color: #fff;
+}
+.containerNormal--vitrina-product:hover{
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+}
+.image--imagen-vitrina-product{
+    border-radius: 20px 20px 0 0;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    -ms-border-radius: 20px 20px 0 0;
+    -o-border-radius: 20px 20px 0 0;
+}
+.containerNormal--vitrinaNH{
+    position: relative;
+
+}
+
+.containerNormal--vitrinaNH :global(.vtex-wish-list-1-x-wishlistIconContainer) :global(.vtex-button){
+    background: transparent;
+}
+.containerNormal--vitrinaNH :global(.vtex-add-to-cart-button-0-x-buttonDataContainer){
+    font-size: 1rem;
+
+
+}
+.productBrand--nombreNH{
+    color: #929292;
+    font-weight: 500;
+}
+
+.containerNormal--vitrinaNH :global(.vtex-button__label):first-child{
+    padding: 0;
+}
+.containerNormal--vitrinaNH :global(.vtex-wish-list-1-x-wishlistIconContainer){
+    display: flex;
+    justify-content: flex-end;
+}
+.containerNormal--vitrinaNH{
+    -webkit-box-shadow: 2px 2px 10px 0px rgba(219,219,219,1);
+    -moz-box-shadow: 2px 2px 10px 0px rgba(219,219,219,1);
+    box-shadow: 2px 2px 10px 0px rgba(219,219,219,1);
+    border-radius: 20px 20px 25px 25px;
+    -webkit-border-radius: 20px 20px 25px 25px;
+    -moz-border-radius: 20px 20px 25px 25px;
+    -ms-border-radius: 20px 20px 25px 25px;
+    -o-border-radius: 20px 20px 25px 25px;
+}
+.element--vitrinaNH{
+    padding-top: 0;
+    padding-bottom: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+   
+}
+
+.containerNormal--vitrina-product :global(.vtex-store-components-3-x-price_className--precio-vitrina-product){
+    min-height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 90%;
+    align-self: flex-end;
+}
+.brandName--nombre-vitrina-product{
+    color: #929292;
+    font-weight: 500;
+    font-size: 12px;
+
+}
+.element--vitrina-product{
+    padding: 0;
+}
+.imageStackContainer{
+    min-height: 10rem;
+}
+.container--vitrinaNH {
+
+    position: relative;
+}
+.nameContainer--nombreNH{
+    min-height: 50px;
+    padding: 0.5rem;
+    background-color: #fff;
+}
+
+@media (min-width: 1024px){
+    .element--vitrinaNH{
+    
+        transition: all 300ms ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        -moz-transition: all 300ms ease-in-out;
+        -ms-transition: all 300ms ease-in-out;
+        -o-transition: all 300ms ease-in-out;
+    }
+    .element--vitrinaNH:hover :global(.vtex-flex-layout-0-x-flexCol--hover){
+        display: block;
+    }
+}
+:global(.vtex-add-to-cart-button-0-x-buttonText){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px !important;
+    font-weight: 500;
+}
+.nameContainer{
+    padding: 0.5rem;
+}
+.element--vitrina-product{
+    position: relative;
+}
+.element--vitrina-product :global(.vtex-wish-list-1-x-wishlistIconContainer){
+    position: absolute;
+    top: 5px;
+    width: 100%;
+}
+.imageStackContainer{
+    max-height: 14rem;
+
+}
+.nameWrapper--nombre-vitrina-product{
+    min-height: 37px;
+}
+.productBrand--nombre-vitrina-product {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+}
+
+@media (min-width: 768px){
+  .brandName--nombre-vitrina-product{
+      font-size: 14px;
+  }
+  .imageContainer--imagen-vitrina-product :global(.vtex-product-summary-2-x-imageNormal){
+    width: auto;
+}
+}
+
+.imageWrapper--imagen-vitrina-product{
+    background: #fff;
+}

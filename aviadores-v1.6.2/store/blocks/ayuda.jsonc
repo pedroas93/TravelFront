@@ -1,0 +1,466 @@
+{
+    "store.custom#ayuda": {
+        "blocks": [
+            "flex-layout.row#main-ayuda"
+        ]
+    },
+
+    "flex-layout.row#main-ayuda":{
+        "props":{
+            "marginTop":8,
+            "marginBottom":8,
+            "blockClass":"main-ayuda"
+        },
+        "children":[
+            "flex-layout.col#help-list",
+            "flex-layout.col#guia-compra"
+        ]
+    },
+
+
+    "flex-layout.col#guia-compra":{
+        "props":{
+            "width":"82%",
+            "marginLeft":4,
+            "marginRight":9,
+            "preventVerticalStretch":true,
+            "blockClass":"build-container-ayuda"
+        },
+        "children":[
+            "rich-text#guia-compra",
+            "flex-layout.row#pasos-compra",
+            "flex-layout.row#pasos-compra2"
+        ]
+    },
+
+    // Title de guia de compra
+    "rich-text#guia-compra":{
+        "props":{
+            "text":"Guía de compras",
+            "textPosition":"CENTER",
+            "textAlignment":"CENTER",
+            "font":"t-heading-4",
+            "blockClass":"rich-guia-compra"
+        }
+    },
+    // Fin title de guia de compra
+
+    // Pasos para la compra
+    "flex-layout.row#pasos-compra":{
+        "props":{
+            "preventVerticalStretch":true
+        },
+        "children":[
+            "flex-layout.col#paso-1",
+            "flex-layout.col#paso-2",
+            "flex-layout.col#paso-3"
+        ]
+    },
+
+    // Paso 1
+    "flex-layout.col#paso-1":{
+        "props":{
+            "marginLeft":4,
+            "marginRight":4,
+            "blockClass":"paso-1",
+            "preventVerticalStretch":true
+        },
+        "children":[
+            "responsive-layout.desktop#paso-1-desktop",
+            "responsive-layout.mobile#paso-1-mobile",
+            "flex-layout.row#paso-1-title",
+            "rich-text#paso-1-paragraph"
+            /* "rich-text#paso-1-links" */
+        ]
+    },
+
+
+    "responsive-layout.desktop#paso-1-desktop":{
+        "children":["image#paso-1-desktop"]
+    },
+    "responsive-layout.mobile#paso-1-mobile":{
+        "children":["image#paso-1-mobile"]
+    },
+
+    "image#paso-1-desktop":{
+        "props": {
+            "src": "/arquivos/step--1.png",
+            "blockClass":"paso-1-desktop"
+          }
+    },
+    "image#paso-1-mobile":{
+        "props": {
+            "src": "/arquivos/step--1.png"
+          }
+    },
+
+    "flex-layout.row#paso-1-title":{
+        "props":{
+            "blockClass":"paso-1-title"
+        },
+        "children":["rich-text#paso-1-title"]
+    },
+    "rich-text#paso-1-title":{
+        "props":{
+            "text":"![alt img](assets/ayuda/paso1.svg)&ensp;Encuentra los <br>&ensp;&ensp;productos que <br>&ensp;&ensp;estás buscando",
+            "textPosition":"CENTER",
+            "textAlignment":"CENTER",
+            "font":"t-heading-5",
+            "blockClass":"paso-1-title"
+        }
+    },
+
+    "rich-text#paso-1-paragraph":{
+        "props":{
+            "blockClass":"paso-1",
+            "textPosition":"CENTER",
+            "textAlignment":"LEFT",
+            "text":"Ve a nuestro menú de categorías o ve <br> directamente a nuestra barra superior"
+        }
+    },
+
+    /* "rich-text#paso-1-links":{
+        "props":{
+            "blockClass":"paso-1-links",
+            "text":"[*1. ¿Cuál es el proceso para realizar un pedido en Mc Center?*](/ayuda/faqs)<br><br>[*2. ¿Necesito registrarme para realizar un pedido?*](/ayuda/faqs)<br><br>[*3. ¿Cómo hago para solicitar productos que no están disponibles en el sitio?*](/ayuda/faqs)"
+        }
+    }, */
+
+    //FIN Paso 1
+
+
+    // Paso 2
+    "flex-layout.col#paso-2":{
+        "props":{
+            "marginLeft":4,
+            "marginRight":4,
+            "blockClass":"paso-2",
+            "preventVerticalStretch":true
+        },
+        "children":[
+            "responsive-layout.desktop#paso-2-desktop",
+            "responsive-layout.mobile#paso-2-mobile",
+            "flex-layout.row#paso-2-title",
+            "rich-text#paso-2-paragraph"
+            /* "rich-text#paso-2-links" */
+        ]
+    },
+    "responsive-layout.desktop#paso-2-desktop":{
+        "children":["image#paso-2-desktop"]
+    },
+    "responsive-layout.mobile#paso-2-mobile":{
+        "children":["image#paso-2-mobile"]
+    },
+
+    "image#paso-2-desktop":{
+        "props": {
+            "src": "/arquivos/step--2.png",
+            "blockClass":"paso-2-desktop"
+          }
+    },
+    "image#paso-2-mobile":{
+        "props": {
+            "src": "/arquivos/step--2.png"
+          }
+    },
+
+    "flex-layout.row#paso-2-title":{
+        "props":{
+            "blockClass":"paso-2-title"
+        },
+        "children":["rich-text#paso-2-title"]
+    },
+
+    "rich-text#paso-2-title":{
+        "props":{
+            "text":"![alt img](assets/ayuda/paso2.svg)&ensp;Agrégalo<br>&ensp;al carrito",
+            "textPosition":"CENTER",
+            "textAlignment":"CENTER",
+            "font":"t-heading-5",
+            "blockClass":"paso-2-title"
+        }
+    },
+    /* "rich-text#paso-2-links":{
+        "props":{
+            "blockClass":"paso-2-links",
+            "text":"[*1. ¿Puedo agregar y quitar libremente los productos del carrito?*](/ayuda/faqs)<br><br>[*2. ¿Puedo agregar un mismo producto en distintos talles o colores?*](/ayuda/faqs)<br><br>[*3. ¿Cómo puedo agregar un cupón de descuento?*](/ayuda/faqs)"
+        }
+    }, */
+    //FIN Paso 2
+
+    "rich-text#paso-2-paragraph":{
+        "props":{
+            "text":"Revisa los detalles de tu producto y \n agrégalo al carrito",
+            "textPosition":"CENTER",
+            "textAlignment":"LEFT",
+            "blockClass":"paso-2"
+        }
+    },
+
+    // Paso 3
+    "flex-layout.col#paso-3":{
+        "props":{
+            "marginLeft":4,
+            "marginRight":4,
+            "blockClass":"paso-3",
+            "preventVerticalStretch":true
+        },
+        "children":[
+            "responsive-layout.desktop#paso-3-desktop",
+            "responsive-layout.mobile#paso-3-mobile",
+            "flex-layout.row#paso-3-title",
+            "rich-text#paso-3-paragraph"
+            /* "rich-text#paso-3-links" */
+        ]
+    },
+    "responsive-layout.desktop#paso-3-desktop":{
+        "children":["image#paso-3-desktop"]
+    },
+    "responsive-layout.mobile#paso-3-mobile":{
+        "children":["image#paso-3-mobile"]
+    },
+
+    "image#paso-3-desktop":{
+        "props": {
+            "src": "/arquivos/step--3.png",
+            "blockClass":"paso-3-desktop"
+          }
+    },
+    "image#paso-3-mobile":{
+        "props": {
+            "src": "/arquivos/step--3.png"
+          }
+    },
+
+    "flex-layout.row#paso-3-title":{
+        "props":{
+            "blockClass":"paso-3-title"
+        },
+        "children":["rich-text#paso-3-title"]
+    },
+
+    "rich-text#paso-3-title":{
+        "props":{
+            "text":"![alt img](assets/ayuda/paso2.svg)&ensp;Verifica tus <br> productos",
+            "textPosition":"CENTER",
+            "textAlignment":"CENTER",
+            "font":"t-heading-5",
+            "blockClass":"paso-3-title"
+        }
+    },
+
+    "rich-text#paso-3-paragraph":{
+        "props":{
+            "text":"Verfica la cantidad en el carrito de compras \n y luego dirígite a “finalizar compra”.",
+            "textPosition":"CENTER",
+            "textAlignment":"LEFT",
+            "blockClass":"paso-3"
+        }
+    },
+    /* "rich-text#paso-3-links":{
+        "props":{
+            "blockClass":"paso-3-links",
+            "text":"[*1. ¿Cuál es el precio que pagaré por los productos que incluyo en mi pedido?*](/ayuda/faqs)<br><br>[*2. ¿Con qué medio de pago puedo abonar en la sucursal?*](/ayuda/faqs)<br><br>[*3. ¿Cómo hago para hacer el seguimiento de mi pedido?*](/ayuda/faqs)"
+        }
+    } *///FIN Paso 3
+
+
+    // Pasos para la compra 2do Row
+    "flex-layout.row#pasos-compra2":{
+        "props":{
+            "preventVerticalStretch":true
+        },
+        "children":[
+            "flex-layout.col#paso-4",
+            "flex-layout.col#paso-5",
+            "flex-layout.col#paso-6"
+        ]
+    },
+
+    // Paso 4
+    "flex-layout.col#paso-4":{
+        "props":{
+            "marginLeft":4,
+            "marginRight":4,
+            "blockClass":"paso-1",
+            "preventVerticalStretch":true
+        },
+        "children":[
+            "responsive-layout.desktop#paso-4-desktop",
+            "responsive-layout.mobile#paso-4-mobile",
+            "flex-layout.row#paso-4-title",
+            "rich-text#paso-4-paragraph"
+            /* "rich-text#paso-1-links" */
+        ]
+    },
+
+
+    "responsive-layout.desktop#paso-4-desktop":{
+        "children":["image#paso-4-desktop"]
+    },
+    "responsive-layout.mobile#paso-4-mobile":{
+        "children":["image#paso-4-mobile"]
+    },
+
+    "image#paso-4-desktop":{
+        "props": {
+            "src": "/arquivos/step--4.png",
+            "blockClass":"paso-1-desktop"
+          }
+    },
+    "image#paso-4-mobile":{
+        "props": {
+            "src": "/arquivos/step--4.png"
+          }
+    },
+
+    "flex-layout.row#paso-4-title":{
+        "props":{
+            "blockClass":"paso-1-title"
+        },
+        "children":["rich-text#paso-4-title"]
+    },
+    "rich-text#paso-4-title":{
+        "props":{
+            "text":"![alt img](assets/ayuda/paso3.svg)&ensp;Registro",
+            "textPosition":"CENTER",
+            "textAlignment":"CENTER",
+            "font":"t-heading-5",
+            "blockClass":"paso-1-title"
+        }
+    },
+
+    "rich-text#paso-4-paragraph":{
+        "props":{
+            "blockClass":"paso-1",
+            "textPosition":"CENTER",
+            "textAlignment":"LEFT",
+            "text":"No olvides: si esres un usuario registrado \n coloca tu correo para continuar con tu \n compra. Si no te has registrado, coloca tu \n correo y completa tu registro."
+        }
+    },
+
+    //FIN Paso 4
+
+    // Paso 5
+    "flex-layout.col#paso-5":{
+        "props":{
+            "marginLeft":4,
+            "marginRight":4,
+            "blockClass":"paso-2",
+            "preventVerticalStretch":true
+        },
+        "children":[
+            "responsive-layout.desktop#paso-5-desktop",
+            "responsive-layout.mobile#paso-5-mobile",
+            "flex-layout.row#paso-5-title",
+            "rich-text#paso-5-paragraph"
+            /* "rich-text#paso-5-links" */
+        ]
+    },
+    "responsive-layout.desktop#paso-5-desktop":{
+        "children":["image#paso-5-desktop"]
+    },
+    "responsive-layout.mobile#paso-5-mobile":{
+        "children":["image#paso-5-mobile"]
+    },
+
+    "image#paso-5-desktop":{
+        "props": {
+            "src": "/arquivos/step--5.png",
+            "blockClass":"paso-5-desktop"
+          }
+    },
+    "image#paso-5-mobile":{
+        "props": {
+            "src": "/arquivos/step--5.png"
+          }
+    },
+
+    "flex-layout.row#paso-5-title":{
+        "props":{
+            "blockClass":"paso-2-title"
+        },
+        "children":["rich-text#paso-5-title"]
+    },
+
+    "rich-text#paso-5-title":{
+        "props":{
+            "text":"![alt img](assets/ayuda/paso4.svg)&ensp;Información \n de entrega",
+            "textPosition":"CENTER",
+            "textAlignment":"CENTER",
+            "font":"t-heading-5",
+            "blockClass":"paso-2-title"
+        }
+    },
+    "rich-text#paso-5-paragraph":{
+        "props":{
+            "text":"Completa los campos según el tipo de \n entrega para programar tu pedido",
+            "textPosition":"CENTER",
+            "textAlignment":"LEFT",
+            "blockClass":"paso-2"
+        }
+    },
+    
+    //FIN Paso 5
+
+    // Paso 3
+    "flex-layout.col#paso-6":{
+        "props":{
+            "marginLeft":4,
+            "marginRight":4,
+            "blockClass":"paso-3",
+            "preventVerticalStretch":true
+        },
+        "children":[
+            "responsive-layout.desktop#paso-6-desktop",
+            "responsive-layout.mobile#paso-6-mobile",
+            "flex-layout.row#paso-6-title",
+            "rich-text#paso-6-paragraph"
+            /* "rich-text#paso-6-links" */
+        ]
+    },
+    "responsive-layout.desktop#paso-6-desktop":{
+        "children":["image#paso-6-desktop"]
+    },
+    "responsive-layout.mobile#paso-6-mobile":{
+        "children":["image#paso-6-mobile"]
+    },
+
+    "image#paso-6-desktop":{
+        "props": {
+            "src": "/arquivos/step---6.png",
+            "blockClass":"paso-3-desktop"
+          }
+    },
+    "image#paso-6-mobile":{
+        "props": {
+            "src": "/arquivos/step---6.png"
+          }
+    },
+
+    "flex-layout.row#paso-6-title":{
+        "props":{
+            "blockClass":"paso-3-title"
+        },
+        "children":["rich-text#paso-6-title"]
+    },
+
+    "rich-text#paso-6-title":{
+        "props":{
+            "text":"![alt img](assets/ayuda/paso5.svg)&ensp;Selecciona tu \n &ensp;método de pago y \n &ensp;finaliza la compra",
+            "textPosition":"CENTER",
+            "textAlignment":"LEFT",
+            "font":"t-heading-5",
+            "blockClass":"paso-3-title"
+        }
+    },
+
+    "rich-text#paso-6-paragraph":{
+        "props":{
+            "text":"Finalmente, queda concluir la compra, \n completando los datos de envío y forma \n de pago ¡y aguardar la llegada de tu producto!",
+            "textPosition":"CENTER",
+            "textAlignment":"LEFT",
+            "blockClass":"paso-3"
+        }
+    }//FIN Paso 3
+}

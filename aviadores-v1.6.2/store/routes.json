@@ -1,0 +1,41 @@
+{
+    "store.custom#ayuda":{
+        "path":"/ayuda"
+    },
+
+    "store.custom#terminos-condiciones":{
+        "path":"/ayuda/terminos-condiciones"
+    },
+
+    "store.custom#cambios-devoluciones":{
+        "path":"/ayuda/cambios-devoluciones"
+    },
+
+    "store.custom#faqs":{
+        "path":"/ayuda/faqs"
+    },
+
+    "store.custom#metodos-pagos":{
+        "path":"/ayuda/metodos-pagos"
+    },
+
+    "store.custom#politica-envios":{
+        "path":"/ayuda/politica-envios"
+    },
+
+    "store.custom#politica-entregas":{
+        "path":"/ayuda/politica-entregas"
+    },
+    
+    "store.custom#contacto":{
+        "path":"/ayuda/contacto"
+    },
+    
+    "store.custom#acerca-de-mccenter":{
+        "path":"/ayuda/acerca-de-aviadores"
+    },
+    "store.custom#sucursales":{
+        "path":"/ayuda/sucursales"
+    }
+    
+}

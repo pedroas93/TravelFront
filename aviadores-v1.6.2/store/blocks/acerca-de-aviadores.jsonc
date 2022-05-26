@@ -1,0 +1,131 @@
+
+{
+    "store.custom#acerca-de-mccenter": {
+        "blocks": [
+            "flex-layout.row#acerca-de-mccenter", 
+            "flex-layout.row#acerca-de-sistema" 
+            
+        ]   //PONER SLIDER A LA IZQUIERDA EN VEZ DE INFO CARD, A LA DERECHA RICHTEXT
+    },
+    "flex-layout.row#acerca-de-mccenter": {
+        "children": [
+            "flex-layout.col#imagen-acercade"
+            /* "flex-layout.col#text-acerca-de-mccenter"  */
+        ],
+        "props": {
+            "blockClass":"rowacercade",
+            "paddingTop": 8,
+            "paddingBottom": 4            
+        }
+      },
+
+      "flex-layout.col#imagen-acercade":{
+        "props":{
+          "verticalAlign":"top"
+        },
+        "children":["list-context.image-list#sliacercade"]
+      },
+
+      "flex-layout.col#text-acerca-de-mccenter": {
+        
+        "children": [
+          "rich-text#about-title",
+          "rich-text#about-content"
+        ],
+        "props": {
+          "marginLeft": 7,
+          "preventVerticalStretch": true,
+          "verticalAlign":"top",
+          "blockClass":"text-acerca-de-mccenter"
+        }
+      },
+     "rich-text#about-title": {
+        "props": {
+          "text":"Acerca de mccenter Autopiezas",
+          "font":"t-heading-3",
+          "blockClass": "titulo-acercade"
+        }
+      },
+      "rich-text#about-content": {
+        "props": {
+          "blockClass":"titulo-acercade-2",
+          "text":
+          "NH AUTOPIEZAS es la evolución de Nuevo Horizonte S.A; la transformaciónde una empresa dedicada durante más de 20 años al desguace de vehículosy comercialización de repuestos originales usados, nuevos e importados; enuna Planta Industrial de Reciclado Automotor y Comercializadora deAutopartes Originales Recuperadas, Nuevas y de Importación Propia,  conlos estándares de calidad a nivel internacional ubicada en la ciudad de RíoCuarto de la provincia de Córdoba.<br><br>La visión de NH AUTOPIEZAS se resume a un objetivo de vanguardia y tendencia: Ser los pioneros en la Industria del Reciclado AutomotorArgentina, en adoptar un modelo de negocio, que se desarrolla en el mundo,paradigma de la recuperación de piezas, en detrimento de los tradicionalesdesarmaderos de autos."
+        }
+      },
+
+      "list-context.image-list#sliacercade": {
+        "children": ["slider-layout#sliacercade"],
+        "props": {
+                  
+          "images": [
+            {
+              "image": "/arquivos/slide1.jpg"              
+            },
+            {
+              "image": "/arquivos/slide2.jpg"              
+            },
+            {
+              "image": "/arquivos/slide3.jpg"              
+            },
+            {
+              "image": "/arquivos/slide4.jpg"              
+            }        
+          ]
+        }
+      },
+      "slider-layout#sliacercade": {
+        "props": {
+            "autoplay": {
+            "timeout": 3500,
+            "stopOnHover": true        
+          },      
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },          
+          "infinite": true,
+          "showNavigationArrows":"always",          
+          "blockClass": "sliacercade"
+        }
+      },
+
+      "flex-layout.row#acerca-de-sistema":{
+        "props":{
+          "blockClass":"rowacercade2",
+          "marginBottom":8
+        },
+        "children":["rich-text#acerca-de-sistema"]
+      },
+
+      "rich-text#acerca-de-sistema":{
+        "props":{
+          "blockClass":"acerca-de-sistema",
+          "text":"**QUIENES SOMOS** \n\n MC CENTER TUCUMAN SRL, es una empresa familiar radicada en la provincia de Santiago del Estero, con 9 tiendas físicas en las ciudades de Santiago del Estero Capital, La Banda, Frías y Termas de Rio Hondo. Comercializamos calzado, indumentaria y accesorios de las marcas más prestigiosas del mercado y hacemos envíos a todo el país. \n \n Te damos la bienvenida a nuestra tienda online, para que puedas comprar y recibir tus productos donde quieras."
+        }
+      }
+
+      /* "image#about-us": {
+        "props": {
+          "src": "https://storecomponents.vteximg.com.br/arquivos/mobile-phone.png",
+          "maxHeight": "600px"
+        }
+      },
+
+      "info-card": {
+        "props": {
+            "width":"95%",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+          "headline": "Acerca de NH Autopiezas",
+          "subhead": "About us content - Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+          "callToActionMode": "button",
+          "callToActionText": "Explore",
+          "callToActionUrl": "/sale/d",
+          "textAlignment": "left"
+        }
+      } */
+     
+}

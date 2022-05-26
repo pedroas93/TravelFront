@@ -1,0 +1,14 @@
+.label {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    /* font-size: 13px; */
+}
+

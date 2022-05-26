@@ -1,0 +1,609 @@
+{
+  "store.search": {
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props":{
+      "context": {
+        "hideUnavailableItems":true
+        // "orderByField":"OrderByPriceASC" <-- Para ordenar por precio mas bajo al mas alto
+      }
+    }
+  },
+
+  "search-result-layout": {
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+
+  // VERSION DESKTOP
+  "search-result-layout.desktop": {
+    "children": [
+      "flex-layout.row#banner-search",
+      "flex-layout.row#searchbread-desktop",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": false,
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+  //BANNER DESK
+  "flex-layout.row#banner-search":{
+    "children": ["image#banner-search"],
+    "props":{
+      "blockClass": "banner-desk"
+    }
+  },
+  "image#banner-search":{
+    "props": {
+      "src": "assets/search/banner-search-desk.png",
+      "blockClass": "banner-desk"
+
+    }
+  },
+
+  // MIGA DE PAN - desktop
+  "flex-layout.row#searchbread-desktop": {
+    "children": [
+      "flex-layout.col#searchbread"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": false
+    }
+  },
+  "flex-layout.col#searchbread":{
+    "props":{
+      "marginLeft":9,
+      "blockClass":"search-bread"
+    },
+    "children":["breadcrumb.search"]
+  },
+  "breadcrumb.search": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+  // miga de pan mobile
+  "flex-layout.row#searchbread-mobile": {
+    "children":["breadcrumb.search"]
+  },//FIN MIGA DE PAN
+
+  // TITULO DESKTOP
+  "flex-layout.row#searchtitle": {
+    "children": [
+      "flex-layout.col#searchtitle"
+    ]
+  },
+  "flex-layout.col#searchtitle":{
+    "props":{
+      "marginLeft":9,
+      "blockClass":"searchtitle"
+    },
+    "children":["search-title.v2"]
+  },//FIN TITULO
+
+  // FILTRO + CONTENIDO DE BUSQUEDA
+  "flex-layout.row#result": {
+    "children": ["flex-layout.col#filter", "flex-layout.col#content"],
+    "props": {
+      "fullWidth": true,
+      "marginBottom":8
+    }
+  },
+  // FILTRO
+  "flex-layout.col#filter": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "width":"25%",
+      "blockClass": "filterCol",
+      "preventVerticalStretch": true,
+      "marginLeft":10
+    }
+  },
+  // CONTENIDO
+  "flex-layout.col#content": {
+    "children": [
+      "flex-layout.row#searchtitle", //<-- TITULO DE LA CONSULTA
+      "flex-layout.row#searchinfo", //<-- TRAE LA CANTIDAD DE PRODUCT + ORDENAR POR
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#products", //<-- TRAE LOS PRODUCTOS DE LA CONSULTA
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "width":"75%",
+      "preventVerticalStretch": true,
+      "marginRight":10
+    }
+  },
+  // CONTADOR + ORDERNAR POR
+  "flex-layout.row#searchinfo": {
+    "children": ["flex-layout.col#productCount", "flex-layout.row#order-switcher"
+    ],
+    "props":{
+      "blockClass": "search-info"
+    }
+  },
+  "flex-layout.row#order-switcher":{
+    "children":["flex-layout.col#orderby" ,"gallery-layout-switcher"],
+    "props":{
+      "blockClass": "order-switcher"
+    }
+  },
+  // CONTADOR
+  "flex-layout.col#productCount": {
+    "children": ["total-products.v2"],
+    "props": {
+      "blockClass": "productCountCol",
+      "horizontalAlign":"left"
+    }
+  },
+  "total-products.v2":{
+    "props":{
+      "blockClass":"total-producto"
+    }
+  },
+  // ORDERNAR POR
+  "flex-layout.col#orderby": {
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "orderByCol"
+    }
+  },
+  "order-by.v2":{
+    "props":{
+      "showOrderTitle": false
+    }
+  },
+
+  // MENOS Y MAS PRODUCTOS
+  "flex-layout.row#fetchprevious": {
+    "props": {
+      "marginBottom": 3
+    },
+    "children": ["search-fetch-previous"]
+  },
+  "flex-layout.row#fetchmore": {
+    "props": {
+      "marginTop": 3
+    },
+    "children": ["search-fetch-more"]
+  },
+  "flex-layout.row#products": {
+    "children": ["search-content"],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  // CONTENIDO GALLERIA DE PRODUCT + VACIO
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  },
+  //FIN VERSION DESKTOP
+
+  // VERSION MOBILE
+  "search-result-layout.mobile": {
+    "children": [
+      "image#portada-mobile",
+      "flex-layout.row#searchbread-mobile", //<-- MIGA DE PAN
+      "flex-layout.row#searchtitle",//<-- TITULO DE LA CONSULTA
+      "flex-layout.row#searchinfomobile", //<-- TRAE ORDENAR POR + FILTRO + Switcher
+      "flex-layout.row#productCountMobile", //<-- TRAE LA CANTIDAD DE PRODUCTOS
+      "flex-layout.row#contentmobile" //<-- CONTENIDO DE LA BUSQUEDA
+    ],
+    "props": {
+      "pagination": "show-more", //<-- BOTON MOSTRAR MAS / 2.OPC = 'infinite-scroll'
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      }
+    }
+  },
+  "image#portada-mobile":{
+    "props":{
+      "src": "assets/search/banner-search-mobile.png"
+    }
+  },
+  // contenido
+  "flex-layout.row#contentmobile": {
+    "children": ["search-content#mobile"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "marginBottom":8
+    }
+  },
+
+  // filtros + orderby + switcher
+  "flex-layout.row#searchinfomobile": {
+    "children": [
+      "flex-layout.col#orderByMobile",
+      "flex-layout.col#filterMobile"
+      
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass":"searchinfomobile"
+      // "colSizing": "auto",
+      // "colJustify": "around"
+    }
+  },
+
+  // ordenar por 
+  "flex-layout.col#orderByMobile": {
+    "children": ["order-by.v2"],
+    "props": {
+      "blockClass": "orderByMobileCol"
+    }
+  },
+  // cantidad de productos
+  "flex-layout.row#productCountMobile": {
+    "children": ["total-products.v2", "gallery-layout-switcher"],
+    "props": {
+      "width":"25%",
+      "blockClass": "productCountMobileRow"
+    }
+  },
+
+  // filtro
+  "flex-layout.col#filterMobile": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterMobileCol"
+    }
+  }, 
+  //FIN VERSION MOBILE
+
+  // FORMATO PARA MOSTRAR PRODUCTOS
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 2
+        }
+      ],
+      "ListSummary": "product-summary.shelf#vitrina-product",
+      "GridSummary": "product-summary.shelf#vitrina-product"
+    }
+  },
+
+  //FILTRO NAVIGATOR
+  "filter-navigator.v3": {
+    "props": {
+      "closeOnOutsideClick": true,
+      "initiallyCollapsed": false
+    }
+  },
+
+
+  // BUSQUEDA VACIA
+  "search-not-found-layout": {
+    "children": [
+      //"flex-layout.row#searchbread-desktop",
+      //"flex-layout.row#notfound",
+      "flex-layout.row#busqueda-vacia",
+      "flex-layout.row#similar-container",
+      "flex-layout.row#categorias"
+
+   
+
+    ]
+  },
+  "flex-layout.row#similar-container":{
+    "children":[ "flex-layout.row#title-similar",
+      "flex-layout.row#similar"],
+      "props":{
+        "blockClass": "row-busqueda-vacia"
+      }
+  },
+      "flex-layout.row#categorias":{
+        "children":[  
+          "flex-layout.row#title-categorias",
+          "flex-layout.row#carrusel-categorias"
+    ],
+    "props":{
+      "blockClass": "row-busqueda-vacia-categorias"
+    }
+      },
+  "flex-layout.row#busqueda-vacia":{
+    "children":["image#busqueda-vacia","rich-text#busqueda-vacia"],
+    "props":{
+      "blockClass": "busqueda-vacia"
+
+    }
+  },
+  "image#busqueda-vacia":{
+    "props":{
+      "src": "assets/search/banner-busqueda-vacia.svg",
+      "blockClass": "busqueda-vacia"
+
+    }
+  },
+
+  "rich-text#busqueda-vacia":{
+    "props": {
+      "text": "**¡Lo sentimos!** No hemos encontrado lo que buscabas.\nPor favor, asegúrate de que la ortografía sea la correcta o vuelve a realizar la búsqueda con un término similar.",
+      "blockClass": "busqueda-vacia"
+    }
+  },
+  
+  "flex-layout.row#notfound": {
+    "props":{
+      "marginTop":8,
+      "marginBottom":10,
+      "horizontalAlign":"center",
+      "preventHorizontalStretch":true,
+      "blockClass":"not-found"
+    },
+    "children": [
+      "flex-layout.col#notfound"
+    ]
+  },
+  "flex-layout.col#notfound":{
+    "props":{
+      "paddingLeft":10,
+      "paddingRight":10,
+      "horizontalAlign":"center",
+      "blockClass":"build-container-search"
+    },
+    "children":["not-found"]
+  },
+  // Titulo productos
+  "flex-layout.row#title-similar":{
+    "props":{
+      "blockClass":"title-similar"
+    },
+    "children":[
+      "flex-layout.col#title-similar"
+    ]
+  },
+  "flex-layout.col#title-similar":{
+    "props":{
+      "paddingLeft":10,
+      "paddingRight":10,
+      "blockClass":"build-container-search-vacio"
+    },
+    "children":["rich-text#similar"]
+  },
+  "rich-text#similar":{
+    "props":{
+      "text":"Mira nuestros productos destacados",
+      "font": "t-heading-3"
+    }
+  },
+  // slider de productos
+  "flex-layout.row#similar":{
+    "props":{
+      "horizontalAlign":"center",
+      "marginBottom":9
+    },
+    "children":[
+      "flex-layout.col#similar"
+    ]
+  },
+  "flex-layout.col#similar":{
+    "props":{
+      "blockClass":"build-container-search-vacio-shelf"
+    },
+    "children":["list-context.product-list#vacia"]
+  },
+
+  "list-context.product-list#vacia": {
+    "blocks": ["product-summary.shelf#vitrina-product"],
+    "children": ["slider-layout#demo-products"]
+  },
+  "slider-layout#demo-products":{
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots":"never",
+      "blockClass": "vitrina-product",
+      "gap":"ph3"
+
+    }
+  },
+    // Titulo categorías
+    "flex-layout.row#title-categorias":{
+      "props":{
+        "blockClass":"title-similar"
+      },
+      "children":[
+        "flex-layout.col#title-categorias"
+      ]
+    },
+    "flex-layout.col#title-categorias":{
+      "props":{
+        "paddingLeft":10,
+        "paddingRight":10,
+        "blockClass":"build-container-search-vacio"
+      },
+      "children":["rich-text#categorias"]
+    },
+    "rich-text#categorias":{
+      "props":{
+        "text":"Explora por categorías",
+        "font": "t-heading-3"
+      }
+    },
+    "flex-layout.row#carrusel-categorias":{
+      "children":["slider-layout#categorias"]
+    },
+    "slider-layout#categorias": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 6,
+          "tablet": 6,
+          "phone": 2
+        },
+        "infinite": false,
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "blockClass": "carousel"
+      },
+      "children": [ "image#categoria-0", "image#categoria-1", "image#categoria-2", "image#categoria-3", "image#categoria-4", "image#categoria-5", "image#categoria-6"]
+    },
+    "image#categoria-0":{
+      "props":{
+        "src": "/arquivos/categoria1.png",
+        "link":{
+          "src": "/niños-y-bebés"
+        }
+      }
+    },
+    "image#categoria-1":{
+      "props":{
+        "src": "/arquivos/categoria2.png",
+        "link":{
+          "src": "/electrónicos"
+        }
+      }
+    },
+    "image#categoria-2":{
+      "props":{
+        "src": "/arquivos/categoria3.png",
+        "link":{
+          "src": "/electrodomésticos"
+        }
+      }
+    },
+    "image#categoria-3":{
+      "props":{
+        "src": "/arquivos/categoria4.png",
+        "link":{
+          "src": "/electrodomésticos"
+        }
+      }
+    },
+    "image#categoria-4":{
+      "props":{
+        "src": "/arquivos/categoria5.png",
+        "link":{
+          "src": "/deportes-y-tiempo-libre"
+        }
+      }
+    },
+    "image#categoria-5":{
+      "props":{
+        "src": "/arquivos/categoria6.png",
+        "link":{
+          "src": "/deportes-y-tiempo-libre"
+        }
+      }
+    },
+    "image#categoria-6":{
+      "props":{
+        "src": "/arquivos/categoria7.png",
+        "link":{
+          "src": "/deportes-y-tiempo-libre"
+        }
+      }
+    }
+  //FIN BUSQUEDA VACIA
+
+
+
+
+  ,
+  "gallery-layout-switcher": {
+    "children": [
+      /*
+        * For accessibility purposes, it is fundamental to define the layout options following the same ordering used to declare them in step 2.
+        */
+      "gallery-layout-option#grid",
+      "gallery-layout-option#list"
+    ]
+  },
+  "gallery-layout-option#grid": {
+    "props": {
+      "name": "grid"
+    },
+    "children": [
+      "icon-grid",
+      "responsive-layout.desktop#textOptionGrid"
+    ]
+  },
+  "gallery-layout-option#list": {
+    "props": {
+      "name": "list"
+    },
+    "children": [
+      "icon-inline-grid",
+      "responsive-layout.desktop#textOptionList"
+    ]
+  },
+  "responsive-layout.desktop#textOptionGrid": {
+    "children": [
+      "rich-text#option-grid"
+    ]
+  },
+  "responsive-layout.desktop#textOptionList": {
+    "children": [
+      "rich-text#option-list"
+    ]
+  },
+  "rich-text#option-grid": {
+    "props": {
+      "text": "",
+      "textColor": "c-auto",
+      "blockClass": "layout-option"
+    }
+  },
+  "rich-text#option-list": {
+    "props": {
+      "text": "",
+      "textColor": "c-auto",
+      "blockClass": "layout-option"
+    }
+  },
+
+  "search-content#mobile": {
+    "blocks": ["gallery#mobile", "not-found"]
+  },
+  "gallery#mobile": {
+    "props": {
+      "layouts": [
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 4,
+            "desktop": 4,
+            "tablet": 3,
+            "phone": 2
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "ListSummary": "product-summary.shelf#vitrina-product",
+      "GridSummary": "product-summary.shelf#vitrina-product"
+    }
+  }
+}

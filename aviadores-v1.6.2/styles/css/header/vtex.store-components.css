@@ -1,0 +1,245 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+.logoLink--logodesk{
+    max-width: 180px;    
+}
+
+
+
+:global(.vtex-search-2-x-tileListList) :global(.vtex-store-components-3-x-discountInsideContainer){
+    display: none;
+}
+
+:global(.vtex-search-2-x-tileListList) :global(.vtex-store-components-3-x-price_listPriceContainer){
+    display: none;
+}
+
+.imageElement--icon-wishlist{
+    background-position: center;
+}
+
+.resultsList--searchbar{
+    position: absolute;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group){
+    border: 2px solid #646464;
+    /* border-image-slice: 1;
+    border-image-source: linear-gradient(105.81deg, #FFEA00 -0.75%, #81F46F 31.71%, #42FAA7 64.2%, #00FFE1 99.85%) */;
+}
+
+.b--muted-4 {
+    background: #0075FD;
+}
+
+.hover-b--muted-3{
+	color: #0075FD;
+} 
+
+/* .imageElement--carousel{
+    margin-bottom: -0.5%;
+}
+
+.imageElement--carouselmobile{
+    margin-bottom: -0.8%;
+} */
+
+.infoCardHeadline--banenvgrat{
+    color: #fff;
+    font-size: x-large;
+    margin-top: 1%;
+    padding-bottom: 1%;
+}
+
+.infoCardTextContainer--banenvgrat{
+    width: fit-content;
+}
+
+.infoCardHeadline--banenvgratmobile{
+    color: #fff;
+    font-size: x-small;
+    margin-top: 1%;
+    padding-bottom: 1%;
+}
+
+.infoCardTextContainer--banenvgratmobile{
+    width: fit-content;
+}
+
+/* .newsletter--bannewslet{
+     background-image: url("assets/home/bannewsletter.png"); 
+} */
+
+.container--bannewslettablet{
+    /* background-image: url("assets/home/bannewsletter.png"); */
+    background-size: cover;
+}
+  
+/* .container--bannewsletmobile{
+    background-image: url("assets/home/newslettermobile.png");
+} */ 
+  
+.buttonContainer--bannewsletmobile{    
+      margin-left: 2%;
+      margin-top: -0.5rem;
+} 
+
+.label--bannewslet{
+    color: #067BB2;
+    font-size: 1.5rem;   
+}
+
+.label--bannewslettablet{
+  color: #067BB2; 
+  font-size: 1.5rem;  
+}
+
+.label--bannewsletmobile{
+  color: #067BB2;
+  font-size: 18px;
+  padding-left: 7%;
+  margin-right: 1%;
+}
+
+/* .newsletter--newsletetter{
+    background-image: url("assets/home/bannewsletter.png");
+} */
+
+.form--bannewslet{
+    background-color: #ffffff8b;
+    padding: 25px;
+    padding-left: 8%;
+    border-radius: 10px;
+    /* background-image: url("https://moralesnico--innew.myvtex.com/arquivos/news32.png"); */
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 2%;
+   
+}
+
+.form--bannewslettablet {
+  background-color: #ffffff8b;
+  padding: 25px;
+  padding-left: 14%;
+  border-radius: 10px;
+  /* background-image: url("https://moralesnico--innew.myvtex.com/arquivos/news32.png"); */
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 2%;
+ 
+}
+
+.form--bannewsletmobile {
+  background-color: #ffffff8b;
+  padding: 25px;
+  border-radius: 10px;
+ /*  background-image: url("https://moralesnico--innew.myvtex.com/arquivos/news32.png"); */
+  background-size: 60px;
+  background-repeat: no-repeat;
+  background-position-y: 10%;
+  background-position-x: 5%;
+  text-align: right;
+}
+
+.buttonContainer--bannewsletmobile{
+    margin-right: 30%;
+    padding-top: 5%;
+}
+
+.infoCardContainer--info-card-example{
+    display: flex;
+    flex-direction: column-reverse; 
+    width: 100%;     
+}
+
+.infoCardTextContainer--info-card-example{
+  
+   width: 72%;
+}
+
+.infoCardImageContainer--info-card-example{
+    width: 75%;    
+}
+
+.infoCardImage--info-card-example{
+    width: 100%;
+    height: 300px;
+}
+
+.infoCardHeadline--info-card-example{
+    font-size: 15px;
+}
+
+.imageElement--banblog{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 0 10%;    
+}
+
+.imageElement--banblogmobile{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    padding: 0 5%;    
+}
+
+.infoCardSubhead--info-card-example{
+    font-weight: bold;
+    color: #8B8B8B;
+}
+
+.infoCardCallActionContainer{
+    display: none;
+}
+
+
+.sellingPriceLabel{
+    display: none;
+}
+
+/* .sellingPriceLabel::after{
+    content: "$";
+    font-family: 'Montserrat', sans-serif;    
+    color: #3E3E3E;
+    font-weight: 500;
+    font-size: 1.8rem;
+} */
+
+.listPriceLabel{
+    display: none;
+}
+
+.logoContainer--logomobile{
+    padding: 0 !important;
+}
+.logoContainer--favorito{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.logoLink--favorito{
+    padding: 0 !important;
+}
+.logoImage--favorito {
+    margin-top: 8px;
+    margin-right: 1px;
+}
+@media (min-width:641px) and (max-width: 1024px){
+    .logoImage--favorito {
+        margin-top: 5px;
+    }
+}
+@media (max-width: 640px){
+    .logoContainer--favorito {
+        
+        
+    }
+    .logoImage--favorito{
+        margin-top: 4px !important;
+        width: 25px !important;
+        height: 25px !important;
+        margin-left: 1.5px !important;
+    }
+}

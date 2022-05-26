@@ -1,0 +1,104 @@
+
+.biggy-autocomplete{
+    flex-direction: row!important;
+}
+
+.tileListSeeMore{
+    padding-top: -1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #00529D;
+    font-size: 15px;
+}
+
+.tileListItem{
+    margin-right: 0.5rem;
+}
+
+.biggy-autocomplete::-webkit-scrollbar-thumb{
+    background-color: #e2e2e2;
+    border-radius: 20px;
+    width:10px;
+}
+
+.biggy-autocomplete::-webkit-scrollbar {
+    width:10px;
+}
+
+/* .biggy-autocomplete :global(.vtex-search-2-x-itemListList){    
+    
+    border-bottom: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(105.81deg, #FFEA00 -0.75%, #81F46F 31.71%, #42FAA7 64.2%, #00FFE1 99.85%);  
+}
+
+.biggy-autocomplete :global(.vtex-search-2-x-tileListTitle){
+    
+    border-bottom: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(105.81deg, #FFEA00 -0.75%, #81F46F 31.71%, #42FAA7 64.2%, #00FFE1 99.85%);
+} */
+
+@media only screen and (max-width: 639px) {
+    .biggy-autocomplete {
+        flex-direction: column!important;
+    }
+
+    .biggy-autocomplete-wrapper {
+        width: 96vw !important;
+        position: relative;
+        top: 6px;
+        right: 0;        
+    }
+}
+
+.biggy-autocomplete::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+
+.biggy-autocomplete::-webkit-scrollbar-thumb{
+    background-color: #e2e2e2;
+    border-radius: 5px;
+}
+
+/* buscador  */
+.itemListTitle,
+.tileListTitle
+{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    color: #646464;
+    font-size: 16px;
+    /* text-align: center; */
+    /* border-bottom: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(105.81deg, #FFEA00 -0.75%, #81F46F 31.71%, #42FAA7 64.2%, #00FFE1 99.85%); */
+}
+
+.itemListLinkTitle{
+    font-family: 'Montserrat', sans-serif;
+    color: #474747;
+    font-size: 14px;
+}
+
+.tileListList{
+    padding: 0 .6rem !important;
+    /* margin-right: 2rem; */
+}
+
+.productBrand{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #474747;
+}
+
+.productBrandName{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+@media (min-width:641px){
+    .tileListItem{
+        max-width: 200px;
+        /* height: 300px; */
+    }
+}
